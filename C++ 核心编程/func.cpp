@@ -2,7 +2,7 @@
 #include "circle.h"
 #include "point.h"
 
-//aµÄb´Î·½
+//açš„bæ¬¡æ–¹
 int Power(int a, int b)
 {
 	int result = 1;
@@ -14,9 +14,9 @@ int Power(int a, int b)
 	return result;
 }
 
-// 0 ¡ª¡ª ÔÚÔ²ÄÚ
-// 1 ¡ª¡ª ÔÚÔ²ÉÏ
-// 2 ¡ª¡ª ÔÚÔ²Íâ
+// 0 â€”â€” åœ¨åœ†å†…
+// 1 â€”â€” åœ¨åœ†ä¸Š
+// 2 â€”â€” åœ¨åœ†å¤–
 int CalculateLocation(Circle c, Point p)
 {
 	int relative_location = 0;

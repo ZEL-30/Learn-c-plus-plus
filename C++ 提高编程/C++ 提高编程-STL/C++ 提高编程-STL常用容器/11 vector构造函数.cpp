@@ -3,10 +3,10 @@
 using namespace std;
 
 
-//vector<T> v;                         //����ģ��ʵ����ʵ�֣�Ĭ�Ϲ��캯��
-//vector(v.begin(), v.end());          //��v[begin(),end())�����е�Ԫ�ؿ���������  ǰ�պ󿪵�����
-//vector(n, elem);                     //���캯����n��elem����������
-//vector(const vector& vec);           //�������캯��
+//vector<T> v;                         //采用模板实现类实现，默认构造函数
+//vector(v.begin(), v.end());          //将v[begin(),end())区间中的元素拷贝给本身  前闭后开的区间
+//vector(n, elem);                     //构造函数将n个elem拷贝给本身
+//vector(const vector& vec);           //拷贝构造函数
 
 void printVector(vector<int> v)
 {
@@ -19,7 +19,7 @@ void printVector(vector<int> v)
 
 void test01()
 {
-	//Ĭ�Ϲ��� �޲ι���
+	//默认构造 无参构造
 	vector<int> v1;   
 	for (int i = 0; i < 10; i++)
 	{
@@ -27,11 +27,11 @@ void test01()
 	}
 	printVector(v1);
 
-	//ͨ�����䷽ʽ���й���
+	//通过区间方式进行构造
 	vector<int>v2(v1.begin(), v1.end());
 	printVector(v2);
 
-	//n��elem��ʽ����
+	//n个elem方式构造
 	vector<int>v3(10, 100);
 	printVector(v3);
 

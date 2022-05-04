@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-//ÎÒµÄÊı×éÄ£ĞÍÀà
+//æˆ‘çš„æ•°ç»„æ¨¡å‹ç±»
 template <class T>
 class Array
 {
@@ -11,21 +11,21 @@ class Array
 
 public:
 
-	Array(int Capacity)                       //ÓĞ²Î¹¹Ôìº¯Êı
+	Array(int Capacity)                       //æœ‰å‚æ„é€ å‡½æ•°
 	{
-		//cout << "ÓĞ²Î¹¹Ôìº¯Êı" << endl;
+		//cout << "æœ‰å‚æ„é€ å‡½æ•°" << endl;
 		m_Capacity = Capacity;
 		m_Size = 0;
 		ArrayPtr = new T[Capacity];
 	}
 
-	Array(const Array& arr)                   //¿½±´¹¹Ôìº¯Êı
+	Array(const Array& arr)                   //æ‹·è´æ„é€ å‡½æ•°
 	{
-		//cout << "¹¹Ôì¹¹Ôìº¯Êı" << endl;
+		//cout << "æ„é€ æ„é€ å‡½æ•°" << endl;
 		m_Capacity = arr.m_Capacity;
 		m_Size = arr.m_Size;
 
-		//Éî¿½±´
+		//æ·±æ‹·è´
 		ArrayPtr = new T[arr.m_Capacity];
 		for (int i = 0; i < m_Size; i++)
 		{
@@ -33,12 +33,12 @@ public:
 		}
 	}
 
-	T& operator[](int Index)                 //ÀûÓÃÏÂ±ê·½Ê½·ÃÎÊÊı×éÔªËØ
+	T& operator[](int Index)                 //åˆ©ç”¨ä¸‹æ ‡æ–¹å¼è®¿é—®æ•°ç»„å…ƒç´ 
 	{
 		return ArrayPtr[Index];
 	}
 
-	Array& operator=(const Array &arr)       //ÖØÔØ¸³ÖµÔËËã·û
+	Array& operator=(const Array &arr)       //é‡è½½èµ‹å€¼è¿ç®—ç¬¦
 	{
 		m_Capacity = arr.m_Capacity;
 		m_Size = arr.m_Size;
@@ -50,22 +50,22 @@ public:
 		return *this;
 	}
 	 
-	void push_back(int a)                     //Î²²å·¨
+	void push_back(int a)                     //å°¾æ’æ³•
 	{
 		if (m_Size == m_Capacity)
 		{
-			cout << "²åÈëÊ§°Ü£¬ÈİÁ¿²»×ã£¡" << endl;
+			cout << "æ’å…¥å¤±è´¥ï¼Œå®¹é‡ä¸è¶³ï¼" << endl;
 			return;
 		}
 		ArrayPtr[m_Size] = a;
 		m_Size++;
 	}
 
-	void pop_back()                          //Î²É¾·¨
+	void pop_back()                          //å°¾åˆ æ³•
 	{
 		if (m_Size == 0)
 		{
-			cout << "É¾³ıÊ§°Ü£¬ÎŞÊı¾İ£¡";
+			cout << "åˆ é™¤å¤±è´¥ï¼Œæ— æ•°æ®ï¼";
 			return;
 		}
 
@@ -77,7 +77,7 @@ public:
 
 	~Array()
 	{
-		//cout << "Îö¹¹º¯Êı" << endl;
+		//cout << "ææ„å‡½æ•°" << endl;
 		delete[] ArrayPtr;
 		ArrayPtr = NULL;
 		m_Capacity = 0;
@@ -87,9 +87,9 @@ public:
 
 
 private:
-	int m_Capacity;                //ÈİÁ¿
-	int m_Size;                    //´óĞ¡
-	T* ArrayPtr;                   //Êı×é
+	int m_Capacity;                //å®¹é‡
+	int m_Size;                    //å¤§å°
+	T* ArrayPtr;                   //æ•°ç»„
 };
 
 

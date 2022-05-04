@@ -4,12 +4,12 @@ using namespace std;
 
 int main()
 {
-	// C++ ���
-	string st1 = "�Ŷ���";
+	// C++ 风格
+	string st1 = "张恩乐";
 	cout << st1 << endl;
 
-	// C ���
-	char st2[] = "������";
+	// C 风格
+	char st2[] = "王子怡";
 	cout << st2 << endl;
 
 

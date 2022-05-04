@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-//����ģ��
-template<class T> //typename �����滻Ϊ class  
+//函数模板
+template<class T> //typename 可以替换为 class  
 void Swap(T& a, T& b)
 {
 	T temp = a;
@@ -17,13 +17,13 @@ int main()
 	double c = 1.1;
 	double d = 2.2;
 
-	//���ַ�ʽʹ�ú���ģ��
-	//1���Զ������Ƶ�
+	//两种方式使用函数模板
+	//1、自动类型推导
 	Swap(a, b);
 	cout << "a = " << a << endl;
 	cout << "b = " << b << endl;
 
-	//2����ʾָ������
+	//2、显示指定类型
 	Swap<double>(c, d);
 	cout << "c = " << c << endl;
 	cout << "d = " << d << endl;

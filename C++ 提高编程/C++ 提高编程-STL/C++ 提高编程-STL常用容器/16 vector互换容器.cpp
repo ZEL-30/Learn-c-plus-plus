@@ -3,7 +3,7 @@
 using namespace std;
 
 
-//swap(vector<T> v);      //��vec�뱾����Ԫ�ػ���
+//swap(vector<T> v);      //将vec与本身的元素互换
 
 void printVector(vector<int> &v)
 {
@@ -17,7 +17,7 @@ void printVector(vector<int> &v)
 
 
 
-//����ʹ��
+//基本使用
 void test01()
 {
 	vector<int> v1;
@@ -43,8 +43,8 @@ void test01()
 }
 
 
-//ʵ����;
-//����swap���������ڴ�ռ�
+//实际用途
+//巧用swap可以收缩内存空间
 void test02()
 {
 	vector<int> v;
@@ -52,13 +52,13 @@ void test02()
 	{
 		v.push_back(i);
 	}
-	cout << "v������Ϊ��" << v.capacity() << " ��СΪ��" << v.size() << endl;
+	cout << "v的容量为：" << v.capacity() << " 大小为：" << v.size() << endl;
 
 	v.resize(3);
-	cout << "v������Ϊ��" << v.capacity() << " ��СΪ��" << v.size() << endl;
+	cout << "v的容量为：" << v.capacity() << " 大小为：" << v.size() << endl;
 
 	vector<int>(v).swap(v);
-	cout << "v������Ϊ��" << v.capacity() << " ��СΪ��" << v.size() << endl;
+	cout << "v的容量为：" << v.capacity() << " 大小为：" << v.size() << endl;
 
 }
 

@@ -11,7 +11,7 @@ int main()
 		{60,70,80}
 	};
 	int f_score[3];
-	string name[] = {"����","����","����"};
+	string name[] = {"张三","李四","王五"};
 	for (int i = 0; i < ROW; i++)
 	{
 		f_score[i] = 0;
@@ -19,7 +19,7 @@ int main()
 		{
 			f_score[i] = f_score[i] + arr[i][j];
 		}
-		cout << name[i] << "���ܳɼ�Ϊ��" << f_score[i] << endl;
+		cout << name[i] << "的总成绩为：" << f_score[i] << endl;
 	}
 
 

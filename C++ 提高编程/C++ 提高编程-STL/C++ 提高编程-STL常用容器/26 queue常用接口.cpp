@@ -3,18 +3,18 @@
 using namespace std;
 
 
-//queue<T> que;                             //queue����ģ����ʵ�֣�queue�����Ĭ�Ϲ�����ʽ
-//queue(const queue& que;                   //�������캯��
+//queue<T> que;                             //queue采用模板类实现，queue对象的默认构造形式
+//queue(const queue& que;                   //拷贝构造函数
 //
-//queue& operator=(const queue& que);       //���صȺŲ�����
+//queue& operator=(const queue& que);       //重载等号操作符
 //
-//push(elem);                               //���β����Ԫ��
-//pop();                                    //�Ӷ�ͷ�Ƴ���һ��Ԫ��
-//back();                                   //�������һ��Ԫ��
-//front();                                    //���ص�һ��Ԫ��
+//push(elem);                               //向队尾添加元素
+//pop();                                    //从队头移除第一个元素
+//back();                                   //返回最后一个元素
+//front();                                    //返回第一个元素
 //
-//empty();                                  //�ж϶����Ƿ�Ϊ��
-//size();                                   //���ض��д�С
+//empty();                                  //判断队列是否为空
+//size();                                   //返回队列大小
 
 
 void test01()
@@ -27,7 +27,7 @@ void test01()
 
 	while (!q.empty())
 	{
-		cout << "��ͷ��" << q.front() << " ��β��"<< q.back() <<endl;
+		cout << "队头：" << q.front() << " 队尾："<< q.back() <<endl;
 		q.pop();
 	}
 

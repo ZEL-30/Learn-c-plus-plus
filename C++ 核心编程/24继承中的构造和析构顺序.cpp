@@ -6,12 +6,12 @@ class Base
 public:
 	Base()
 	{
-		cout << "Base�Ĺ��캯��!" << endl;
+		cout << "Base的构造函数!" << endl;
 	}
 
 	~Base()
 	{
-		cout << "Base����������!" << endl;
+		cout << "Base的析构函数!" << endl;
 	}
 
 };
@@ -21,12 +21,12 @@ class Son : public Base
 public:
 	Son()
 	{
-		cout << "Son�Ĺ��캯��!" << endl;
+		cout << "Son的构造函数!" << endl;
 	}
 
 	~Son()
 	{
-		cout << "Son����������!" << endl;
+		cout << "Son的析构函数!" << endl;
 	}
 };
 

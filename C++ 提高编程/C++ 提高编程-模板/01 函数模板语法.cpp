@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-//����ģ��
-template<typename T> //����һ��ģ�壬���߱�������������н����ŵ�T��Ҫ������T��һ��ͨ�õ���������
+//函数模板
+template<typename T> //声明一个模板，告诉编译器后面代码中紧跟着的T不要报错，T是一个通用的数据类型
 void Swap(T &a,T &b)
 {
 	T temp = a;
@@ -17,13 +17,13 @@ int main()
 	double c = 1.1;
 	double d = 2.2;
 
-	//���ַ�ʽʹ�ú���ģ��
-	//1���Զ������Ƶ�
+	//两种方式使用函数模板
+	//1、自动类型推导
 	Swap(a, b);
 	cout << "a = " << a << endl;
 	cout << "b = " << b << endl;
 
-	//2����ʾָ������
+	//2、显示指定类型
 	Swap<double>(c, d);
 	cout << "c = " << c << endl;
 	cout << "d = " << d << endl;

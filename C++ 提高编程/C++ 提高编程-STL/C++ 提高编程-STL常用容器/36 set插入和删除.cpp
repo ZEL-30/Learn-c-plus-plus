@@ -4,11 +4,11 @@ using namespace std;
 
 
 
-//insert(elem);                            //�������в���Ԫ��
-//erase(pos);                              //ɾ��posλ�õ����ݣ�������һ�����ݵ�λ��
-//erase(beg, end);                         //ɾ��[beg��end)��������ݣ�������һ�����ݵ�λ��
-//clear();                                 //ɾ������������Ԫ��
-//erase(elem);                             //ɾ��������������elemֵƥ���Ԫ��
+//insert(elem);                            //在容器中插入元素
+//erase(pos);                              //删除pos位置的数据，返回下一个数据的位置
+//erase(beg, end);                         //删除[beg，end)区间的数据，返回下一个数据的位置
+//clear();                                 //删除容器中所有元素
+//erase(elem);                             //删除容器中所有与elem值匹配的元素
 
 
 
@@ -27,7 +27,7 @@ void test01()
 {
 	set<int> s1;
 
-	//�������ݣ�ֻ��insert��ʽ
+	//插入数据，只有insert方式
 	s1.insert(10);
 	s1.insert(40);
 	s1.insert(30);

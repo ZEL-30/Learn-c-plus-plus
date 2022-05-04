@@ -32,7 +32,7 @@ void printSet(set<int,Mycompare> &S)
 void test01()
 {
 
-	//��Ҫ��û�в���ǰ������������ָ��
+	//需要在没有插入前进行排序规则的指定
 	set<int,Mycompare> s1;
 	s1.insert(10);
 	s1.insert(20);

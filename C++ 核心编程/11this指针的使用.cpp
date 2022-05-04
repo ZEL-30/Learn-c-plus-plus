@@ -6,7 +6,7 @@ class Person
 public:
 	Person(int age)
 	{
-		// this ָ��ָ��   �����õĳ�Ա���������Ķ���
+		// this 指针指向   被调用的成员函数所属的对象
 		this->age = age;
 	}
 
@@ -14,7 +14,7 @@ public:
 	{
 		this->age += p.age;
 
-		//this ָ��p2��ָ��
+		//this 指向p2的指针
 		return *this;
 	}
 
@@ -24,23 +24,23 @@ public:
 
 
 
-//1.������Ƴ�ͻ
+//1.解决名称冲突
 void test01()
 {
 	Person p(18);
-	cout << "p1������Ϊ��" << p.age << endl;
+	cout << "p1的年龄为：" << p.age << endl;
 }
 
 
-//2.���ض������� *this
+//2.返回对象本身用 *this
 void test02()
 { 
 	Person p1(10);
 	Person p2(200);
 	
-	//��ʽ���˼��
+	//链式编程思想
 	p2.PersonAddAge(p1).PersonAddAge(p1).PersonAddAge(p1).PersonAddAge(p1);
-	cout << "p2����Ϊ��" << p2.age << endl;
+	cout << "p2的年为：" << p2.age << endl;
 }
 
 

@@ -4,11 +4,11 @@
 using namespace std;
 
 //merge(iterator beg1, iterator end1, iterator beg2, iterator end2, iterator dest);
-////beg1 ����1��ʼ������
-////end1 ����1����������
-////beg2 ����2��ʼ������
-////end2 ����2����������
-////dest Ŀ��������ʼ������
+////beg1 容器1起始迭代器
+////end1 容器1结束迭代器
+////beg2 容器2起始迭代器
+////end2 容器2结束迭代器
+////dest 目标容器起始迭代器
 
 
 void print(int val)

@@ -5,8 +5,8 @@ int main()
 {
 	char ch1 = 'a';
 
-	//�ַ��ͱ�������Ӧ��ASCII��ֵ   
-	cout << "98����Ӧ���ַ��ǣ�\n" << (int)ch1 << endl;
+	//字符型变量所对应的ASCII码值   
+	cout << "98所对应的字符是：\n" << (int)ch1 << endl;
 
 	cout << "aaa\t\thelloworld" << endl;
 	system("pause");

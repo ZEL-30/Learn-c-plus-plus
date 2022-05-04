@@ -4,9 +4,9 @@ using namespace std;
 
 
 
-//empty();                  //�ж������Ƿ�Ϊ��  ����bool��
-//size();                   //����������Ԫ�صĸ���
-//swap(st);                 //����������������
+//empty();                  //判断容器是否为空  返回bool型
+//size();                   //返回容器中元素的个数
+//swap(st);                 //交换两个集合容器
 
 
 void printSet(set<int> S)
@@ -24,7 +24,7 @@ void test01()
 {
 	set<int> s1;
 
-	//�������ݣ�ֻ��insert��ʽ
+	//插入数据，只有insert方式
 	s1.insert(10);
 	s1.insert(40);
 	s1.insert(30);
@@ -38,11 +38,11 @@ void test01()
 	s2.insert(400);
 	s2.insert(500);
 
-	cout << "����ǰ��" << endl;
+	cout << "交换前：" << endl;
 	printSet(s1);
 	printSet(s2);
 
-	cout << "������" << endl;
+	cout << "交换后：" << endl;
 	s1.swap(s2);
 	printSet(s1);
 	printSet(s2);

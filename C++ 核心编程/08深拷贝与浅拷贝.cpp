@@ -6,23 +6,23 @@ class Person
 public:
 	Person                                                                   ()
 	{
-		cout << "Ĭ�Ϲ��캯������" << endl;
+		cout << "默认构造函数调用" << endl;
 	}
 
 	Person(int a, int height)
 	{
 		age = a;
 		Height = new int(height);
-		cout << "�вι��캯������" << endl;
+		cout << "有参构造函数调用" << endl;
 	}
 
 	Person(const Person& p)
 	{
 		age = p.age;
 
-		//�������   ����ʹ���Լ������Ŀ������캯�����ڶ�����������
+		//深拷贝操作   就是使用自己创建的拷贝构造函数，在堆区创建数据
 		Height = new int(*p.Height);
-		cout << "�������캯������" << endl;
+		cout << "拷贝构造函数调用" << endl;
 	}
 
 	~Person()
@@ -32,7 +32,7 @@ public:
 			delete Height;
 			Height = NULL;
 		}
-		cout << "����������������" << endl;
+		cout << "这是析构函数调用" << endl;
 	}
 
 
@@ -46,8 +46,8 @@ void test01()
 	Person p1(10,177);
 
 	Person p2(p1);
-	cout << "����Ϊ��" << p2.age << endl;
-	cout << "����Ϊ��" << *p2.Height << endl;
+	cout << "年龄为：" << p2.age << endl;
+	cout << "身高为：" << *p2.Height << endl;
 }
 
 

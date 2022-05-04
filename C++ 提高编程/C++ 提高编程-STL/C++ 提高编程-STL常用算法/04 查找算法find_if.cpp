@@ -4,10 +4,10 @@
 using namespace std;
 
 //find_if(iterator beg, iterator end, _Pred);
-////��ֵ����Ԫ�أ��ҵ�����ָ��Ԫ�صĵ��������Ҳ������ؽ���������end()
-////beg��ʼ������
-////end����������
-////_Pred ��������ν�� (����ֵbool���͵ķº���)
+////按值查找元素，找到返回指定元素的迭代器，找不到返回结束迭代器end()
+////beg开始迭代器
+////end结束迭代器
+////_Pred 函数或者谓词 (返回值bool类型的仿函数)
 
 class Mycompare1
 {
@@ -35,7 +35,7 @@ public:
 		m_Age = Age;
 	}
 
-	//���� ==
+	//重载 ==
 	bool operator==(const Person &p)
 	{
 		if (m_Age == p.m_Age && m_Name == p.m_Name)
@@ -66,7 +66,7 @@ public:
 
 
 
-//������������
+//内置数据类型
 void test01()
 {
 	vector<int> V;
@@ -78,13 +78,13 @@ void test01()
 	vector<int>::iterator it = find_if(V.begin(), V.end(), Mycompare1());
 	if (it != V.end())
 	{
-		cout << " �ҵ��ˣ�" << *it << endl;
+		cout << " 找到了！" << *it << endl;
 	}
 
 }
 
 
-//�Զ�����������
+//自定义数据类型
 void test02()
 {
 	vector<Person> V;
@@ -103,7 +103,7 @@ void test02()
 	vector<Person>::iterator it = find_if(V.begin(), V.end(), Mycompare2());
 	if (it != V.end())
 	{
-		cout << " �ҵ��ˣ�" << it->m_Name << endl;
+		cout << " 找到了！" << it->m_Name << endl;
 	}
 
 

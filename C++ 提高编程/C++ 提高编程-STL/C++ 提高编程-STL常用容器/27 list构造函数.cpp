@@ -3,10 +3,10 @@
 using namespace std;
 
 
-//list<T> lst;                         //list����ģ��ʵ����ʵ�֣�Ĭ�Ϲ��캯��
-//list(v.begin(), v.end());            //��v[begin(),end())�����е�Ԫ�ؿ���������  ǰ�պ󿪵�����
-//list(n, elem);                       //���캯����n��elem����������
-//list(const list& lst);               //�������캯��
+//list<T> lst;                         //list采用模板实现类实现，默认构造函数
+//list(v.begin(), v.end());            //将v[begin(),end())区间中的元素拷贝给本身  前闭后开的区间
+//list(n, elem);                       //构造函数将n个elem拷贝给本身
+//list(const list& lst);               //拷贝构造函数
 
 
 void printList(const list<int> &L)

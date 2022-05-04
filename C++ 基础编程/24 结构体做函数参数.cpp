@@ -14,15 +14,15 @@ struct Student
 
 void PrintSturct(struct Student std)
 {
-	cout << "ѧ����������" << std.name << endl;
-	cout << "ѧ�������䣺" << std.age << endl;
-	cout << "ѧ�����Ա�" << std.sex << endl;
-	cout << "ѧ����ѧ�ţ�" << std.s_id << endl;
-	cout << "ѧ����ѧ�ƣ�" << std.courses << endl;
-	cout << "ѧ���ĳɼ���" << std.scores << endl;
+	cout << "学生的姓名：" << std.name << endl;
+	cout << "学生的年龄：" << std.age << endl;
+	cout << "学生的性别：" << std.sex << endl;
+	cout << "学生的学号：" << std.s_id << endl;
+	cout << "学生的学科：" << std.courses << endl;
+	cout << "学生的成绩：" << std.scores << endl;
 }
 
-//��ʼ��
+//初始化
 Student* Init(Student* std)
 {
 	std->name = " ";
@@ -36,22 +36,22 @@ Student* Init(Student* std)
 
 int main()
 {
-	// �ṹ�帳ֵ����1
+	// 结构体赋值方法1
 	Student std1;
-	std1.name = "�Ŷ���";
+	std1.name = "张恩乐";
 	std1.age = 23;
-	std1.sex = "��";
+	std1.sex = "男";
 	std1.s_id = 201802464052;
 	std1.courses  = "CET-6";
 	std1.scores = 452;
 
-	// �ṹ�帳ֵ����2
-	Student std2 = { "������",22,"��",201802464060,"CET-6",0 };
+	// 结构体赋值方法2
+	Student std2 = { "杨文龙",22,"男",201802464060,"CET-6",0 };
 
 	PrintSturct(std1);
 	PrintSturct(std2);
 
-	Init(&std2);   //��ʼ������
+	Init(&std2);   //初始化数据
 	PrintSturct(std1);
 	PrintSturct(std2);
 

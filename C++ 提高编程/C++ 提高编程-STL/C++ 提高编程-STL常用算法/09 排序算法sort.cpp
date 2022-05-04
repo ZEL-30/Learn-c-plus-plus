@@ -7,7 +7,7 @@ using namespace std;
 
 
 
-//��ӡ
+//打印
 void print1(int val)
 {
 	cout << val << " ";
@@ -26,7 +26,7 @@ public:
 
 
 
-//������������
+//内置数据类型
 void test01()
 {
 	vector<int> V;
@@ -37,20 +37,20 @@ void test01()
 	V.push_back(10);
 	V.push_back(60);
 
-	cout << "ԭ������" << endl;
+	cout << "原容器：" << endl;
 	for_each(V.begin(), V.end(), print1);
 	cout << endl;
 
-	sort(V.begin(), V.end()); //Ĭ��������
+	sort(V.begin(), V.end()); //默认正排序
 	cout << "-------------------------------------------" << endl;
-	cout << "������" << endl;
+	cout << "正排序：" << endl;
 	for_each(V.begin(), V.end(), print1);
 	cout << endl;
 
 	//sort(V.begin(), V.end(), Mycompare1());
 	sort(V.begin(), V.end(), greater<int>());
 	cout << "-------------------------------------------" << endl;
-	cout << "������" << endl;
+	cout << "反排序：" << endl;
 	for_each(V.begin(), V.end(), print1);
 	cout << endl;
 
@@ -73,7 +73,7 @@ public:
 
 void print2(const Person& p)
 {
-	cout << "������" << p.m_Name << " ���䣺" << p.m_Age << endl;
+	cout << "姓名：" << p.m_Name << " 年龄：" << p.m_Age << endl;
 }
 
 
@@ -98,7 +98,7 @@ public:
 	}
 };
 
-//�Զ�����������
+//自定义数据类型
 void test02()
 {
 	vector<Person> V;
@@ -114,17 +114,17 @@ void test02()
 	V.push_back(p4);
 	V.push_back(p5);
 
-	cout << "ԭ������" << endl;
+	cout << "原容器：" << endl;
 	for_each(V.begin(), V.end(), print2);
 
-	sort(V.begin(), V.end(),Mycompare2()); //Ĭ��������
+	sort(V.begin(), V.end(),Mycompare2()); //默认正排序
 	cout << "-------------------------------------------" << endl;
-	cout << "������" << endl;
+	cout << "正排序：" << endl;
 	for_each(V.begin(), V.end(), print2);
 
-	sort(V.begin(), V.end(), Mycompare3()); //Ĭ��������
+	sort(V.begin(), V.end(), Mycompare3()); //默认正排序
 	cout << "-------------------------------------------" << endl;
-	cout << "������" << endl;
+	cout << "反排序：" << endl;
 	for_each(V.begin(), V.end(), print2);
 
 }

@@ -3,9 +3,9 @@
 #include <algorithm>
 using namespace std;
 
-//set_intersection           //ÇóÁ½¸öÈÝÆ÷µÄ½»¼¯
-//set_union                  //ÇóÁ½¸öÈÝÆ÷µÄ²¢¼¯
-//set_difference             //ÇóÁ½¸öÈÝÆ÷µÄ²î¼¯
+//set_intersection           //æ±‚ä¸¤ä¸ªå®¹å™¨çš„äº¤é›†
+//set_union                  //æ±‚ä¸¤ä¸ªå®¹å™¨çš„å¹¶é›†
+//set_difference             //æ±‚ä¸¤ä¸ªå®¹å™¨çš„å·®é›†
 
 
 class Myprint
@@ -37,12 +37,12 @@ void test01()
 	vector<int> vTargert;
 	vTargert.resize(max(v1.size(),v2.size()));
 	vector<int>::iterator itEnd = set_difference(v1.begin(), v1.end(), v2.begin(), v2.end(), vTargert.begin());
-	cout << "v1ºÍv2²î¼¯£º" << endl;
+	cout << "v1å’Œv2å·®é›†ï¼š" << endl;
 	for_each(vTargert.begin(), itEnd, Myprint());
 	cout << endl;
 
 	vector<int>::iterator itsEnd = set_difference(v2.begin(), v2.end(), v1.begin(), v1.end(), vTargert.begin());
-	cout << "v2ºÍv1²î¼¯£º" << endl;
+	cout << "v2å’Œv1å·®é›†ï¼š" << endl;
 	for_each(vTargert.begin(), itsEnd, Myprint());
 	cout << endl;
 }

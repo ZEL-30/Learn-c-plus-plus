@@ -4,10 +4,10 @@ using namespace std;
 
 
 
-//deque<T> depT;                         //����ģ��ʵ����ʵ�֣�Ĭ�Ϲ��캯��
-//deque(v.begin(), v.end());             //��v[begin(),end()]�����е�Ԫ�ؿ���������     ǰ�պ󿪵�����
-//deque(n, elem);                        //���캯����n��elem����������
-//deque(const deque& deq);               //�������캯��
+//deque<T> depT;                         //采用模板实现类实现，默认构造函数
+//deque(v.begin(), v.end());             //将v[begin(),end()]区间中的元素拷贝给本身     前闭后开的区间
+//deque(n, elem);                        //构造函数将n个elem拷贝给本身
+//deque(const deque& deq);               //拷贝构造函数
 
 void printDeque(const deque<int> &d)
 {

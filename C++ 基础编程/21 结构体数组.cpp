@@ -14,10 +14,10 @@ typedef struct Student
 
 int main()
 {
-	Student std_arr[] = { {"ï¿½Å¶ï¿½ï¿½ï¿½",23,"ï¿½ï¿½",201802464052,"CET-6",452},{"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",22,"ï¿½ï¿½",201802464060,"CET-6",0} };
+	Student std_arr[] = { {"ÕÅ¶÷ÀÖ",23,"ÄÐ",201802464052,"CET-6",452},{"ÑîÎÄÁú",22,"ÄÐ",201802464060,"CET-6",0} };
 
-	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << std_arr[0].name << " ï¿½É¼ï¿½ï¿½ï¿½" << std_arr[0].scores << endl;
-	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << std_arr[1].name << " ï¿½É¼ï¿½ï¿½ï¿½" << std_arr[1].scores << endl;
+	cout << "ÐÕÃû£º" << std_arr[0].name << " ³É¼¨£º" << std_arr[0].scores << endl;
+	cout << "ÐÕÃû£º" << std_arr[1].name << " ³É¼¨£º" << std_arr[1].scores << endl;
 	
 	
 	system("pause");

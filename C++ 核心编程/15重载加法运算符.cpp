@@ -5,7 +5,7 @@ class Person
 {
 public:
 	Person();
-	//Person operator+(Person &p);   //��Ա����ʵ�ּӷ����������
+	//Person operator+(Person &p);   //成员函数实现加法运算符重载
 	 
 	int m_a;
 	int m_b;
@@ -18,7 +18,7 @@ Person::Person()
 	m_b = 10;
 }
 
-//Person Person::operator+(Person &p)    //��Ա����ʵ�ּӷ����������
+//Person Person::operator+(Person &p)    //成员函数实现加法运算符重载
 //{
 //	Person temp;
 //	temp.m_a = this->m_a + p.m_a;
@@ -26,7 +26,7 @@ Person::Person()
 //	return temp;
 //}
 
-Person operator+(Person& p1, Person& p2)  //ȫ�ֺ���ʵ�ּӷ����������
+Person operator+(Person& p1, Person& p2)  //全局函数实现加法运算符重载
 {
 	Person temp;
 	temp.m_a = p1.m_a + p2.m_a;
@@ -40,7 +40,7 @@ void test01()
 {
 	Person p1;
 	Person p2;
-	//Person p3 = p1.operator+(p2);  //��Ա�������õı���
+	//Person p3 = p1.operator+(p2);  //成员函数调用的本质
 	Person p3 = p1 + p2;
 	Person p4 = p3 + p2;
 

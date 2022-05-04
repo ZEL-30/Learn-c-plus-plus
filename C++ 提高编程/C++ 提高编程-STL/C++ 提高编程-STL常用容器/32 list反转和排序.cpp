@@ -3,8 +3,8 @@
 using namespace std;
 
 
-//reverse();        //��ת����
-//sort();           //��������
+//reverse();        //反转链表
+//sort();           //链表排序
 
 
 void printList(list<int>& L)
@@ -19,7 +19,7 @@ void printList(list<int>& L)
 
 bool mycompare(int v1, int v2)
 {
-	//����  ���õ�һ���� > �ڶ�����
+	//降序  就让第一个数 > 第二个数
 	return v1 > v2;
 }
 
@@ -40,10 +40,10 @@ void test01()
 	printList(L);
 	L.reverse();
 	printList(L);
-	L.sort();  //Ĭ������
+	L.sort();  //默认升序
 	printList(L);
 
-	//����
+	//降序
 	L.sort(mycompare);
 	printList(L);
 }

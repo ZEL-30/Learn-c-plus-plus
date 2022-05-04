@@ -2,10 +2,10 @@
 #include <list>
 using namespace std;
 
-//list& operator=(const list& lst);               //���صȺ������
-//assign(beg, end);                               //��[beg,end)�����е����ݿ�����ֵ������
-//assign(n,elem);                                 //��n��elem������ֵ������
-//swap(lst);                                      //��lst�뱾����Ԫ�ػ���
+//list& operator=(const list& lst);               //重载等号运算符
+//assign(beg, end);                               //将[beg,end)区间中的数据拷贝赋值给本身
+//assign(n,elem);                                 //将n个elem拷贝赋值给本身
+//swap(lst);                                      //将lst与本身的元素互换
 
 
 void printList(const list<int>& L)

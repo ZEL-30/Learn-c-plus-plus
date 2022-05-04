@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-//reseve(int len);    //ÈİÆ÷Ô¤Áôlen¸öÔªËØ³¤¶È£¬Ô¤ÁôÎ»ÖÃ²»³õÊ¼»¯£¬ÔªËØ²»¿É·ÃÎÊ
+//reseve(int len);    //å®¹å™¨é¢„ç•™lenä¸ªå…ƒç´ é•¿åº¦ï¼Œé¢„ç•™ä½ç½®ä¸åˆå§‹åŒ–ï¼Œå…ƒç´ ä¸å¯è®¿é—®
 
 void test01()
 {

@@ -3,7 +3,7 @@
 #include <algorithm>
 using namespace std;
 
-//һԪν��
+//一元谓词
 
 class Mycompare
 {
@@ -32,11 +32,11 @@ void test01()
 		V.push_back(i);
 	}
 
-	//������������û�д���5������
-	vector<int>::iterator it = find_if(V.begin(), V.end(), Mycompare());   //Mycompare()������������
+	//查找容器中有没有大于5的数字
+	vector<int>::iterator it = find_if(V.begin(), V.end(), Mycompare());   //Mycompare()匿名函数对象
 	if (it != V.end())
 	{
-		cout << "�ҵ���" << endl;
+		cout << "找到了" << endl;
 	}
 }
 

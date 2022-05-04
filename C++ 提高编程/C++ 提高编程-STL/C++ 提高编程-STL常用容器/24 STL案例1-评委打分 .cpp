@@ -16,8 +16,8 @@ public:
 		m_Score = Score;
 	}
 
-	string        m_Name;        //ѡ������
-	double        m_Score;       //ѡ��ƽ����
+	string        m_Name;        //选手姓名
+	double        m_Score;       //选手平均分
 };
 
 
@@ -28,7 +28,7 @@ void createplayer(vector<Player> &v)
 	{
 		double score = 0;
 		string name;
-		cout << "�������" << i + 1 << "���˵�������" << endl;
+		cout << "请输入第" << i + 1 << "个人的姓名：" << endl;
 		cin >> name;
 		Player p(name, score);
 		v.push_back(p);
@@ -40,7 +40,7 @@ void setscore(vector<Player> &v)
 {
 	for (vector<Player>::iterator it = v.begin(); it != v.end(); it++)
 	{
-		//����deque������ŷ���
+		//创建deque容器存放分数
 		deque<int> d;
 		
 		for (int i = 0; i < 10; i++)
@@ -63,18 +63,18 @@ void setscore(vector<Player> &v)
 int main()
 {
 	srand((unsigned int)time(NULL));
-	//1������5��ѡ��
+	//1、创建5名选手
 	vector<Player> v;
 	createplayer(v);
 
-	//2����5��ѡ�ִ��
+	//2、给5名选手打分
 	setscore(v);
 
 
-	//3����ʾ���÷�
+	//3、显示最后得分
 	for (vector<Player>::iterator it = v.begin(); it != v.end(); it++)
 	{
-		cout << "������" << (*it).m_Name << " ƽ���֣�" << (*it).m_Score << endl;
+		cout << "姓名：" << (*it).m_Name << " 平均分：" << (*it).m_Score << endl;
 	}
 
 

@@ -14,11 +14,11 @@ public:
 
 	void showage()
 	{
-		if (this == NULL)
+		if (this == null)
 		{
 			return;
 		}
-		cout << "ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½" << m_age << endl;
+		cout << "ÄêÁäÎª£º" << m_age << endl;
 	}
 
 	int m_age;
@@ -28,7 +28,7 @@ public:
 
 void test01()
 {
-	person* p = NULL;
+	person* p = null;
 	//p->sksd();
 	p->showage();
 

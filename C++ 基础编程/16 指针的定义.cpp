@@ -9,13 +9,13 @@ int main()
 	char* pb = NULL;
 	pa = &a;
 	*pa = 200;
-	cout << "a�ĵ�ַΪ��" << (long)pa << endl;
-	cout << "a+1�ĵ�ַΪ��" << (long)(pa + 1) << endl;
+	cout << "a的地址为：" << (long)pa << endl;
+	cout << "a+1的地址为：" << (long)(pa + 1) << endl;
 	cout << "a = " << a << endl;
 
-	cout << "int* ��ռ���ڴ�ռ�Ϊ��" << sizeof(pa) << endl;
+	cout << "int* 所占的内存空间为：" << sizeof(pa) << endl;
 
-	cout << "char* ��ռ���ڴ�ռ�Ϊ��" << sizeof(pb) << endl;
+	cout << "char* 所占的内存空间为：" << sizeof(pb) << endl;
 
 	system("pause");
 

@@ -8,11 +8,11 @@ public:
 
 	Person();
 
-	// ���� ��ϵ����� ==
+	// 重载 关系运算符 ==
 	bool operator==(Person& p);
-	// ���� ��ϵ����� <
+	// 重载 关系运算符 <
 	bool operator<(Person& p);
-	// ���� ��ϵ����� >
+	// 重载 关系运算符 >
 	bool operator>(Person& p);
 
 
@@ -85,11 +85,11 @@ int main()
 
 	//if (a == b == c)
 	//{
-	//	cout << "abc���" << endl;
+	//	cout << "abc相等" << endl;
 	//}
 	//else 
 	//{
-	//	cout << "abc�����" << endl;
+	//	cout << "abc不相等" << endl;
 	//}
 
 	system("pause");

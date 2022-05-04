@@ -1,8 +1,8 @@
 #include "bubble.h"
 
-// 函数主体
+// 鍑芥暟涓讳綋
 
-// 冒泡排序
+// 鍐掓场鎺掑簭
 int* Bubble(int* arr_p,int len)
 {
 	for (int i = 0; i < len - 1; i++)
@@ -24,7 +24,7 @@ int* Bubble(int* arr_p,int len)
 	return arr_p; 
 }
 
-// 打印数组
+// 鎵撳嵃鏁扮粍
 void Print_Arr(int* arr, int len)
 {
 	for (int i = 0; i < len; i++)

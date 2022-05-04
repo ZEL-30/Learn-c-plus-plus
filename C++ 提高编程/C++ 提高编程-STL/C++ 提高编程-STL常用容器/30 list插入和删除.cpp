@@ -2,18 +2,18 @@
 using namespace std;
 
 
-//push_back(ele);                          //������β������Ԫ��ele
-//push_front(ele);                         //������ͷ������Ԫ��ele
-//pop_back();                              //ɾ���������һ��Ԫ��
-//pop_front();                             //ɾ��������һ��һ��Ԫ��
-//ָ��λ�ò�����
-//insert(pos, elem);                       //��posλ�ò���һ��elemԪ�صĿ��������������ݵ�λ��
-//insert(pos, n, elem);                    //��posλ�ò���n��elem���ݣ��޷���ֵ
-//insert(pos, beg, end);                   //��posλ�ò���[beg��end)��������ݣ��޷���ֵ
-//erase(pos);                              //ɾ��posλ�õ����ݣ�������һ�����ݵ�λ��
-//erase(beg, end);                         //ɾ��[beg��end)��������ݣ�������һ�����ݵ�λ��
-//clear();                                 //ɾ������������Ԫ��
-//remove(elem);                            //ɾ��������������elemֵƥ���Ԫ��
+//push_back(ele);                          //在容器尾部插入元素ele
+//push_front(ele);                         //在容器头部插入元素ele
+//pop_back();                              //删除容器最后一个元素
+//pop_front();                             //删除容器第一个一个元素
+//指定位置操作：
+//insert(pos, elem);                       //在pos位置插入一个elem元素的拷贝，返回新数据的位置
+//insert(pos, n, elem);                    //在pos位置插入n个elem数据，无返回值
+//insert(pos, beg, end);                   //在pos位置插入[beg，end)区间的数据，无返回值
+//erase(pos);                              //删除pos位置的数据，返回下一个数据的位置
+//erase(beg, end);                         //删除[beg，end)区间的数据，返回下一个数据的位置
+//clear();                                 //删除容器中所有元素
+//remove(elem);                            //删除容器中所有与elem值匹配的元素
 
 
 

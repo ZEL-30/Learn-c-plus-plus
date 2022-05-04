@@ -3,21 +3,21 @@
 using namespace std;
 
 
-//char& operator[](int n);      //ͨ��[]�ķ�ʽ��ȡ�ַ�
-//char& at(int n);              //ͨ��at�ķ�ʽ��ȡ�ַ�
+//char& operator[](int n);      //通过[]的方式获取字符
+//char& at(int n);              //通过at的方式获取字符
  
 void test01()
 {
 	string str = "hello";
 	//cout << "str = " << str << endl;
 
-	for (int i = 0; i < str.size(); i++)    //str.size()  �����ַ�������
+	for (int i = 0; i < str.size(); i++)    //str.size()  计算字符串长度
 	{
-		cout << str[i] << endl;        //ͨ��[]�ķ�ʽ��ȡ�ַ�
-		cout << str.at(i) << endl;     //ͨ��at�ķ�ʽ��ȡ�ַ�
+		cout << str[i] << endl;        //通过[]的方式获取字符
+		cout << str.at(i) << endl;     //通过at的方式获取字符
 	}
 
-	//�޸ĵ����ַ�
+	//修改单个字符
 	str[0] = 'x';
 	cout << "str = " << str << endl;
 	str.at(1) = 'x';

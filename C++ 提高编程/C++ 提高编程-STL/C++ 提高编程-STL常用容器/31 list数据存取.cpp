@@ -3,8 +3,8 @@
 using namespace std;
 
 
-//front();               //���ص�һ��Ԫ��
-//back();                //�������һ��Ԫ��
+//front();               //返回第一个元素
+//back();                //返回最后一个元素
 
 
 void printList(list<int> &L)

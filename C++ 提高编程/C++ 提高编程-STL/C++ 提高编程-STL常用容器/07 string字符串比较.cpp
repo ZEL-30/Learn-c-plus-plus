@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 
-//= ���� 0
-//> ���� 1
-//< ���� -1
-//int campare(const string& s) const;       //���ַ���s�Ƚ�
-//int compare(const char* s) const;         //���ַ���s�Ƚ�
+//= 返回 0
+//> 返回 1
+//< 返回 -1
+//int campare(const string& s) const;       //与字符串s比较
+//int compare(const char* s) const;         //与字符串s比较
 
 void test01()
 {
@@ -13,7 +13,7 @@ void test01()
 	string str2 = "hello";
 	if (str1.compare(str2) == 0)
 	{
-		cout << "�ַ������" << endl;
+		cout << "字符串相等" << endl;
 	}
 	else if (str1.compare(str2) > 0)
 	{

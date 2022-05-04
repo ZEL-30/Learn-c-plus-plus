@@ -24,11 +24,11 @@ void PrintPerson(list<Person> L)
 {
 	for (list<Person>::iterator it = L.begin(); it != L.end(); it++)
 	{
-		cout << "������" << it->m_Name << " ���䣺" << it->m_Age << " ���ߣ�" << it->m_Height << endl;
+		cout << "姓名：" << it->m_Name << " 年龄：" << it->m_Age << " 身高：" << it->m_Height << endl;
 	}
 }
 
-//sort �ص����� ָ���������
+//sort 回调函数 指定排序规则
 bool mycompare(Person& p1,Person &p2)
 {
 	if (p1.m_Age != p2.m_Age)
@@ -45,11 +45,11 @@ bool mycompare(Person& p1,Person &p2)
 void test01()
 {
 	list<Person> L;
-	Person p1("�Ŷ���", 23, 177);
-	Person p2("������", 20, 168);
-	Person p3("������", 21, 173);
-	Person p4("�����", 21, 175);
-	Person p5("˾��ܲ", 21, 180);
+	Person p1("张恩乐", 23, 177);
+	Person p2("王子怡", 20, 168);
+	Person p3("杨文龙", 21, 173);
+	Person p4("诸葛亮", 21, 175);
+	Person p5("司马懿", 21, 180);
 
 	L.push_back(p1);
 	L.push_back(p2);
@@ -59,8 +59,8 @@ void test01()
 
 	PrintPerson(L);
 	
-	//����
-	cout << "�����" << endl;
+	//排序
+	cout << "排序后：" << endl;
 	L.sort(mycompare);
 	PrintPerson(L);
 }

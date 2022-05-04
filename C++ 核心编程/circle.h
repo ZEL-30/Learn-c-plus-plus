@@ -1,4 +1,4 @@
-#pragma once    //·ÀÖ¹Í·ÎÄ¼şÖØ¸´ÉùÃ÷
+#pragma once    //é˜²æ­¢å¤´æ–‡ä»¶é‡å¤å£°æ˜
 #include "point.h"
 #include <iostream>
 using namespace std;
@@ -19,7 +19,7 @@ public:
 
 
 private:
-	//ÔÚÀàÖĞ¿ÉÒÔÓÃÁíÒ»¸öÀà
-	Point m_Center;   //Ô²ĞÄ 
-	int m_R;          //°ë¾¶
+	//åœ¨ç±»ä¸­å¯ä»¥ç”¨å¦ä¸€ä¸ªç±»
+	Point m_Center;   //åœ†å¿ƒ 
+	int m_R;          //åŠå¾„
 };

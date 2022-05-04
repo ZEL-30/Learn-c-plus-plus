@@ -7,7 +7,7 @@ int main()
 	int b = 20;
 	int c = 0;
 	a > b ? c = a : c = b;
-	cout << "C锟斤拷值为锟斤拷" << c << endl;
+	cout << "C的值为：" << c << endl;
 
 	system("pause");
 

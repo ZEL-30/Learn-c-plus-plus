@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-//ʵ��һ��ͨ�� �������������
-//���� ����
-//�㷨 ����
+//实现一个通用 对数组进行排序
+//规则 降序
+//算法 排序
 
 template <class T>
 void Swap(T& a, T& b)
@@ -19,7 +19,7 @@ void SelectSort(T arr[], int len)
 {
 	for (int i = 0; i < len; i++)
 	{
-		int Max = i;  //�϶����ֵ���±�
+		int Max = i;  //认定最大值的下标
 		for (int j = i + 1; j < len; j++)
 		{
 			if (arr[Max] < arr[j])
@@ -36,7 +36,7 @@ void SelectSort(T arr[], int len)
 }
 
 
-//�ṩ��ӡ����ģ��
+//提供打印数组模板
 template <class T>
 void Print(T arr[],int len)
 {
@@ -58,7 +58,7 @@ int main()
 
 	SelectSort(arr1, length1);
 
-	cout << "ѡ���������" << endl;
+	cout << "选择排序降序后：" << endl;
 	Print(arr1, length1);
 
 	char arr2[] = { 'x','a','v','r','w','k','h'};
@@ -67,7 +67,7 @@ int main()
 
 	SelectSort(arr2, length2);
 
-	cout << "ѡ���������" << endl;
+	cout << "选择排序降序后：" << endl;
 	Print(arr2, length2);
 
 	system("pause");

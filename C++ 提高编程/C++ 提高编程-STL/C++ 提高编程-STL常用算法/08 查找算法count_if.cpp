@@ -54,7 +54,7 @@ public:
 
 
 
-//Í³ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//Í³¼ÆÄÚÖÃµÄÊı¾İÀàĞÍ
 void test01()
 {
 	vector<int> V;
@@ -67,10 +67,10 @@ void test01()
 	V.push_back(5);
 	int ret = count_if(V.begin(), V.end(),Mycompare1() );  
 
-	cout << "ï¿½ï¿½ï¿½ï¿½4ï¿½ï¿½ï¿½ï¿½ï¿½Ğ£ï¿½" << ret << endl;
+	cout << "´óÓÚ4µÄÊıÓĞ£º" << ret << endl;
 }
 
-//Í³ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//Í³¼Æ×Ô¶¨ÒåµÄÊı¾İÀàĞÍ
 void test02()
 {
 	vector<Person> V;
@@ -87,7 +87,7 @@ void test02()
 	V.push_back(P5);
 
 	int ret = count_if(V.begin(), V.end(),Mycompare2());
-	cout  << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½25ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << ret << endl;
+	cout  << "ÄêÁä´óÓÚ25µÄÈËÊı£º" << ret << endl;
 
 
 

@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-//��ģ����̳�
+//类模板与继承
 template <class T>
 class Base
 {
@@ -15,7 +15,7 @@ class son :public Base<int>
 };
 
 
-//��������ָ����������T�����ͣ�����Ҳ���Ϊ��ģ��
+//如果想灵活指定出父类中T的类型，子类也需变为类模板
 template <class T1,class T2>
 class son2 : public Base<T2>
 {

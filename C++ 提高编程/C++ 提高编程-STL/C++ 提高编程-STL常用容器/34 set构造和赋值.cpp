@@ -3,10 +3,10 @@
 using namespace std;
 
 
-//set<T> st;                                       //Ĭ�Ϲ��캯��
-//set(const set& st);                              //�������캯��
+//set<T> st;                                       //默认构造函数
+//set(const set& st);                              //拷贝构造函数
 //
-//set& operator=(const set& st);                   //���صȺŲ�����
+//set& operator=(const set& st);                   //重载等号操作符
 
 
 
@@ -25,7 +25,7 @@ void test01()
 {
 	set<int> s1;
 
-	//�������ݣ�ֻ��insert��ʽ
+	//插入数据，只有insert方式
 	s1.insert(10);
 	s1.insert(40);
 	s1.insert(30);

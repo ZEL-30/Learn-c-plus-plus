@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 
-//��������Ĭ��ֵ
+//函数设置默认值
 int func(int a = 10, int b = 20, int c = 30)
 {
 	return a + b + c;
 }
 
-//����ռλ����
+//函数占位参数
 int func1(int a, int)
 {
 	return a;

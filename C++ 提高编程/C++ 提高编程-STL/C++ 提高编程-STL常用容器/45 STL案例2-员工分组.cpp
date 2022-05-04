@@ -16,8 +16,8 @@ public:
 	}
 
 
-	string m_Name;      //Ա������
-	int    m_Salary;    //Ա��н��
+	string m_Name;      //员工姓名
+	int    m_Salary;    //员工薪资
 };
 
 
@@ -26,7 +26,7 @@ void CreateEmployee(vector<Employee>& V)
 	string NameSeed = "ABCDEFGHIJ";
 	for (int i = 0; i < 10; i++)
 	{
-		string Name = "Ա��";
+		string Name = "员工";
 		Name += NameSeed[i];
 
 		int Salary = 0;
@@ -36,7 +36,7 @@ void CreateEmployee(vector<Employee>& V)
 	}
 }
 
-//�������
+//随机分组
 void Group(vector<Employee>& V, multimap<int, Employee>& M)
 {
 	for (vector<Employee>::iterator it = V.begin(); it != V.end(); it++)
@@ -44,15 +44,15 @@ void Group(vector<Employee>& V, multimap<int, Employee>& M)
 		int random = rand() % 3 + 1;   //1~3
 		switch (random)
 		{
-		case 1:  //�߻�  н�� 15000
+		case 1:  //策划  薪资 15000
 			it->m_Salary = 15000;
 			M.insert(make_pair(1, (*it)));
 			break;
-		case 2:  //����  н�� 12000
+		case 2:  //美术  薪资 12000
 			it->m_Salary = 12000;
 			M.insert(make_pair(2, (*it)));
 			break;
-		case 3:  //�з�  н�� 20000
+		case 3:  //研发  薪资 20000
 			it->m_Salary = 20000;
 			M.insert(make_pair(3, (*it)));
 			break;
@@ -63,48 +63,48 @@ void Group(vector<Employee>& V, multimap<int, Employee>& M)
 
 	}
 }
-//cout << "���ţ��߻� ������" << it->second.m_Name << " н�ʣ�" << it->second.m_Salary << endl;
+//cout << "部门：策划 姓名：" << it->second.m_Name << " 薪资：" << it->second.m_Salary << endl;
 
-//��ӡԱ����Ϣ
+//打印员工信息
 void PrintEmployee(multimap<int,Employee> &M)
 {
-	//��ӡ�߻�
-	cout << "�߻����ţ�" << endl;
+	//打印策划
+	cout << "策划部门：" << endl;
 	for (multimap<int, Employee>::iterator it = M.begin(); it != M.find(2); it++)
 	{
-		cout << "������" << it->second.m_Name << " н�ʣ�" << it->second.m_Salary << endl;
+		cout << "姓名：" << it->second.m_Name << " 薪资：" << it->second.m_Salary << endl;
 	}
 
-	//��ӡ����
+	//打印美术
 	cout << "----------------------------------" << endl;
-	cout << "�������ţ�" << endl;
+	cout << "美术部门：" << endl;
 	for (multimap<int, Employee>::iterator it = M.find(2); it != M.find(3); it++)
 	{
-		cout << "������" << it->second.m_Name << " н�ʣ�" << it->second.m_Salary << endl;
+		cout << "姓名：" << it->second.m_Name << " 薪资：" << it->second.m_Salary << endl;
 	}
 
-	//��ӡ�з�
+	//打印研发
 	cout << "----------------------------------" << endl;
-	cout << "�з����ţ�" << endl;
+	cout << "研发部门：" << endl;
 	for (multimap<int, Employee>::iterator it = M.find(3); it != M.end(); it++)
 	{
-		cout << "������" << it->second.m_Name << " н�ʣ�" << it->second.m_Salary << endl;
+		cout << "姓名：" << it->second.m_Name << " 薪资：" << it->second.m_Salary << endl;
 	}
 }
 
 
 int main()
 {
-	srand((unsigned int)time(NULL));   //�������
-	//1������10��Ա��
+	srand((unsigned int)time(NULL));   //随机播种
+	//1、创建10名员工
 	vector<Employee> V;
 	CreateEmployee(V);
 
-	//2���������
+	//2、随机分组
 	multimap<int, Employee> M;
 	Group(V, M);
 
-	//3���ֲ�����ʾԱ����Ϣ
+	//3、分部门显示员工信息
 	PrintEmployee(M);
 
 	system("pause");

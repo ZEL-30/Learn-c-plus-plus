@@ -2,7 +2,7 @@
 using namespace std;
 
 
-//��ģ���������������
+//类模板对象做函数参数
 
 template<class T1,class T2>
 class Person
@@ -17,7 +17,7 @@ public:
 
 	void showPerson()
 	{
-		cout << "������" << m_Name << " ���䣺" << m_Age << endl;
+		cout << "姓名：" << m_Name << " 年龄：" << m_Age << endl;
 	}
 
 
@@ -26,7 +26,7 @@ public:
 	T1 m_Name;
 	T2 m_Age;
 };
-//1��ָ����������
+//1、指定传入类型
 void printPerson1(Person<string, int> &p1)
 {
 	p1.showPerson();
@@ -36,37 +36,37 @@ void printPerson1(Person<string, int> &p1)
 
 void test01()
 {
-	Person<string, int>p1("�����", 100);
+	Person<string, int>p1("孙悟空", 100);
 	printPerson1(p1);
 }
 
-//2������ģ�廯
+//2、参数模板化
 template <class T1,class T2>
 void prntPerson2(Person<T1,T2> &p)
 {
 	p.showPerson();
-	cout << "T1 ������Ϊ��" << typeid(T1).name() << endl;
-	cout << "T2 ������Ϊ��" << typeid(T2).name() << endl;
+	cout << "T1 的类型为：" << typeid(T1).name() << endl;
+	cout << "T2 的类型为：" << typeid(T2).name() << endl;
 }
 
 
 void test02()
 {
-	Person<string, int>p2("���˽�", 90);
+	Person<string, int>p2("猪八戒", 90);
 	prntPerson2(p2);
 }
 
-//3������ģ�廯
+//3、整个模板化
 template <class T>
 void printPerson3(T& p)
 {
 	p.showPerson();
-	cout << "T ������Ϊ��" << typeid(T).name() << endl;
+	cout << "T 的类型为：" << typeid(T).name() << endl;
 }
 
 void test03()
 {
-	Person<string, int>p3("��ɮ", 30);
+	Person<string, int>p3("唐僧", 30);
 	printPerson3(p3);
 }
 

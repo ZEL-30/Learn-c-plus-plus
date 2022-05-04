@@ -30,9 +30,9 @@ public:
 void test01()
 {
 	map<Person, int,Mycompare> M;
-	Person p1("ï¿½Å¶ï¿½ï¿½ï¿½", 23);
-	Person p2("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 20);
-	Person p3("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 21);
+	Person p1("ÕÅ¶÷ÀÖ", 23);
+	Person p2("Íõ×Óâù", 20);
+	Person p3("ÑîÎÄÁú", 21);
 
 	M.insert(make_pair(p1,1));
 	M.insert(make_pair(p2,2));
@@ -41,7 +41,7 @@ void test01()
 
 	for (map<Person, int, Mycompare>::iterator it = M.begin(); it != M.end(); it++)
 	{
-		cout << "ï¿½ï¿½Å£ï¿½" << it->second << " ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << it->first.m_Name << " ï¿½ï¿½ï¿½ä£º" << it->first.m_Age << endl;
+		cout << "±àºÅ£º" << it->second << " ĞÕÃû£º" << it->first.m_Name << " ÄêÁä£º" << it->first.m_Age << endl;
 	}
 
 

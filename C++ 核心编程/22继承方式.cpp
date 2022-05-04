@@ -1,9 +1,11 @@
 #include <iostream>
 using namespace std;
 
-//�̳��еĶ���ģ��
 
-class Base
+// 继承方式
+
+//公共继承
+class Base1
 {
 public:
 	int m_a;
@@ -11,27 +13,33 @@ protected:
 	int m_b;
 private:
 	int m_c;
+
 };
 
-class Son : public Base
+
+class Son1 :public Base1
 {
 public:
-	int m_d;
+	void func()
+	{
+		m_a = 10;  
+		m_b = 20;
+		m_c = 30;
+	}
 };
 
 
-void test01()
-{
-	Son s1;
-	cout << sizeof(s1) << endl;
-}
+//保护继承
+
+
+
 
 
 
 
 int main()
 {
-	test01();
+
 
 	system("pause");
 	return 0;

@@ -2,22 +2,22 @@
 
 using namespace std;
 
-//�ж��Ƿ���ˮ�ɻ���
+//判断是否是水仙花数
 int Daffodil_number(int num);
 
-//�˷�����
+//乘方函数
 int power(int a, int b);
 
 int main()
 {
 
-	int num = 100;    //��ʼ����
+	int num = 100;    //起始数字
 
-	cout << "3λ���е�ˮ�ɻ����У�" << endl;
+	cout << "3位数中的水仙花数有：" << endl;
 
 	do
 	{
-		if (Daffodil_number(num) == 1)
+		if (daffodil_number(num) == 1)
 		{
 			cout << num << endl;
 			num++;
@@ -32,13 +32,13 @@ int main()
 }
 
 
-//�ж��Ƿ���ˮ�ɻ���
+//判断是否是水仙花数
 int Daffodil_number(int num)
 {
-	int num_1 = 0;  //��λ
-	int num_2 = 0;  //ʮλ
-	int num_3 = 0;  //��λ
-	//����������λ��ʮλ����λ
+	int num_1 = 0;  //个位
+	int num_2 = 0;  //十位
+	int num_3 = 0;  //百位
+	//分离整数百位、十位、个位
 	num_3 = num / 100;
 	num_2 = (num % 100) / 10;
 	num_1 = (num % 100) % 10;
@@ -49,7 +49,7 @@ int Daffodil_number(int num)
 		return 0;
 }
 
-//�˷�����
+//乘方函数
 int power(int a, int b)
 {
 	int result = 1;

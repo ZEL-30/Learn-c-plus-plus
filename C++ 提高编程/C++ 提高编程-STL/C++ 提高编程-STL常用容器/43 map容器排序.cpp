@@ -20,7 +20,7 @@ void printMap(map<int, int,Mycompare>& M)
 {
 	for (map<int, int, Mycompare>::iterator it = M.begin(); it != M.end(); it++)
 	{
-		cout << "ï¿½ï¿½ï¿½ï¿½" << it->first << " Öµï¿½ï¿½" << it->second << endl;
+		cout << "¼ü£º" << it->first << " Öµ£º" << it->second << endl;
 	}
 }
 

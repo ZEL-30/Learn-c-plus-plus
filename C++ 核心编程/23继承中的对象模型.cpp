@@ -1,11 +1,9 @@
 #include <iostream>
 using namespace std;
 
+//继承中的对象模型
 
-// �̳з�ʽ
-
-//�����̳�
-class Base1
+class Base
 {
 public:
 	int m_a;
@@ -13,33 +11,27 @@ protected:
 	int m_b;
 private:
 	int m_c;
-
 };
 
-
-class Son1 :public Base1
+class Son : public Base
 {
 public:
-	void func()
-	{
-		m_a = 10;  
-		m_b = 20;
-		m_c = 30;
-	}
+	int m_d;
 };
 
 
-//�����̳�
-
-
-
+void test01()
+{
+	Son s1;
+	cout << sizeof(s1) << endl;
+}
 
 
 
 
 int main()
 {
-
+	test01();
 
 	system("pause");
 	return 0;

@@ -13,7 +13,7 @@ public:
 		m_age = age;
 	}
 
-	bool operator==(Person &p)      //���������
+	bool operator==(Person &p)      //运算符重载
 	{
 		if (m_age == p.m_age && m_Name == p.m_Name)
 		{
@@ -30,7 +30,7 @@ public:
 
 
 
-//�Ա����������Ƿ���Ⱥ���
+//对比两个数据是否相等函数
 template <class T>
 bool myCompare(T& a, T& b)
 {
@@ -45,7 +45,7 @@ bool myCompare(T& a, T& b)
 }
 
 
-//���þ��廯Person�İ汾ʵ�ִ��룬���廯���ȵ���
+//利用具体化Person的版本实现代码，具体化优先调用
 template <> bool myCompare(Person& p1, Person& p2)
 {
 	if (p1.m_age == p2.m_age && p2.m_Name == p2.m_Name)
@@ -62,11 +62,11 @@ void test01()
 	bool ret = myCompare(a, b);
 	if (ret)
 	{
-		cout << "a��b���" << endl;
+		cout << "a和b相等" << endl;
 	}
 	else
 	{
-		cout << "a��b�����" << endl;
+		cout << "a和b不相等" << endl;
 	}
 
 }
@@ -74,17 +74,17 @@ void test01()
 
 void test02()
 {
-	Person p1("�Ŷ���", 23);
-	Person p2("�Ŷ���", 23);
+	Person p1("张恩乐", 23);
+	Person p2("张恩乐", 23);
 
 	bool ret = myCompare(p1, p2);
 	if (ret)
 	{
-		cout << "p1��p2���" << endl;
+		cout << "p1和p2相等" << endl;
 	}
 	else
 	{
-		cout << "p1��p2�����" << endl;
+		cout << "p1和p2不相等" << endl;
 	}
 }
 

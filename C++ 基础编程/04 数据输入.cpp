@@ -4,14 +4,14 @@ using namespace std;
 int main()
 {
 	int a = 10;
-	cout << "������α���a��ֵ:" << endl;
+	cout << "请给整形变量a赋值:" << endl;
 	cin >> a;
-	cout << "a��ֵ�ı�Ϊ��" << a << endl;
+	cout << "a的值改变为：" << a << endl;
 
 	double b = 0.0;
-	cout << "����������α���b��ֵ:" << endl;
+	cout << "请给浮点型形变量b赋值:" << endl;
 	cin >> b;
-	cout << "a��ֵ�ı�Ϊ��" << b << endl;
+	cout << "a的值改变为：" << b << endl;
 
 	system("pause");
 

@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-//º¯ÊıµÄÉùÃ÷
+//å‡½æ•°çš„å£°æ˜
 
 
-//½»»»Á½¸öÊı×Ö
+//äº¤æ¢ä¸¤ä¸ªæ•°å­—
 void swap(int& a, int& b);

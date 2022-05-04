@@ -12,7 +12,7 @@
 //	}
 //	cout << endl;
 //	int order = 0;
-//	cout << "ÄãÏëÒªÉ¾³ıµÚ¼¸¸öÔªËØ£º" << endl;
+//	cout << "ä½ æƒ³è¦åˆ é™¤ç¬¬å‡ ä¸ªå…ƒç´ ï¼š" << endl;
 //	cin >> order;
 //	int site = order - 1;
 //	for (int i = site; i<len; i++)
@@ -20,7 +20,7 @@
 //		arr[i] = arr[i + 1];
 //	}
 //	len--;
-//	cout << "É¾³ıºó£º" << endl;
+//	cout << "åˆ é™¤åï¼š" << endl;
 //
 //	for (int i = 0; i < len; i++)
 //	{

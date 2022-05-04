@@ -6,7 +6,7 @@ class Person1
 public:
 	void showPerson1()
 	{
-		cout << "Person1�ĵ���" << endl;
+		cout << "Person1的调用" << endl;
 	}
 
 };
@@ -17,7 +17,7 @@ class Person2
 public:
 	void showPerson2()
 	{
-		cout << "Person2�ĵ���" << endl;
+		cout << "Person2的调用" << endl;
 	}
 
 };

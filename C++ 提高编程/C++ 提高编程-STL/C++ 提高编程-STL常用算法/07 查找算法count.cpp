@@ -5,10 +5,10 @@ using namespace std;
 
 
 //count(iterator beg, iterator end,value);
-////ͳ��Ԫ�س��ֵĴ���  
-////beg ��ʼ������
-////end ��ʼ������
-////value ͳ�Ƶ�Ԫ��
+////统计元素出现的次数  
+////beg 开始迭代器
+////end 开始迭代器
+////value 统计的元素
 
 class Person
 {
@@ -44,7 +44,7 @@ public:
 
 
 
-//ͳ�����õ���������
+//统计内置的数据类型
 void test01()
 {
 	vector<int> V;
@@ -55,12 +55,12 @@ void test01()
 	V.push_back(5);
 	V.push_back(5);
 	V.push_back(5);
-	int ret = count(V.begin(), V.end(), 5);  //��������������
+	int ret = count(V.begin(), V.end(), 5);  //必须是有序序列
 
-	cout << "5���ֵĴ���Ϊ��" << ret << endl;
+	cout << "5出现的次数为：" << ret << endl;
 }
 
-//ͳ���Զ������������
+//统计自定义的数据类型
 void test02()
 {
 	vector<Person> V;
@@ -77,7 +77,7 @@ void test02()
 	V.push_back(P5);
 
 	int ret = count(V.begin(), V.end(), P5);
-	cout  << "����Ϊ20��������" << ret << endl;
+	cout  << "年龄为20的人数：" << ret << endl;
 
 
 

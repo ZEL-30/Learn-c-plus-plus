@@ -1,4 +1,4 @@
-#pragma once   //·ÀÖ¹Í·ÎÄ¼şÖØ¸´ÉùÃ÷
+#pragma once   //é˜²æ­¢å¤´æ–‡ä»¶é‡å¤å£°æ˜
 #include <iostream>
 using namespace std;
    
@@ -15,6 +15,6 @@ public:
 	int GetY();
 
 private:
-	int m_X;      //µãµÄxÖá×ø±ê
-	int m_Y;      //µãµÄyÖá×ø±ê
+	int m_X;      //ç‚¹çš„xè½´åæ ‡
+	int m_Y;      //ç‚¹çš„yè½´åæ ‡
 };

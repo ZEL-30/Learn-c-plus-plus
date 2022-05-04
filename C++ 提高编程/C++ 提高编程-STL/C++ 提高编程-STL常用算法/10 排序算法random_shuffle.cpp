@@ -7,7 +7,7 @@ using namespace std;
 
 
 
-//��ӡ
+//打印
 void print1(int val)
 {
 	cout << val << " ";
@@ -26,7 +26,7 @@ public:
 
 
 
-//������������
+//内置数据类型
 void test01()
 {
 	vector<int> V;
@@ -37,20 +37,20 @@ void test01()
 	V.push_back(10);
 	V.push_back(60);
 
-	cout << "ԭ������" << endl;
+	cout << "原容器：" << endl;
 	for_each(V.begin(), V.end(), print1);
 	cout << endl;
 
-	sort(V.begin(), V.end()); //Ĭ��������
+	sort(V.begin(), V.end()); //默认正排序
 	cout << "-------------------------------------------" << endl;
-	cout << "������" << endl;
+	cout << "正排序：" << endl;
 	for_each(V.begin(), V.end(), print1);
 	cout << endl;
 
 	//sort(V.begin(), V.end(), Mycompare1());
 	random_shuffle(V.begin(), V.end());
 	cout << "-------------------------------------------" << endl;
-	cout << "���Һ�" << endl;
+	cout << "打乱后：" << endl;
 	for_each(V.begin(), V.end(), print1);
 	cout << endl;
 

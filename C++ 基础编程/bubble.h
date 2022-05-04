@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 
-// 函数声明
+// 鍑芥暟澹版槑
 
-// 冒泡排序
+// 鍐掓场鎺掑簭
 int* Bubble(int* arr,int len);
 
-// 打印数组
+// 鎵撳嵃鏁扮粍
 void Print_Arr(int* arr, int len);

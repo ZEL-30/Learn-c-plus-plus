@@ -12,19 +12,19 @@ int main()
 	}
 	cout << endl;
 
-	//ѡ������
+	//选择排序
 	for (int i = 0; i < length; i++)
 	{
-		int Min = i;   //�϶�һ����С�������±�
+		int Min = i;   //认定一个最小的数的下标
 		for (int j = i + 1; j < length; j++)
 		{
 			if (arr[Min] > arr[j])
 			{
-				Min = j;  //������Сֵ���±�
+				Min = j;  //更新最小值的下标
 			}
 		}
 
-		if (Min != i)    //����±��б仯���ͽ���Ԫ�أ�������СԪ��
+		if (Min != i)    //如果下标有变化，就交换元素，更新最小元素
 		{
 			int temp = arr[i];
 			arr[i] = arr[Min];

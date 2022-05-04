@@ -1,13 +1,13 @@
-//����һ ֱ�Ӱ���Դ�ļ�
+//方法一 直接包含源文件
 //#include "Person.cpp" 
 
-//������ �� .h ��.cpp�е�����д��һ�𣬺�׺��Ϊ.hpp
+//方法二 将 .h 和.cpp中的内容写到一起，后缀改为.hpp
 
 #include "Person.hpp"
 
 void test01()
 {
-	Person<string, int>p1("�Ŷ���", 23);
+	Person<string, int>p1("张恩乐", 23);
 	p1.showPerson();
 }
 

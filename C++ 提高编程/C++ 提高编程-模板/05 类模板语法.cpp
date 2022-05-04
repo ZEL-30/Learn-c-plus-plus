@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-//��ģ��
-template <class NameType,class AgeType = int>  //class AgeType = int Ĭ������
+//类模板
+template <class NameType,class AgeType = int>  //class AgeType = int 默认类型
 class Person
 {
 public:
@@ -25,7 +25,7 @@ public:
 
 void test01()
 {
-	Person<string,int>p1("�Ŷ���", 23);
+	Person<string,int>p1("张恩乐", 23);
 	p1.showInfo();
 
 

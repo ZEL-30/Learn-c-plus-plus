@@ -3,7 +3,7 @@
 using namespace std;
 
 
-//string substr(int pos = 0, int n = npos) const;     //������pos��ʼ��n���ַ���ɵ��ַ���
+//string substr(int pos = 0, int n = npos) const;     //返回由pos开始的n个字符组成的字符串
 
 
 void test01()
@@ -16,14 +16,14 @@ void test01()
 	
 }
 
-//ʵ�ʲ���
+//实际操作
 void test02()
 {
 	string email = "1362848545@qq.com";
 	string emails = "zhangenle@qq.com";
 	string substr = emails.substr(0, emails.find("@"));
-	cout << "����Ϊ�� " << emails << endl; 
-	cout << "�û���Ϊ��" << substr << endl;
+	cout << "邮箱为： " << emails << endl; 
+	cout << "用户名为：" << substr << endl;
 }
 
 

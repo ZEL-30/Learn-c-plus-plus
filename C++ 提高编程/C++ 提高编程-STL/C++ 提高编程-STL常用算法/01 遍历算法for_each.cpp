@@ -3,14 +3,14 @@
 #include <algorithm>
 using namespace std;
 
-//1����ͨ����
+//1、普通函数
 void print(int val)
 {
 	cout << val << " ";
 }
 
 
-//2���º���
+//2、仿函数
 class Myprint
 {
 public:
@@ -32,12 +32,12 @@ void test01()
 		V.push_back(i);
 	}
 
-	//��������
-	//����һ����ͨ����
+	//遍历容器
+	//方法一、普通函数
 	//for_each(V.begin(),V.end(),print);
 	//cout << endl;
 
-	//����������������-�º���
+	//方法二、函数对象-仿函数
 	Myprint p;
 	for_each(V.begin(), V.end(), p);
 	cout << endl;

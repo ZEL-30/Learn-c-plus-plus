@@ -3,13 +3,13 @@ using namespace std;
 
 int main()
 {
-	//Ç°ï¿½ÃµÝ¼ï¿½
+	//Ç°ÖÃµÝ¼õ
 	int a = 10;
 	int b = a-- * 60;
 	cout << "a = " << a << endl;  //9
 	cout << "b = " << b << endl;  //600
 
-	//ï¿½ï¿½ï¿½ÃµÝ¼ï¿½
+	//ºóÖÃµÝ¼õ
 	int c = 10;
 	int d = --c * 60;
 	cout << "c = " << c << endl;  //9

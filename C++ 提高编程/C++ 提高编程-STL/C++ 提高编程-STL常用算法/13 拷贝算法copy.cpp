@@ -12,7 +12,7 @@ void myprint(int val)
 
 
 
-//������������
+//内置数据类型
 void test01()
 {
 	vector<int> V;
@@ -50,10 +50,10 @@ public:
 
 void print2(const Person& p)
 {
-	cout << "������" << p.m_Name << " ���䣺" << p.m_Age << endl;
+	cout << "姓名：" << p.m_Name << " 年龄：" << p.m_Age << endl;
 }
 
-//�Զ�����������
+//自定义数据类型
 void test02()
 {
 	vector<Person> V;

@@ -3,14 +3,14 @@
 #include <algorithm>
 using namespace std;
 
-//ï¿½ï¿½ÔªÎ½ï¿½ï¿½
+//¶şÔªÎ½´Ê
 
 class Mycompare
 {
 public:
 	bool operator()(int num1,int num2)
 	{
-		if (num1> 5)
+		if (num1 > 5)
 		{
 			return true;
 		}

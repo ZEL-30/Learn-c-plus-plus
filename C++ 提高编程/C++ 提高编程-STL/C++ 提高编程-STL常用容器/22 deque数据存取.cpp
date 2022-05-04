@@ -2,10 +2,10 @@
 #include <deque>
 using namespace std;
 
-//at(int index);           //��������index��ָ������
-//operator[];              //��������index��ָ������
-//front();                 //���������е�һ������Ԫ��
-//back();                  //�������������һ������Ԫ��
+//at(int index);           //返回索引index所指的数据
+//operator[];              //返回索引index所指的数据
+//front();                 //返回容器中第一个数据元素
+//back();                  //返回容器中最后一个数据元素
 
 
 
@@ -19,22 +19,22 @@ void test01()
 		d1.push_back(i);
 	}
 
-	//����[]��ʽ����Ԫ��
+	//利用[]方式访问元素
 	for (int i = 0; i < d1.size(); i++)
 	{
 		cout << d1[i] << " ";
 	}
 	cout << endl;
 
-	//����at��ʽ����Ԫ��
+	//利用at方式访问元素
 	for (int i = 0; i < d1.size(); i++)
 	{
 		cout << d1.at(i) << " ";
 	}
 	cout << endl;
 
-	cout << "��һ��Ԫ��Ϊ��" << d1.front() << endl;
-	cout << "���һ��Ԫ��Ϊ��" << d1.back() << endl;
+	cout << "第一个元素为：" << d1.front() << endl;
+	cout << "最后一个元素为：" << d1.back() << endl;
 
 }
 

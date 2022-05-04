@@ -3,27 +3,27 @@
 using namespace std;
 
 
-//stack<T> stk;                             //stack����ģ����ʵ�֣�stack�����Ĭ�Ϲ�����ʽ
-//stack(const stack& stk);                  //�������캯��
+//stack<T> stk;                             //stack采用模板类实现，stack对象的默认构造形式
+//stack(const stack& stk);                  //拷贝构造函数
 //
-//stack& operator=(const stack& stk);       //���صȺŲ�����
+//stack& operator=(const stack& stk);       //重载等号操作符
 //
-//push(elem);                               //��ջ������Ԫ��
-//pop();                                    //��ջ���Ƴ���һ��Ԫ��
-//top();                                    //����ջ��Ԫ��
+//push(elem);                               //向栈顶添加元素
+//pop();                                    //从栈顶移除第一个元素
+//top();                                    //返回栈顶元素
 //
-//empty();                                  //�ж�ջ���Ƿ�Ϊ��
-//size();                                   //����ջ��С
+//empty();                                  //判断栈顶是否为空
+//size();                                   //返回栈大小
 
 
 
 
 void test01()
 {
-	//�ص㣺�����Ƚ�������ݽṹ
+	//特点：符合先进后出数据结构
 	stack<int> s;
 
-	//��ջ
+	//入栈
 	s.push(10);
 	s.push(20);
 	s.push(30);

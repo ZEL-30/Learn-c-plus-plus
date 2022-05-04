@@ -4,11 +4,11 @@
 using namespace std;
 
 //merge(iterator beg1, iterator end1, iterator beg2, iterator end2, iterator dest);
-////beg1 ����1��ʼ������
-////end1 ����1����������
-////beg2 ����2��ʼ������
-////end2 ����2����������
-////dest Ŀ��������ʼ������
+////beg1 容器1起始迭代器
+////end1 容器1结束迭代器
+////beg2 容器2起始迭代器
+////end2 容器2结束迭代器
+////dest 目标容器起始迭代器
 
 
 void print(int val)
@@ -36,11 +36,11 @@ void test01()
 
 	vector<int> vtarget;
 	vtarget.resize(v1.size()+v2.size());
-	cout << "��תǰ��" << endl;
+	cout << "反转前：" << endl;
 	merge(v1.begin(), v1.end(), v2.begin(), v2.end(), vtarget.begin());
 	for_each(vtarget.begin(), vtarget.end(), print);
 	cout << endl;
-	cout << "��ת��" << endl;
+	cout << "反转后：" << endl;
 	reverse(vtarget.begin(), vtarget.end());
 	for_each(vtarget.begin(), vtarget.end(), print);
 	cout << endl;

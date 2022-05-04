@@ -2,13 +2,13 @@
 #include <vector>
 using namespace std;
 
-//empty();                  //�ж������Ƿ�Ϊ��
-//capacity();               //����������
-//size();                   //����������Ԫ�صĸ���
-//resize(int num);          //����ָ�������ĳ���Ϊnum���������䳤������Ĭ��ֵ������λ��
-//						  //���������̣���ĩβ�����������ȵ�Ԫ�ر�ɾ��
-//resize(int num, elem);    //����ָ�������ĳ���Ϊnum���������䳤������elemֵ������λ��
-//						  //���������̣���ĩβ�����������ȵ�Ԫ�ر�ɾ��
+//empty();                  //判断容器是否为空
+//capacity();               //容器的容量
+//size();                   //返回容器中元素的个数
+//resize(int num);          //重新指定容器的长度为num，若容器变长，则以默认值充填新位置
+//						  //如果容器变短，则末尾超出容器长度的元素被删除
+//resize(int num, elem);    //重新指定容器的长度为num，若容器变长，则以elem值充填新位置
+//						  //如果容器变短，则末尾超出容器长度的元素被删除
 
 void printVector(vector<int> v)
 {
@@ -31,17 +31,17 @@ void test01()
 	printVector(v1);
 	if (v1.empty())
 	{
-		cout << "����Ϊ��" << endl;
+		cout << "容器为空" << endl;
 	}
 	else
 	{
-		cout << "������Ϊ��" << endl;
+		cout << "容器不为空" << endl;
 	}
 
-	cout << "v1��������" << v1.capacity() << " ��СΪ��" << v1.size() << endl;
+	cout << "v1的容量：" << v1.capacity() << " 大小为：" << v1.size() << endl;
 
 	v1.resize(15,100);
-	cout << "v1��������" << v1.capacity() << " ��СΪ��" << v1.size() << endl;
+	cout << "v1的容量：" << v1.capacity() << " 大小为：" << v1.size() << endl;
 	printVector(v1);
 }
 

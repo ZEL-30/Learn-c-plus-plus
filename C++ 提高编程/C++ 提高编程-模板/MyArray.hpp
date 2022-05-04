@@ -3,37 +3,37 @@
 #include <iostream>
 using namespace std;
 
-//×Ô¼ºµÄÍ¨ÓÃÊı×éÀà
+//è‡ªå·±çš„é€šç”¨æ•°ç»„ç±»
 
 template <class T>
 class MyArray
 {
 public:
-	MyArray(int Capacity);                      //¹¹Ôìº¯Êı
+	MyArray(int Capacity);                      //æ„é€ å‡½æ•°
 
-	MyArray(const MyArray& arr);                //¿½±´¹¹Ôìº¯Êı
+	MyArray(const MyArray& arr);                //æ‹·è´æ„é€ å‡½æ•°
 
-	MyArray& operator=(const MyArray& arr);     //ÖØÔØ¸³ÖµÔËËã·û
+	MyArray& operator=(const MyArray& arr);     //é‡è½½èµ‹å€¼è¿ç®—ç¬¦
 
-	int GetCapacity();                          //»ñÈ¡ÈİÁ¿
+	int GetCapacity();                          //è·å–å®¹é‡
 
-	T& operator[](int x);                       //ÀûÓÃÏÂ±ê·½Ê½·ÃÎÊÊı×éÔªËØ
+	T& operator[](int x);                       //åˆ©ç”¨ä¸‹æ ‡æ–¹å¼è®¿é—®æ•°ç»„å…ƒç´ 
 
-	void Push_Back(const T &a);                 //Î²²å·¨
+	void Push_Back(const T &a);                 //å°¾æ’æ³•
 	 
-	void Pop_Back();                            //Î²É¾·¨
+	void Pop_Back();                            //å°¾åˆ æ³•
 
-	int GetSize();                              //»ñÈ¡´óĞ¡
+	int GetSize();                              //è·å–å¤§å°
 
-	~MyArray();                                 //Îö¹¹º¯Êı
+	~MyArray();                                 //ææ„å‡½æ•°
 
 
 private:
-	int* pAddress;                              //Êı×é
+	int* pAddress;                              //æ•°ç»„
 
-	int m_Capacity;                             //ÈİÁ¿
+	int m_Capacity;                             //å®¹é‡
 
-	int m_Size;                                 //´óĞ¡
+	int m_Size;                                 //å¤§å°
 };   
 
 
@@ -51,10 +51,10 @@ MyArray<T>::MyArray(const MyArray &arr)
 	m_Capacity = arr.m_Capacity;
 	m_Size = arr.m_Size;
 
-	//Éî¿½±´
+	//æ·±æ‹·è´
 	pAddress = new T[arr.m_Capacity];
 
-	//½«arrÖĞµÄÊı¾İ¶¼¿½±´¹ıÀ´
+	//å°†arrä¸­çš„æ•°æ®éƒ½æ‹·è´è¿‡æ¥
 	for (int i = 0; i < m_Size; i++)
 	{
 		pAddress[i] = arr.pAddress[i];
@@ -75,10 +75,10 @@ MyArray<T>& MyArray<T>::operator=(const MyArray& arr)
 	m_Capacity = arr.m_Capacity;
 	m_Size = arr.m_Size;
 
-	//Éî¿½±´
+	//æ·±æ‹·è´
 	pAddress = new T[arr.m_Capacity];
 
-	//½«arrÖĞµÄÊı¾İ¶¼¿½±´¹ıÀ´
+	//å°†arrä¸­çš„æ•°æ®éƒ½æ‹·è´è¿‡æ¥
 	for (int i = 0; i < m_Size; i++)
 	{
 		pAddress[i] = arr.pAddress[i];
@@ -108,7 +108,7 @@ void MyArray<T>::Push_Back(const T& a)
 {
 	if (m_Size == m_Capacity)
 	{
-		cout << "Êı×éÈİÁ¿ÒÑÂú£¬²åÈëÊ§°Ü" << endl;
+		cout << "æ•°ç»„å®¹é‡å·²æ»¡ï¼Œæ’å…¥å¤±è´¥" << endl;
 		return;
 	}
 	else 
@@ -124,7 +124,7 @@ void MyArray<T>::Pop_Back()
 {
 	if (m_Size == m_Capacity)
 	{
-		cout << "Êı×éÈİÁ¿ÎªÁã£¬É¾³ıÊ§°Ü" << endl;
+		cout << "æ•°ç»„å®¹é‡ä¸ºé›¶ï¼Œåˆ é™¤å¤±è´¥" << endl;
 		return;
 	}
 	else

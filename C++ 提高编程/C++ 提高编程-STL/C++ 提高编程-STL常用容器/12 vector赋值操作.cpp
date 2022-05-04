@@ -3,9 +3,9 @@
 using namespace std;
 
 
-//vector& operator=(const vector& vec);           //���صȺ������
-//assign(beg, end);                               //��[beg,end)�����е����ݿ�����ֵ������
-//assign(n,elem);                                 //��n��elem������ֵ������
+//vector& operator=(const vector& vec);           //重载等号运算符
+//assign(beg, end);                               //将[beg,end)区间中的数据拷贝赋值给本身
+//assign(n,elem);                                 //将n个elem拷贝赋值给本身
 
 
 

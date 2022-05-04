@@ -4,7 +4,7 @@
 using namespace std;
 
 
-//vector�������������������
+//vector容器存放内置数据类型
 
 void myPrint(int val)
 {
@@ -16,21 +16,21 @@ void myPrint(int val)
 
 void test01()
 {
-	//����һ��vector����������������
+	//创建一个vector容器，类似于数组
 	vector<int> v;
 
-	//�������в�������
+	//向容器中插入数据
 	v.push_back(10);
 	v.push_back(20);
 	v.push_back(30);
 	v.push_back(40);
 
-	////ͨ�����������������е�����
-	//vector<int>::iterator itBegin = v.begin(); //��ʼ������ ָ�������е�һ��Ԫ��
-	//vector<int>::iterator itEnd = v.end();     //���������� ָ�����������һ��Ԫ�ص���һ��λ��
+	////通过迭代器访问容器中的数据
+	//vector<int>::iterator itBegin = v.begin(); //起始迭代器 指向容器中第一个元素
+	//vector<int>::iterator itEnd = v.end();     //结束迭代器 指向容器中最后一个元素的下一个位置
 
 
-	////��һ�ֱ�����ʽ
+	////第一种遍历方式
 	//while (itBegin != itEnd)
 	//{
 	//	cout << *itBegin << " ";
@@ -38,14 +38,14 @@ void test01()
 	//}
 	//cout << endl;
 
-	////�ڶ��ֱ�����ʽ �����ã�
+	////第二种遍历方式 （常用）
 	//for (vector<int>::iterator it = v.begin(); it != v.end(); it++)
 	//{
 	//	cout << *it << " ";
 	//}
 	//cout << endl;
 
-	//�����ֱ�����ʽ  ����STL�ṩ�����㷨
+	//第三种遍历方式  利用STL提供遍历算法
 	for_each(v.begin(), v.end(), myPrint);
 	cout << endl;
 

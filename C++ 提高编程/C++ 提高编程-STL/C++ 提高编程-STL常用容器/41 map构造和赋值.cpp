@@ -6,7 +6,7 @@ void printMap(map<int, int>& M)
 {
 	for (map<int, int>::iterator it = M.begin(); it != M.end(); it++)
 	{
-		cout << "ï¿½ï¿½Å£ï¿½" << (*it).first << " Öµï¿½ï¿½" << it->second << endl;
+		cout << "±àºÅ£º" << (*it).first << " Öµ£º" << it->second << endl;
 	}
 }
 

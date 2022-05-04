@@ -24,14 +24,14 @@ private:
 
 };
 
-Student::Student() :m_name("ï¿½Å¶ï¿½ï¿½ï¿½"), m_id("201802464052"), m_age(23)
+Student::Student() :m_name("ÕÅ¶÷ÀÖ"), m_id("201802464052"), m_age(23)
 {
 
 }
 
 ostream& operator<< (ostream& cout, Student& s)
 {
-	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << s.m_name << " ï¿½ï¿½ï¿½ä£º" << s.m_age << " Ñ§ï¿½Å£ï¿½" << s.m_id;
+	cout << "ĞÕÃû£º" << s.m_name << " ÄêÁä£º" << s.m_age << " Ñ§ºÅ£º" << s.m_id;
 
 	return  cout;
 }

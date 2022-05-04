@@ -1,19 +1,19 @@
 #include <iostream>
 using namespace std;
 
-//pair�����鴴��
+//pair对数组创建
 void test01()
 {
-	//��һ�ַ�ʽ
-	pair<string, int>p{ "�Ŷ���",23 };
+	//第一种方式
+	pair<string, int>p{ "张恩乐",23 };
 		
-	cout << "������" << p.first << " ���䣺" << p.second << endl;
+	cout << "姓名：" << p.first << " 年龄：" << p.second << endl;
 
 
-	//�ڶ��ַ�ʽ
-	pair<string, int> p2 = make_pair("������",20);
+	//第二种方式
+	pair<string, int> p2 = make_pair("王子怡",20);
 
-	cout << "������" << p.first << " ���䣺" << p.second << endl;
+	cout << "姓名：" << p.first << " 年龄：" << p.second << endl;
 }
 
 

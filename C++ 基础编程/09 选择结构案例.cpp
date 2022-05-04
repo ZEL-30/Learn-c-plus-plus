@@ -6,32 +6,32 @@ int main()
 	int a = 0;
 	int b = 0;
 	int c = 0;
-	cout << "��������ֻС��A��B��C�����أ�" << endl;
+	cout << "请输入三只小猪A、B、C的体重：" << endl;
 	cin >> a;
 	cin >> b;
 	cin >> c;
-	cout << "С��A������Ϊ��" << a << endl;
-	cout << "С��B������Ϊ��" << b << endl;
-	cout << "С��C������Ϊ��" << c << endl;
+	cout << "小猪A的体重为：" << a << endl;
+	cout << "小猪B的体重为：" << b << endl;
+	cout << "小猪C的体重为：" << c << endl;
 	if (a > b )
 	{
 		if (a > c)
-			cout << "С��A���أ�" << endl;
+			cout << "小猪A最重！" << endl;
 		else
-			cout << "С��C���أ�" << endl;
+			cout << "小猪C最重！" << endl;
 
 	}
 	else if ( b < c)
-		cout << "С��C���أ�" << endl;
+		cout << "小猪C最重！" << endl;
 	else
-		cout << "С��B���أ�" << endl;
+		cout << "小猪B最重！" << endl;
 
 	if (a > b && a > c)
-		cout << "С��A���أ�" << endl;
+		cout << "小猪A最重！" << endl;
 	else if (b > a && b > c)
-		cout << "С��B���أ�" << endl;
+		cout << "小猪B最重！" << endl;
 	else if (c > a && c > b)
-		cout << "С��C���أ�" << endl;
+		cout << "小猪C最重！" << endl;
 
 
 	system("pause");

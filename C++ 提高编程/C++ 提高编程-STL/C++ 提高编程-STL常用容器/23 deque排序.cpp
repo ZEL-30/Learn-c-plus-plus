@@ -1,9 +1,9 @@
 #include <iostream>
 #include <deque>
-#include <algorithm>    //��׼�㷨ͷ�ļ�
+#include <algorithm>    //标准算法头文件
 using namespace std;
 
-//sort(iteraotr deg, iterator end);   //��beg��end������Ԫ�ؽ�������
+//sort(iteraotr deg, iterator end);   //对beg和end区间内元素进行排序
 
 
 void printDeque(deque<int> &d)
@@ -30,7 +30,7 @@ void test01()
 
 	printDeque(d1);
 
-	//����
+	//排序
 	sort(d1.begin(), d1.end());
 	printDeque(d1);
 

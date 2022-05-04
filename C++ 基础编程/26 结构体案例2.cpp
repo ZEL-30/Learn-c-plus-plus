@@ -14,15 +14,15 @@ struct Hero
 void Swap(Hero* h1, Hero* h2)
 {
 	Hero temp;
-	//��������
+	//交换名字
 	temp.name = h1->name;
 	h1->name = h2->name;
 	h2->name = temp.name;
-	//��������
+	//交换年龄
 	temp.age = h1->age;
 	h1->age = h2->age;
 	h2->age = temp.age;
-	//�����Ա�
+	//交换性别
 	temp.sex = h1->sex;
 	h1->sex = h2->sex;
 	h2->sex = temp.sex;
@@ -70,11 +70,11 @@ int main()
 {
 	Hero h[5] =
 	{
-		{"����",23,"��"},
-		{"����",22,"��"},
-		{"�ŷ�",20,"��"},
-		{"����",21,"��"},
-		{"����",19,"Ů"}
+		{"刘备",23,"男"},
+		{"关羽",22,"男"},
+		{"张飞",20,"男"},
+		{"赵云",21,"男"},
+		{"貂蝉",19,"女"}
 	};
 
 	int len = sizeof(h) / sizeof(h[0]);

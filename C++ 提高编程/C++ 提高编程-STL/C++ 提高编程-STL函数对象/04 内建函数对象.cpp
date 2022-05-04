@@ -3,15 +3,15 @@
 using namespace std;
 
 
-//template<class T> T plus<T>             //�ӷ��º���
-//template<class T> T minus<T>            //�����º���
-//template<class T> T multiplies<T>       //�˷��º���
-//template<class T> T divides<T>          //�����º���
-//template<class T> T modulues<T>         //ȡģ�º���
-//template<class T> T negate<T>           //ȡ���º���
+//template<class T> T plus<T>             //加法仿函数
+//template<class T> T minus<T>            //减法仿函数
+//template<class T> T multiplies<T>       //乘法仿函数
+//template<class T> T divides<T>          //除法仿函数
+//template<class T> T modulues<T>         //取模仿函数
+//template<class T> T negate<T>           //取反仿函数
 
 
-//negate һԪ�º���   ȡ��
+//negate 一元仿函数   取反
 void test01()
 {
 	negate<int> N;
@@ -20,7 +20,7 @@ void test01()
 
 
 
-//plus ��Ԫ�º���   �ӷ�
+//plus 二元仿函数   加法
 
 void test02()
 {

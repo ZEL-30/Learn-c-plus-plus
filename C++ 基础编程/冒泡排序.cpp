@@ -6,14 +6,14 @@ int main()
 	//int arr[] = {4,2,8,0,5,7,1,3,9};
 	int arr[] = { 0,1,2,3,4,5,6,7,8,9 };
 	int order= sizeof(arr)/sizeof(arr[0]) - 1;
-	cout << "Ã°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½" << endl;
+	cout << "Ã°ÅÝÅÅÐòÇ°£º" << endl;
 	for (int i = 0; i <= order; i++)
 	{
 		cout << arr[i] << " ";
 	}
 	cout << endl;
 	cout << "------------------------------------\n";
-	//Ã°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	//Ã°ÅÝÅÅÐò
 	int temp = 0;
 	for (int i = 0; i < order; i++)
 	{
@@ -38,7 +38,7 @@ int main()
 		cout << endl;
 	}
 
-	cout << "Ã°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << endl;
+	cout << "Ã°ÅÝÅÅÐòºó£º" << endl;
 	for (int i = 0; i <= order; i++)
 	{
 		cout << arr[i] << " ";

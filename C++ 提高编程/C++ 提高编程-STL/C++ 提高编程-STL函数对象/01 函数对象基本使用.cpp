@@ -2,7 +2,7 @@
 using namespace std;
 
 
-//�������� - �º���
+//函数对象 - 仿函数
 
 class MyAdd
 {

@@ -2,8 +2,8 @@
 #include <set>
 using namespace std;
 
-//find(key);                            //����key�Ƿ���ڣ������ڣ����ظü���Ԫ�صĵ��������������ڣ�����set.end()
-//count(key);                           //ͳ��key��Ԫ�ظ���
+//find(key);                            //查找key是否存在，若存在，返回该键的元素的迭代器；若不存在，返回set.end()
+//count(key);                           //统计key的元素个数
 
 
 
@@ -22,7 +22,7 @@ void test01()
 {
 	set<int> s1;
 
-	//�������ݣ�ֻ��insert��ʽ
+	//插入数据，只有insert方式
 	s1.insert(10);
 	s1.insert(40);
 	s1.insert(30);
@@ -32,20 +32,20 @@ void test01()
 	set<int>::iterator pos = s1.find(40);
 	if (pos != s1.end())
 	{
-		cout << "�ҵ�Ԫ��:" << *pos << endl;
+		cout << "找到元素:" << *pos << endl;
 	}
 	else
 	{
-		cout << "û���ҵ�Ԫ��" << endl;
+		cout << "没有找到元素" << endl;
 	}
 }
 
 void test02()
 {
-	//ͳ��
+	//统计
 	multiset<int> s1;
 
-	//�������ݣ�ֻ��insert��ʽ
+	//插入数据，只有insert方式
 	s1.insert(10);
 	s1.insert(40);
 	s1.insert(30);

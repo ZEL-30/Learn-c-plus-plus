@@ -29,28 +29,28 @@ int Son::m_a = 200;
 
 void test01()
 {
-	//ͨ���������
-	cout << "ͨ���������" << endl;
+	//通过对象访问
+	cout << "通过对象访问" << endl;
 	Son s1;
-	cout << "�����е�m_aΪ��" << s1.m_a << endl;
-	cout << "�����е�m_aΪ��" << s1.Base::m_a << endl;
+	cout << "子类中的m_a为：" << s1.m_a << endl;
+	cout << "父类中的m_a为：" << s1.Base::m_a << endl;
 
-	//ͨ����������
-	cout << "ͨ����������" << endl;
-	cout << "�����е�m_aΪ��" << Son::m_a << endl;
+	//通过类名访问
+	cout << "通过类名访问" << endl;
+	cout << "子类中的m_a为：" << Son::m_a << endl;
 
-	cout << "�����е�m_aΪ��" << Son::Base::m_a << endl;
+	cout << "父类中的m_a为：" << Son::Base::m_a << endl;
 
 }
 
 
 void test02()
 {
-	//ͨ������ķ�ʽ���з���
+	//通过对象的方式进行访问
 	Son s2;
 	s2.func();
 	s2.Base::func();
-	//ͨ�������ķ�ʽ���з���
+	//通过类名的方式进行访问
 	Son::func();
 	Son::Base::func();
 

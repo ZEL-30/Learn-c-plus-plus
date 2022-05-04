@@ -17,36 +17,36 @@ struct Teachers
 
 Teachers* Add_data(Teachers* t)
 {
-	t[0].name = "Îºï¿½ï¿½";
-	t[0].stu[0].name = "ï¿½Å¶ï¿½ï¿½ï¿½";
-	t[0].stu[1].name = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
-	t[0].stu[2].name = "ï¿½Üºï¿½";
-	t[0].stu[3].name = "ï¿½ï¿½ï¿½ï¿½";
-	t[0].stu[4].name = "ï¿½ï¿½ï¿½";
+	t[0].name = "Îº¹ú";
+	t[0].stu[0].name = "ÕÅ¶÷ÀÖ";
+	t[0].stu[1].name = "ÑîÎÄÁú";
+	t[0].stu[2].name = "ÖÜºè";
+	t[0].stu[3].name = "³ÂÕÜ";
+	t[0].stu[4].name = "Ñî¹ã";
 	t[0].stu[0].scroe = 650;
 	t[0].stu[1].scroe = 700;
 	t[0].stu[2].scroe = 540;
 	t[0].stu[3].scroe = 380;
 	t[0].stu[4].scroe = 250;
 
-	t[1].name = "ï¿½ï¿½ï¿½";
-	t[1].stu[0].name = "ï¿½ï¿½ï¿½ï¿½";
-	t[1].stu[1].name = "ï¿½ï¿½ï¿½ï¿½ï¿½";
-	t[1].stu[2].name = "ï¿½Üºï¿½";
-	t[1].stu[3].name = "ï¿½Å·ï¿½";
-	t[1].stu[4].name = "ï¿½ï¿½ï¿½ï¿½";
+	t[1].name = "Êñ¹ú";
+	t[1].stu[0].name = "ÕÔÔÆ";
+	t[1].stu[1].name = "Öî¸ðÁÁ";
+	t[1].stu[2].name = "ÖÜºè";
+	t[1].stu[3].name = "ÕÅ·É";
+	t[1].stu[4].name = "¹ØÓð";
 	t[1].stu[0].scroe = 300;
 	t[1].stu[1].scroe = 540;
 	t[1].stu[2].scroe = 570;
 	t[1].stu[3].scroe = 380;
 	t[1].stu[4].scroe = 530;
 
-	t[2].name = "ï¿½ï¿½ï¿½";
-	t[2].stu[0].name = "ï¿½ï¿½È¨";
-	t[2].stu[1].name = "ï¿½ï¿½ï¿½ï¿½";
-	t[2].stu[2].name = "ï¿½Üºï¿½";
-	t[2].stu[3].name = "ï¿½ï¿½ï¿½ï¿½";
-	t[2].stu[4].name = "ï¿½ï¿½ï¿½";
+	t[2].name = "Îâ¹ú";
+	t[2].stu[0].name = "ËïÈ¨";
+	t[2].stu[1].name = "ÂÀÃÉ";
+	t[2].stu[2].name = "ÖÜºè";
+	t[2].stu[3].name = "³ÂÕÜ";
+	t[2].stu[4].name = "Ñî¹ã";
 	t[2].stu[0].scroe = 650;
 	t[2].stu[1].scroe = 150;
 	t[2].stu[2].scroe = 820;
@@ -59,12 +59,12 @@ void Print_struct(Teachers* t)
 {	
 	for (int i = 0; i < 3; i++)
 	{
-		cout << "ï¿½ï¿½Ê¦" << i + 1 << ":" << endl;
+		cout << "½ÌÊ¦" << i + 1 << ":" << endl;
 		cout << t[i].name << endl;
-		cout << "\tï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½" << endl;
+		cout << "\tËù´øÑ§Éú£º" << endl;
 		for (int j = 0; j < 5; j++)
 		{
-			cout << "\t" << t[i].stu[j].name << " ï¿½É¼ï¿½ï¿½ï¿½" << t[i].stu[j].scroe << endl;
+			cout << "\t" << t[i].stu[j].name << " ³É¼¨£º" << t[i].stu[j].scroe << endl;
 		}
 
 	}
@@ -77,7 +77,7 @@ void Print_struct(Teachers* t)
 
 int main()
 {	
-	srand((unsigned int)time(NULL));  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	srand((unsigned int)time(NULL));  //Ëæ»úÊýÖÖ×Ó
 	Teachers sturct_arr[3];
 
 	Add_data(sturct_arr);
@@ -90,7 +90,7 @@ int main()
 
 	for (int i = 0; i < 5; i++)
 	{
-		int random = rand() % 41 + 60;  // rand()%41 ï¿½ï¿½ï¿½ï¿½ 0 ~ 40 ï¿½ï¿½È¡Öµï¿½ï¿½Î§
+		int random = rand() % 41 + 60;  // rand()%41 ¡ª¡ª 0 ~ 40 µÄÈ¡Öµ·¶Î§
 		arr[i] = random;
 	}
 

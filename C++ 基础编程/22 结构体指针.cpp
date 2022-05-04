@@ -14,13 +14,13 @@ struct Student
 
 int main()
 {
-	Student std1 = {"ï¿½Å¶ï¿½ï¿½ï¿½",23,"ï¿½ï¿½",201802464052,"CET-6",452};
-	Student std2 = { "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",22,"ï¿½ï¿½",201802464060,"CET-6",0 };
+	Student std1 = {"ÕÅ¶÷ÀÖ",23,"ÄĞ",201802464052,"CET-6",452};
+	Student std2 = { "ÑîÎÄÁú",22,"ÄĞ",201802464060,"CET-6",0 };
 
 	Student* p_std1 = &std1;
-	p_std1->name = "ï¿½ï¿½ï¿½ï¿½";
+	p_std1->name = "³ÂÕÜ";
 
-	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << p_std1->name << " ï¿½É¼ï¿½ï¿½ï¿½" << p_std1->scores << endl;
+	cout << "ĞÕÃû£º" << p_std1->name << " ³É¼¨£º" << p_std1->scores << endl;
 
 
 
