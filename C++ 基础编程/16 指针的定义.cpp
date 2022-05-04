@@ -1,23 +1,23 @@
-//#include <iostream>
-//using namespace std;
-//
-//int main()
-//{
-//	int a = 100;
-//	cout << "a = " << a << endl;
-//	int* pa = NULL;
-//	char* pb = NULL;
-//	pa = &a;
-//	*pa = 200;
-//	cout << "aµÄµØÖ·Îª£º" << (long)pa << endl;
-//	cout << "a+1µÄµØÖ·Îª£º" << (long)(pa + 1) << endl;
-//	cout << "a = " << a << endl;
-//
-//	cout << "int* ËùÕ¼µÄÄÚ´æ¿Õ¼äÎª£º" << sizeof(pa) << endl;
-//
-//	cout << "char* ËùÕ¼µÄÄÚ´æ¿Õ¼äÎª£º" << sizeof(pb) << endl;
-//
-//	system("pause");
-//
-//	return 0;
-//} 
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a = 100;
+	cout << "a = " << a << endl;
+	int* pa = NULL;
+	char* pb = NULL;
+	pa = &a;
+	*pa = 200;
+	cout << "aï¿½Äµï¿½Ö·Îªï¿½ï¿½" << (long)pa << endl;
+	cout << "a+1ï¿½Äµï¿½Ö·Îªï¿½ï¿½" << (long)(pa + 1) << endl;
+	cout << "a = " << a << endl;
+
+	cout << "int* ï¿½ï¿½Õ¼ï¿½ï¿½ï¿½Ú´ï¿½Õ¼ï¿½Îªï¿½ï¿½" << sizeof(pa) << endl;
+
+	cout << "char* ï¿½ï¿½Õ¼ï¿½ï¿½ï¿½Ú´ï¿½Õ¼ï¿½Îªï¿½ï¿½" << sizeof(pb) << endl;
+
+	system("pause");
+
+	return 0;
+} 

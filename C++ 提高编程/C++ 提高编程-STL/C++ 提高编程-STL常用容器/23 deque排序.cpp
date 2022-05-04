@@ -1,47 +1,47 @@
-//#include <iostream>
-//#include <deque>
-//#include <algorithm>    //±ê×¼Ëã·¨Í·ÎÄ¼þ
-//using namespace std;
-//
-////sort(iteraotr deg, iterator end);   //¶ÔbegºÍendÇø¼äÄÚÔªËØ½øÐÐÅÅÐò
-//
-//
-//void printDeque(deque<int> &d)
-//{
-//	for (deque<int>::iterator it = d.begin(); it != d.end(); it++)
-//	{
-//		cout << *it << " ";
-//	}
-//	cout << endl;
-//}
-//
-//
-//
-//
-//void test01()
-//{
-//	deque<int> d1;
-//	d1.push_back(10);
-//	d1.push_back(20);
-//	d1.push_back(30);
-//	d1.push_front(100);
-//	d1.push_front(200);
-//	d1.push_front(300);
-//
-//	printDeque(d1);
-//
-//	//ÅÅÐò
-//	sort(d1.begin(), d1.end());
-//	printDeque(d1);
-//
-//}
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <deque>
+#include <algorithm>    //ï¿½ï¿½×¼ï¿½ã·¨Í·ï¿½Ä¼ï¿½
+using namespace std;
+
+//sort(iteraotr deg, iterator end);   //ï¿½ï¿½begï¿½ï¿½endï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
+
+void printDeque(deque<int> &d)
+{
+	for (deque<int>::iterator it = d.begin(); it != d.end(); it++)
+	{
+		cout << *it << " ";
+	}
+	cout << endl;
+}
+
+
+
+
+void test01()
+{
+	deque<int> d1;
+	d1.push_back(10);
+	d1.push_back(20);
+	d1.push_back(30);
+	d1.push_front(100);
+	d1.push_front(200);
+	d1.push_front(300);
+
+	printDeque(d1);
+
+	//ï¿½ï¿½ï¿½ï¿½
+	sort(d1.begin(), d1.end());
+	printDeque(d1);
+
+}
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

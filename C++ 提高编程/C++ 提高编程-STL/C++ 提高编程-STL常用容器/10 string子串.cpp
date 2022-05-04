@@ -1,36 +1,36 @@
-//#include <iostream>
-//#include <string>
-//using namespace std;
-//
-//
-////string substr(int pos = 0, int n = npos) const;     //·µ»ØÓÉpos¿ªÊ¼µÄn¸ö×Ö·û×é³ÉµÄ×Ö·û´®
-//
-//
-//void test01()
-//{
-//	string str1 = "I love you";
-//	string substr = str1.substr(2, 4);
-//	cout << "str1 = " << str1 << endl;
-//	cout << "substr = " << substr <<  endl;
-//
-//	
-//}
-//
-////Êµ¼Ê²Ù×÷
-//void test02()
-//{
-//	string email = "1362848545@qq.com";
-//	string emails = "zhangenle@qq.com";
-//	string substr = emails.substr(0, emails.find("@"));
-//	cout << "ÓÊÏäÎª£º " << emails << endl; 
-//	cout << "ÓÃ»§ÃûÎª£º" << substr << endl;
-//}
-//
-//
-//int main()
-//{
-//	//test01();
-//	test02();
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+//string substr(int pos = 0, int n = npos) const;     //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½posï¿½ï¿½Ê¼ï¿½ï¿½nï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Éµï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+
+
+void test01()
+{
+	string str1 = "I love you";
+	string substr = str1.substr(2, 4);
+	cout << "str1 = " << str1 << endl;
+	cout << "substr = " << substr <<  endl;
+
+	
+}
+
+//Êµï¿½Ê²ï¿½ï¿½ï¿½
+void test02()
+{
+	string email = "1362848545@qq.com";
+	string emails = "zhangenle@qq.com";
+	string substr = emails.substr(0, emails.find("@"));
+	cout << "ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ " << emails << endl; 
+	cout << "ï¿½Ã»ï¿½ï¿½ï¿½Îªï¿½ï¿½" << substr << endl;
+}
+
+
+int main()
+{
+	//test01();
+	test02();
+	system("pause");
+	return 0;
+}

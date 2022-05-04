@@ -1,64 +1,64 @@
-//#include <iostream>
-//#include <list>
-//using namespace std;
-//
-////list& operator=(const list& lst);               //ÖØÔØµÈºÅÔËËã·û
-////assign(beg, end);                               //½«[beg,end)Çø¼äÖÐµÄÊý¾Ý¿½±´¸³Öµ¸ø±¾Éí
-////assign(n,elem);                                 //½«n¸öelem¿½±´¸³Öµ¸ø±¾Éí
-////swap(lst);                                      //½«lstÓë±¾ÉíµÄÔªËØ»¥»»
-//
-//
-//void printList(const list<int>& L)
-//{
-//	for (list<int>::const_iterator it = L.begin(); it != L.end(); it++)
-//	{
-//		cout << *it << " ";
-//	}
-//	cout << endl;
-//}
-//
-//
-//
-//void test01()
-//{
-//	list<int> L1;
-//	
-//	L1.push_back(10);
-//	L1.push_back(20);
-//	L1.push_back(30);
-//	L1.push_back(40);
-//	printList(L1);
-//
-//	list<int> L2 = L1;
-//	printList(L2);
-//
-//	list<int> L3;
-//	L3.assign(L1.begin(), L1.end());
-//	printList(L3);
-//
-//	list<int> L4;
-//	L4.assign(10, 520);
-//	printList(L4);
-//
-//	L1.swap(L4);
-//	printList(L4);
-//	printList(L1);
-//
-//
-//
-//}
-//
-//
-//
-//
-//
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <list>
+using namespace std;
+
+//list& operator=(const list& lst);               //ï¿½ï¿½ï¿½ØµÈºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//assign(beg, end);                               //ï¿½ï¿½[beg,end)ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//assign(n,elem);                                 //ï¿½ï¿½nï¿½ï¿½elemï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//swap(lst);                                      //ï¿½ï¿½lstï¿½ë±¾ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø»ï¿½ï¿½ï¿½
+
+
+void printList(const list<int>& L)
+{
+	for (list<int>::const_iterator it = L.begin(); it != L.end(); it++)
+	{
+		cout << *it << " ";
+	}
+	cout << endl;
+}
+
+
+
+void test01()
+{
+	list<int> L1;
+	
+	L1.push_back(10);
+	L1.push_back(20);
+	L1.push_back(30);
+	L1.push_back(40);
+	printList(L1);
+
+	list<int> L2 = L1;
+	printList(L2);
+
+	list<int> L3;
+	L3.assign(L1.begin(), L1.end());
+	printList(L3);
+
+	list<int> L4;
+	L4.assign(10, 520);
+	printList(L4);
+
+	L1.swap(L4);
+	printList(L4);
+	printList(L1);
+
+
+
+}
+
+
+
+
+
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

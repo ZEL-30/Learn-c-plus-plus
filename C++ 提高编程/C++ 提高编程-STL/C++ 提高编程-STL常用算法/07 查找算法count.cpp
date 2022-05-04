@@ -1,91 +1,91 @@
-//#include <iostream>
-//#include <vector>
-//#include <algorithm>
-//using namespace std;
-//
-//
-////count(iterator beg, iterator end,value);
-//////Í³¼ÆÔªËØ³öÏÖµÄ´ÎÊý  
-//////beg ¿ªÊ¼µü´úÆ÷
-//////end ¿ªÊ¼µü´úÆ÷
-//////value Í³¼ÆµÄÔªËØ
-//
-//class Person
-//{
-//public:
-//	Person(string Name, int Age)
-//	{
-//		m_Name = Name;
-//		m_Age = Age;
-//	}
-//
-//	bool operator==(const Person& p)
-//	{
-//		if (m_Age == p.m_Age)
-//		{
-//			return true;
-//		}
-//		else
-//		{
-//			return false;
-//		}
-//	}
-//
-//	string m_Name;
-//	int m_Age;
-//};
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-////Í³¼ÆÄÚÖÃµÄÊý¾ÝÀàÐÍ
-//void test01()
-//{
-//	vector<int> V;
-//	for (int i = 0; i < 10; i++)
-//	{
-//		V.push_back(i);
-//	}
-//	V.push_back(5);
-//	V.push_back(5);
-//	V.push_back(5);
-//	int ret = count(V.begin(), V.end(), 5);  //±ØÐëÊÇÓÐÐòÐòÁÐ
-//
-//	cout << "5³öÏÖµÄ´ÎÊýÎª£º" << ret << endl;
-//}
-//
-////Í³¼Æ×Ô¶¨ÒåµÄÊý¾ÝÀàÐÍ
-//void test02()
-//{
-//	vector<Person> V;
-//	Person P1("sss", 20);
-//	Person P2("aaa", 26);
-//	Person P3("hhh", 29);
-//	Person P4("yyy", 20);
-//	Person P5("yyy", 20);
-//
-//	V.push_back(P1);
-//	V.push_back(P2);
-//	V.push_back(P3);
-//	V.push_back(P4);
-//	V.push_back(P5);
-//
-//	int ret = count(V.begin(), V.end(), P5);
-//	cout  << "ÄêÁäÎª20µÄÈËÊý£º" << ret << endl;
-//
-//
-//
-//}
-//int main()
-//{
-//	//test01();
-//	test02();
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+
+//count(iterator beg, iterator end,value);
+////Í³ï¿½ï¿½Ôªï¿½Ø³ï¿½ï¿½ÖµÄ´ï¿½ï¿½ï¿½  
+////beg ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+////end ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+////value Í³ï¿½Æµï¿½Ôªï¿½ï¿½
+
+class Person
+{
+public:
+	Person(string Name, int Age)
+	{
+		m_Name = Name;
+		m_Age = Age;
+	}
+
+	bool operator==(const Person& p)
+	{
+		if (m_Age == p.m_Age)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	string m_Name;
+	int m_Age;
+};
+
+
+
+
+
+
+
+
+
+
+//Í³ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+void test01()
+{
+	vector<int> V;
+	for (int i = 0; i < 10; i++)
+	{
+		V.push_back(i);
+	}
+	V.push_back(5);
+	V.push_back(5);
+	V.push_back(5);
+	int ret = count(V.begin(), V.end(), 5);  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
+	cout << "5ï¿½ï¿½ï¿½ÖµÄ´ï¿½ï¿½ï¿½Îªï¿½ï¿½" << ret << endl;
+}
+
+//Í³ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+void test02()
+{
+	vector<Person> V;
+	Person P1("sss", 20);
+	Person P2("aaa", 26);
+	Person P3("hhh", 29);
+	Person P4("yyy", 20);
+	Person P5("yyy", 20);
+
+	V.push_back(P1);
+	V.push_back(P2);
+	V.push_back(P3);
+	V.push_back(P4);
+	V.push_back(P5);
+
+	int ret = count(V.begin(), V.end(), P5);
+	cout  << "ï¿½ï¿½ï¿½ï¿½Îª20ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << ret << endl;
+
+
+
+}
+int main()
+{
+	//test01();
+	test02();
+	system("pause");
+	return 0;
+}

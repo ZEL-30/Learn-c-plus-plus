@@ -1,38 +1,38 @@
-//#include <iostream>
-//using namespace std;
-//
-////学生结构体
-//struct student 
-//{
-//	string name;
-//	int    age;
-//	int    scores;
-//};
-//
-//// 定义老师的结构体
-//struct teacher
-//{
-//	int id;
-//	string name;
-//	int age;
-//	struct student stu;   //老师的结构体嵌套学生结构体
-//};
-//
-//
-//
-//int main()
-//{
-//	teacher t;
-//	t.age = 62;
-//	t.name = "老王";
-//	t.id = 01;
-//	t.stu.age = 22;
-//	t.stu.name= "小明";
-//	t.stu.scores = 650;
-//
-//	cout << t.stu.scores << endl;
-//
-//	system("pause");
-//
-//	return 0;
-//} 
+#include <iostream>
+using namespace std;
+
+//学锟斤拷锟结构锟斤拷
+struct student 
+{
+	string name;
+	int    age;
+	int    scores;
+};
+
+// 锟斤拷锟斤拷锟斤拷师锟侥结构锟斤拷
+struct teacher
+{
+	int id;
+	string name;
+	int age;
+	struct student stu;   //锟斤拷师锟侥结构锟斤拷嵌锟斤拷学锟斤拷锟结构锟斤拷
+};
+
+
+
+int main()
+{
+	teacher t;
+	t.age = 62;
+	t.name = "锟斤拷锟斤拷";
+	t.id = 01;
+	t.stu.age = 22;
+	t.stu.name= "小锟斤拷";
+	t.stu.scores = 650;
+
+	cout << t.stu.scores << endl;
+
+	system("pause");
+
+	return 0;
+} 

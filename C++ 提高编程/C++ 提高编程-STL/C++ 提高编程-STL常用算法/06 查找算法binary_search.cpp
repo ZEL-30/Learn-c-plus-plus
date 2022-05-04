@@ -1,38 +1,38 @@
-//#include <iostream>
-//#include <vector>
-//#include <algorithm>
-//using namespace std;
-//
-//
-////binary_search(iterator beg, iterator end,value);
-//////²éÕÒÖ¸¶¨µÄÔªËØ£¬²éµ½ ·µ»Øtrue ,·ñÔòflase  
-//////beg ¿ªÊ¼µü´úÆ÷
-//////end ¿ªÊ¼µü´úÆ÷
-//////value ²éÕÒµÄÔªËØ
-//
-//
-//
-//void test01()
-//{
-//	vector<int> V;
-//	for (int i = 0; i < 10; i++)
-//	{
-//		V.push_back(i);
-//	}
-//
-//	bool ret = binary_search(V.begin(), V.end(), 9);  //±ØÐëÊÇÎÞÐòÐòÁÐ
-//
-//	if (ret)
-//	{
-//		cout << "ÕÒµ½ÁË" << endl;
-//	}
-//}
-//
-//
-//
-//int main()
-//{
-//	test01();
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+
+//binary_search(iterator beg, iterator end,value);
+////ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø£ï¿½ï¿½éµ½ ï¿½ï¿½ï¿½ï¿½true ,ï¿½ï¿½ï¿½ï¿½flase  
+////beg ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+////end ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+////value ï¿½ï¿½ï¿½Òµï¿½Ôªï¿½ï¿½
+
+
+
+void test01()
+{
+	vector<int> V;
+	for (int i = 0; i < 10; i++)
+	{
+		V.push_back(i);
+	}
+
+	bool ret = binary_search(V.begin(), V.end(), 9);  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
+	if (ret)
+	{
+		cout << "ï¿½Òµï¿½ï¿½ï¿½" << endl;
+	}
+}
+
+
+
+int main()
+{
+	test01();
+	system("pause");
+	return 0;
+}

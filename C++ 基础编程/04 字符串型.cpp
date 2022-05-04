@@ -2,18 +2,18 @@
 #include <string.h>
 using namespace std;
 
-//int main()
-//{
-//	// C++ ·ç¸ñ
-//	string st1 = "ÕÅ¶÷ÀÖ";
-//	cout << st1 << endl;
-//
-//	// C ·ç¸ñ
-//	char st2[] = "Íõ×Óâù";
-//	cout << st2 << endl;
-//
-//
-//	system("pause");
-//
-//	return 0;
-//}
+int main()
+{
+	// C++ ï¿½ï¿½ï¿½
+	string st1 = "ï¿½Å¶ï¿½ï¿½ï¿½";
+	cout << st1 << endl;
+
+	// C ï¿½ï¿½ï¿½
+	char st2[] = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
+	cout << st2 << endl;
+
+
+	system("pause");
+
+	return 0;
+}

@@ -1,36 +1,36 @@
-//#include <iostream>
-//#include <string>
-//using namespace std;
-//
-//
-////char& operator[](int n);      //Í¨¹ý[]µÄ·½Ê½»ñÈ¡×Ö·û
-////char& at(int n);              //Í¨¹ýatµÄ·½Ê½»ñÈ¡×Ö·û
-//  
-//void test01()
-//{
-//	string str = "hello";
-//	//cout << "str = " << str << endl;
-//
-//	for (int i = 0; i < str.size(); i++)    //str.size()  ¼ÆËã×Ö·û´®³¤¶È
-//	{
-//		cout << str[i] << endl;        //Í¨¹ý[]µÄ·½Ê½»ñÈ¡×Ö·û
-//		cout << str.at(i) << endl;     //Í¨¹ýatµÄ·½Ê½»ñÈ¡×Ö·û
-//	}
-//
-//	//ÐÞ¸Äµ¥¸ö×Ö·û
-//	str[0] = 'x';
-//	cout << "str = " << str << endl;
-//	str.at(1) = 'x';
-//	cout << "str = " << str << endl;
-//}
-//
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+//char& operator[](int n);      //Í¨ï¿½ï¿½[]ï¿½Ä·ï¿½Ê½ï¿½ï¿½È¡ï¿½Ö·ï¿½
+//char& at(int n);              //Í¨ï¿½ï¿½atï¿½Ä·ï¿½Ê½ï¿½ï¿½È¡ï¿½Ö·ï¿½
+ 
+void test01()
+{
+	string str = "hello";
+	//cout << "str = " << str << endl;
+
+	for (int i = 0; i < str.size(); i++)    //str.size()  ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	{
+		cout << str[i] << endl;        //Í¨ï¿½ï¿½[]ï¿½Ä·ï¿½Ê½ï¿½ï¿½È¡ï¿½Ö·ï¿½
+		cout << str.at(i) << endl;     //Í¨ï¿½ï¿½atï¿½Ä·ï¿½Ê½ï¿½ï¿½È¡ï¿½Ö·ï¿½
+	}
+
+	//ï¿½Þ¸Äµï¿½ï¿½ï¿½ï¿½Ö·ï¿½
+	str[0] = 'x';
+	cout << "str = " << str << endl;
+	str.at(1) = 'x';
+	cout << "str = " << str << endl;
+}
+
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

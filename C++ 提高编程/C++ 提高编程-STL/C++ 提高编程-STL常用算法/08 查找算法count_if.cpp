@@ -1,101 +1,101 @@
-//#include <iostream>
-//#include <vector>
-//#include <algorithm>
-//using namespace std;
-//
-//
-//
-//
-//class Person
-//{
-//public:
-//	Person(string Name, int Age)
-//	{
-//		m_Name = Name;
-//		m_Age = Age;
-//	}
-//
-//	bool operator==(const Person& p)
-//	{
-//		if (m_Age == p.m_Age)
-//		{
-//			return true;
-//		}
-//		else
-//		{
-//			return false;
-//		}
-//	}
-//
-//	string m_Name;
-//	int m_Age;
-//};
-//
-//
-//class Mycompare1
-//{
-//public:
-//	bool operator()(int val)
-//	{
-//		return val > 4;
-//	}
-//};
-//
-//class Mycompare2
-//{
-//public:
-//	bool operator()(Person &p)
-//	{
-//		return p.m_Age > 25;
-//	}
-//};
-//
-//
-//
-//
-//
-////Í³¼ÆÄÚÖÃµÄÊý¾ÝÀàÐÍ
-//void test01()
-//{
-//	vector<int> V;
-//	for (int i = 0; i < 10; i++)
-//	{
-//		V.push_back(i);
-//	}
-//	V.push_back(5);
-//	V.push_back(5);
-//	V.push_back(5);
-//	int ret = count_if(V.begin(), V.end(),Mycompare1() );  
-//
-//	cout << "´óÓÚ4µÄÊýÓÐ£º" << ret << endl;
-//}
-//
-////Í³¼Æ×Ô¶¨ÒåµÄÊý¾ÝÀàÐÍ
-//void test02()
-//{
-//	vector<Person> V;
-//	Person P1("sss", 20);
-//	Person P2("aaa", 26);
-//	Person P3("hhh", 29);
-//	Person P4("yyy", 20);
-//	Person P5("yyy", 20);
-//
-//	V.push_back(P1);
-//	V.push_back(P2);
-//	V.push_back(P3);
-//	V.push_back(P4);
-//	V.push_back(P5);
-//
-//	int ret = count_if(V.begin(), V.end(),Mycompare2());
-//	cout  << "ÄêÁä´óÓÚ25µÄÈËÊý£º" << ret << endl;
-//
-//
-//
-//}
-//int main()
-//{
-//	//test01();
-//	test02();
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+
+
+
+class Person
+{
+public:
+	Person(string Name, int Age)
+	{
+		m_Name = Name;
+		m_Age = Age;
+	}
+
+	bool operator==(const Person& p)
+	{
+		if (m_Age == p.m_Age)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	string m_Name;
+	int m_Age;
+};
+
+
+class Mycompare1
+{
+public:
+	bool operator()(int val)
+	{
+		return val > 4;
+	}
+};
+
+class Mycompare2
+{
+public:
+	bool operator()(Person &p)
+	{
+		return p.m_Age > 25;
+	}
+};
+
+
+
+
+
+//Í³ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+void test01()
+{
+	vector<int> V;
+	for (int i = 0; i < 10; i++)
+	{
+		V.push_back(i);
+	}
+	V.push_back(5);
+	V.push_back(5);
+	V.push_back(5);
+	int ret = count_if(V.begin(), V.end(),Mycompare1() );  
+
+	cout << "ï¿½ï¿½ï¿½ï¿½4ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½" << ret << endl;
+}
+
+//Í³ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+void test02()
+{
+	vector<Person> V;
+	Person P1("sss", 20);
+	Person P2("aaa", 26);
+	Person P3("hhh", 29);
+	Person P4("yyy", 20);
+	Person P5("yyy", 20);
+
+	V.push_back(P1);
+	V.push_back(P2);
+	V.push_back(P3);
+	V.push_back(P4);
+	V.push_back(P5);
+
+	int ret = count_if(V.begin(), V.end(),Mycompare2());
+	cout  << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½25ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << ret << endl;
+
+
+
+}
+int main()
+{
+	//test01();
+	test02();
+	system("pause");
+	return 0;
+}

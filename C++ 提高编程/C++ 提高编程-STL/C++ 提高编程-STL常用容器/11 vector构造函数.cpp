@@ -1,52 +1,52 @@
-//#include <iostream>
-//#include <vector>
-//using namespace std;
-//
-//
-////vector<T> v;                         //²ÉÓÃÄ£°åÊµÏÖÀàÊµÏÖ£¬Ä¬ÈÏ¹¹Ôìº¯Êý
-////vector(v.begin(), v.end());          //½«v[begin(),end())Çø¼äÖÐµÄÔªËØ¿½±´¸ø±¾Éí  Ç°±Õºó¿ªµÄÇø¼ä
-////vector(n, elem);                     //¹¹Ôìº¯Êý½«n¸öelem¿½±´¸ø±¾Éí
-////vector(const vector& vec);           //¿½±´¹¹Ôìº¯Êý
-//
-//void printVector(vector<int> v)
-//{
-//	for (vector<int>::iterator it = v.begin(); it != v.end(); it++)
-//	{
-//		cout << *it << " ";
-//	}
-//	cout << endl;
-//}
-//
-//void test01()
-//{
-//	//Ä¬ÈÏ¹¹Ôì ÎÞ²Î¹¹Ôì
-//	vector<int> v1;   
-//	for (int i = 0; i < 10; i++)
-//	{
-//		v1.push_back(i);
-//	}
-//	printVector(v1);
-//
-//	//Í¨¹ýÇø¼ä·½Ê½½øÐÐ¹¹Ôì
-//	vector<int>v2(v1.begin(), v1.end());
-//	printVector(v2);
-//
-//	//n¸öelem·½Ê½¹¹Ôì
-//	vector<int>v3(10, 100);
-//	printVector(v3);
-//
-//	vector<int>v4(v3);
-//	printVector(v4);
-//
-//
-//
-//}
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <vector>
+using namespace std;
+
+
+//vector<T> v;                         //ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½Êµï¿½Ö£ï¿½Ä¬ï¿½Ï¹ï¿½ï¿½ìº¯ï¿½ï¿½
+//vector(v.begin(), v.end());          //ï¿½ï¿½v[begin(),end())ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½Ôªï¿½Ø¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  Ç°ï¿½Õºó¿ªµï¿½ï¿½ï¿½ï¿½ï¿½
+//vector(n, elem);                     //ï¿½ï¿½ï¿½ìº¯ï¿½ï¿½ï¿½ï¿½nï¿½ï¿½elemï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//vector(const vector& vec);           //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ìº¯ï¿½ï¿½
+
+void printVector(vector<int> v)
+{
+	for (vector<int>::iterator it = v.begin(); it != v.end(); it++)
+	{
+		cout << *it << " ";
+	}
+	cout << endl;
+}
+
+void test01()
+{
+	//Ä¬ï¿½Ï¹ï¿½ï¿½ï¿½ ï¿½Þ²Î¹ï¿½ï¿½ï¿½
+	vector<int> v1;   
+	for (int i = 0; i < 10; i++)
+	{
+		v1.push_back(i);
+	}
+	printVector(v1);
+
+	//Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ä·½Ê½ï¿½ï¿½ï¿½Ð¹ï¿½ï¿½ï¿½
+	vector<int>v2(v1.begin(), v1.end());
+	printVector(v2);
+
+	//nï¿½ï¿½elemï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½
+	vector<int>v3(10, 100);
+	printVector(v3);
+
+	vector<int>v4(v3);
+	printVector(v4);
+
+
+
+}
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

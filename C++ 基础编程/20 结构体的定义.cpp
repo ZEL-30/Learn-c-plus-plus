@@ -1,55 +1,55 @@
-//#include <iostream>
-//#include <string>
-//using namespace std;
-//
-//typedef struct Student
-//{
-//	string       name;
-//	int          age;
-//	string       sex;
-//	long long    s_id;
-//	string       courses;
-//	int          scores;
-//} Student;
-//
-//
-//
-//int main()
-//{
-//	// ½á¹¹Ìå¸³Öµ·½·¨1
-//	Student std1;
-//	std1.name = "ÕÅ¶÷ÀÖ";
-//	std1.age = 23;
-//	std1.sex = "ÄÐ";
-//	std1.s_id = 201802464052;
-//	std1.courses  = "CET-6";
-//	std1.scores = 452;
-//
-//	// ½á¹¹Ìå¸³Öµ·½·¨2
-//	Student std2 = { "ÑîÎÄÁú",22,"ÄÐ",201802464060,"CET-6",0 };
-//
-//
-//
-//
-//	cout << "Ñ§ÉúµÄÐÕÃû£º" << std1.name << endl;
-//	cout << "Ñ§ÉúµÄÄêÁä£º" << std1.age << endl;
-//	cout << "Ñ§ÉúµÄÐÔ±ð£º" << std1.sex << endl;
-//	cout << "Ñ§ÉúµÄÑ§ºÅ£º" << std1.s_id << endl;
-//	cout << "Ñ§ÉúµÄÑ§¿Æ£º" << std1.courses << endl;
-//	cout << "Ñ§ÉúµÄ³É¼¨£º" << std1.scores << endl;
-//
-//	cout << endl;
-//   
-//	cout << "Ñ§ÉúµÄÐÕÃû£º" << std2.name << endl;
-//	cout << "Ñ§ÉúµÄÄêÁä£º" << std2.age << endl;
-//	cout << "Ñ§ÉúµÄÐÔ±ð£º" << std2.sex << endl;
-//	cout << "Ñ§ÉúµÄÑ§ºÅ£º" << std2.s_id << endl;
-//	cout << "Ñ§ÉúµÄÑ§¿Æ£º" << std2.courses << endl;
-//	cout << "Ñ§ÉúµÄ³É¼¨£º" << std2.scores << endl;
-//
-//
-//	system("pause");
-//
-//
-//	return 0;
-//} 
+#include <iostream>
+#include <string>
+using namespace std;
+
+typedef struct Student
+{
+	string       name;
+	int          age;
+	string       sex;
+	long long    s_id;
+	string       courses;
+	int          scores;
+} Student;
+
+
+
+int main()
+{
+	// ï¿½á¹¹ï¿½å¸³Öµï¿½ï¿½ï¿½ï¿½1
+	Student std1;
+	std1.name = "ï¿½Å¶ï¿½ï¿½ï¿½";
+	std1.age = 23;
+	std1.sex = "ï¿½ï¿½";
+	std1.s_id = 201802464052;
+	std1.courses  = "CET-6";
+	std1.scores = 452;
+
+	// ï¿½á¹¹ï¿½å¸³Öµï¿½ï¿½ï¿½ï¿½2
+	Student std2 = { "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",22,"ï¿½ï¿½",201802464060,"CET-6",0 };
+
+
+
+
+	cout << "Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << std1.name << endl;
+	cout << "Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä£º" << std1.age << endl;
+	cout << "Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½" << std1.sex << endl;
+	cout << "Ñ§ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½Å£ï¿½" << std1.s_id << endl;
+	cout << "Ñ§ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½Æ£ï¿½" << std1.courses << endl;
+	cout << "Ñ§ï¿½ï¿½ï¿½Ä³É¼ï¿½ï¿½ï¿½" << std1.scores << endl;
+
+	cout << endl;
+  
+	cout << "Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << std2.name << endl;
+	cout << "Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä£º" << std2.age << endl;
+	cout << "Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½" << std2.sex << endl;
+	cout << "Ñ§ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½Å£ï¿½" << std2.s_id << endl;
+	cout << "Ñ§ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½Æ£ï¿½" << std2.courses << endl;
+	cout << "Ñ§ï¿½ï¿½ï¿½Ä³É¼ï¿½ï¿½ï¿½" << std2.scores << endl;
+
+
+	system("pause");
+
+
+	return 0;
+} 

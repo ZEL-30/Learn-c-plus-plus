@@ -1,40 +1,40 @@
-//#include <iostream>
-//using namespace std;
-//
-//int main()
-//{
-//	int a = 0;
-//	int b = 0;
-//	int c = 0;
-//	cout << "ÇëÊäÈëÈıÖ»Ğ¡ÖíA¡¢B¡¢CµÄÌåÖØ£º" << endl;
-//	cin >> a;
-//	cin >> b;
-//	cin >> c;
-//	cout << "Ğ¡ÖíAµÄÌåÖØÎª£º" << a << endl;
-//	cout << "Ğ¡ÖíBµÄÌåÖØÎª£º" << b << endl;
-//	cout << "Ğ¡ÖíCµÄÌåÖØÎª£º" << c << endl;
-//	if (a > b )
-//	{
-//		if (a > c)
-//			cout << "Ğ¡ÖíA×îÖØ£¡" << endl;
-//		else
-//			cout << "Ğ¡ÖíC×îÖØ£¡" << endl;
-//
-//	}
-//	else if ( b < c)
-//		cout << "Ğ¡ÖíC×îÖØ£¡" << endl;
-//	else
-//		cout << "Ğ¡ÖíB×îÖØ£¡" << endl;
-//
-//	if (a > b && a > c)
-//		cout << "Ğ¡ÖíA×îÖØ£¡" << endl;
-//	else if (b > a && b > c)
-//		cout << "Ğ¡ÖíB×îÖØ£¡" << endl;
-//	else if (c > a && c > b)
-//		cout << "Ğ¡ÖíC×îÖØ£¡" << endl;
-//
-//
-//	system("pause");
-//
-//	return 0;
-//}
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»Ğ¡ï¿½ï¿½Aï¿½ï¿½Bï¿½ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½Ø£ï¿½" << endl;
+	cin >> a;
+	cin >> b;
+	cin >> c;
+	cout << "Ğ¡ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½" << a << endl;
+	cout << "Ğ¡ï¿½ï¿½Bï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½" << b << endl;
+	cout << "Ğ¡ï¿½ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½" << c << endl;
+	if (a > b )
+	{
+		if (a > c)
+			cout << "Ğ¡ï¿½ï¿½Aï¿½ï¿½ï¿½Ø£ï¿½" << endl;
+		else
+			cout << "Ğ¡ï¿½ï¿½Cï¿½ï¿½ï¿½Ø£ï¿½" << endl;
+
+	}
+	else if ( b < c)
+		cout << "Ğ¡ï¿½ï¿½Cï¿½ï¿½ï¿½Ø£ï¿½" << endl;
+	else
+		cout << "Ğ¡ï¿½ï¿½Bï¿½ï¿½ï¿½Ø£ï¿½" << endl;
+
+	if (a > b && a > c)
+		cout << "Ğ¡ï¿½ï¿½Aï¿½ï¿½ï¿½Ø£ï¿½" << endl;
+	else if (b > a && b > c)
+		cout << "Ğ¡ï¿½ï¿½Bï¿½ï¿½ï¿½Ø£ï¿½" << endl;
+	else if (c > a && c > b)
+		cout << "Ğ¡ï¿½ï¿½Cï¿½ï¿½ï¿½Ø£ï¿½" << endl;
+
+
+	system("pause");
+
+	return 0;
+}

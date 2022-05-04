@@ -1,112 +1,112 @@
-//#include <iostream>
-//#include <vector>
-//#include <map>
-//#include <ctime>
-//using namespace std;
-//
-//
-//class Employee
-//{
-//public:
-//
-//	Employee(string Name, int Salary)
-//	{
-//		m_Name = Name;
-//		m_Salary = Salary;
-//	}
-//
-//
-//	string m_Name;      //Ô±¹¤ÐÕÃû
-//	int    m_Salary;    //Ô±¹¤Ð½×Ê
-//};
-//
-//
-//void CreateEmployee(vector<Employee>& V)
-//{
-//	string NameSeed = "ABCDEFGHIJ";
-//	for (int i = 0; i < 10; i++)
-//	{
-//		string Name = "Ô±¹¤";
-//		Name += NameSeed[i];
-//
-//		int Salary = 0;
-//
-//		Employee E(Name, Salary);
-//		V.push_back(E);
-//	}
-//}
-//
-////Ëæ»ú·Ö×é
-//void Group(vector<Employee>& V, multimap<int, Employee>& M)
-//{
-//	for (vector<Employee>::iterator it = V.begin(); it != V.end(); it++)
-//	{
-//		int random = rand() % 3 + 1;   //1~3
-//		switch (random)
-//		{
-//		case 1:  //²ß»®  Ð½×Ê 15000
-//			it->m_Salary = 15000;
-//			M.insert(make_pair(1, (*it)));
-//			break;
-//		case 2:  //ÃÀÊõ  Ð½×Ê 12000
-//			it->m_Salary = 12000;
-//			M.insert(make_pair(2, (*it)));
-//			break;
-//		case 3:  //ÑÐ·¢  Ð½×Ê 20000
-//			it->m_Salary = 20000;
-//			M.insert(make_pair(3, (*it)));
-//			break;
-//		default:
-//			break;
-//
-//		}
-//
-//	}
-//}
-////cout << "²¿ÃÅ£º²ß»® ÐÕÃû£º" << it->second.m_Name << " Ð½×Ê£º" << it->second.m_Salary << endl;
-//
-////´òÓ¡Ô±¹¤ÐÅÏ¢
-//void PrintEmployee(multimap<int,Employee> &M)
-//{
-//	//´òÓ¡²ß»®
-//	cout << "²ß»®²¿ÃÅ£º" << endl;
-//	for (multimap<int, Employee>::iterator it = M.begin(); it != M.find(2); it++)
-//	{
-//		cout << "ÐÕÃû£º" << it->second.m_Name << " Ð½×Ê£º" << it->second.m_Salary << endl;
-//	}
-//
-//	//´òÓ¡ÃÀÊõ
-//	cout << "----------------------------------" << endl;
-//	cout << "ÃÀÊõ²¿ÃÅ£º" << endl;
-//	for (multimap<int, Employee>::iterator it = M.find(2); it != M.find(3); it++)
-//	{
-//		cout << "ÐÕÃû£º" << it->second.m_Name << " Ð½×Ê£º" << it->second.m_Salary << endl;
-//	}
-//
-//	//´òÓ¡ÑÐ·¢
-//	cout << "----------------------------------" << endl;
-//	cout << "ÑÐ·¢²¿ÃÅ£º" << endl;
-//	for (multimap<int, Employee>::iterator it = M.find(3); it != M.end(); it++)
-//	{
-//		cout << "ÐÕÃû£º" << it->second.m_Name << " Ð½×Ê£º" << it->second.m_Salary << endl;
-//	}
-//}
-//
-//
-//int main()
-//{
-//	srand((unsigned int)time(NULL));   //Ëæ»ú²¥ÖÖ
-//	//1¡¢´´½¨10ÃûÔ±¹¤
-//	vector<Employee> V;
-//	CreateEmployee(V);
-//
-//	//2¡¢Ëæ»ú·Ö×é
-//	multimap<int, Employee> M;
-//	Group(V, M);
-//
-//	//3¡¢·Ö²¿ÃÅÏÔÊ¾Ô±¹¤ÐÅÏ¢
-//	PrintEmployee(M);
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <vector>
+#include <map>
+#include <ctime>
+using namespace std;
+
+
+class Employee
+{
+public:
+
+	Employee(string Name, int Salary)
+	{
+		m_Name = Name;
+		m_Salary = Salary;
+	}
+
+
+	string m_Name;      //Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	int    m_Salary;    //Ô±ï¿½ï¿½Ð½ï¿½ï¿½
+};
+
+
+void CreateEmployee(vector<Employee>& V)
+{
+	string NameSeed = "ABCDEFGHIJ";
+	for (int i = 0; i < 10; i++)
+	{
+		string Name = "Ô±ï¿½ï¿½";
+		Name += NameSeed[i];
+
+		int Salary = 0;
+
+		Employee E(Name, Salary);
+		V.push_back(E);
+	}
+}
+
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+void Group(vector<Employee>& V, multimap<int, Employee>& M)
+{
+	for (vector<Employee>::iterator it = V.begin(); it != V.end(); it++)
+	{
+		int random = rand() % 3 + 1;   //1~3
+		switch (random)
+		{
+		case 1:  //ï¿½ß»ï¿½  Ð½ï¿½ï¿½ 15000
+			it->m_Salary = 15000;
+			M.insert(make_pair(1, (*it)));
+			break;
+		case 2:  //ï¿½ï¿½ï¿½ï¿½  Ð½ï¿½ï¿½ 12000
+			it->m_Salary = 12000;
+			M.insert(make_pair(2, (*it)));
+			break;
+		case 3:  //ï¿½Ð·ï¿½  Ð½ï¿½ï¿½ 20000
+			it->m_Salary = 20000;
+			M.insert(make_pair(3, (*it)));
+			break;
+		default:
+			break;
+
+		}
+
+	}
+}
+//cout << "ï¿½ï¿½ï¿½Å£ï¿½ï¿½ß»ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << it->second.m_Name << " Ð½ï¿½Ê£ï¿½" << it->second.m_Salary << endl;
+
+//ï¿½ï¿½Ó¡Ô±ï¿½ï¿½ï¿½ï¿½Ï¢
+void PrintEmployee(multimap<int,Employee> &M)
+{
+	//ï¿½ï¿½Ó¡ï¿½ß»ï¿½
+	cout << "ï¿½ß»ï¿½ï¿½ï¿½ï¿½Å£ï¿½" << endl;
+	for (multimap<int, Employee>::iterator it = M.begin(); it != M.find(2); it++)
+	{
+		cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << it->second.m_Name << " Ð½ï¿½Ê£ï¿½" << it->second.m_Salary << endl;
+	}
+
+	//ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½
+	cout << "----------------------------------" << endl;
+	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å£ï¿½" << endl;
+	for (multimap<int, Employee>::iterator it = M.find(2); it != M.find(3); it++)
+	{
+		cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << it->second.m_Name << " Ð½ï¿½Ê£ï¿½" << it->second.m_Salary << endl;
+	}
+
+	//ï¿½ï¿½Ó¡ï¿½Ð·ï¿½
+	cout << "----------------------------------" << endl;
+	cout << "ï¿½Ð·ï¿½ï¿½ï¿½ï¿½Å£ï¿½" << endl;
+	for (multimap<int, Employee>::iterator it = M.find(3); it != M.end(); it++)
+	{
+		cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << it->second.m_Name << " Ð½ï¿½Ê£ï¿½" << it->second.m_Salary << endl;
+	}
+}
+
+
+int main()
+{
+	srand((unsigned int)time(NULL));   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	//1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½10ï¿½ï¿½Ô±ï¿½ï¿½
+	vector<Employee> V;
+	CreateEmployee(V);
+
+	//2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	multimap<int, Employee> M;
+	Group(V, M);
+
+	//3ï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾Ô±ï¿½ï¿½ï¿½ï¿½Ï¢
+	PrintEmployee(M);
+
+	system("pause");
+	return 0;
+}

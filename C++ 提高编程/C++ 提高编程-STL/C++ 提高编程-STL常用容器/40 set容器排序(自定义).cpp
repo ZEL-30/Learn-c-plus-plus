@@ -1,64 +1,64 @@
-//#include <iostream>
-//#include <set>
-//#include <string>
-//using namespace std;
-//
-//
-//class Person
-//{
-//public:
-//
-//	Person(string Name, int Age, int Height)
-//	{
-//		m_Name = Name;
-//		m_Age = Age;
-//		m_Height = Height;
-//	}
-//
-//	string m_Name;
-//	int    m_Age;
-//	int    m_Height;
-//};
-//
-//
-//class Mycompare
-//{
-//public:
-//	bool operator()(Person p1, Person p2) const
-//	{
-//		return p1.m_Age > p2.m_Age;
-//	}
-//};
-//
-//
-//
-//
-//void test01()
-//{
-//	Person p1("ÕÅ¶÷ÀÖ", 23,177);
-//	Person p2("Íõ×Óâù", 20,168);
-//	Person p3("ÑîÎÄÁú", 21,175);
-//	Person p4("Öî¸ğÁÁ", 36,180);
-//	Person p5("Ë¾ÂíÜ²", 36,173);
-//	set<Person, Mycompare> S;
-//	S.insert(p1);
-//	S.insert(p2);
-//	S.insert(p3);
-//	S.insert(p4);
-//	S.insert(p5);
-//
-//	for (set<Person, Mycompare>::iterator it = S.begin(); it != S.end(); it++)
-//	{
-//		cout << "ĞÕÃû£º " << it->m_Name << " ÄêÁä£º" << it->m_Age << " Éí¸ß£º" << it->m_Height << endl;
-//	}
-//}
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <set>
+#include <string>
+using namespace std;
+
+
+class Person
+{
+public:
+
+	Person(string Name, int Age, int Height)
+	{
+		m_Name = Name;
+		m_Age = Age;
+		m_Height = Height;
+	}
+
+	string m_Name;
+	int    m_Age;
+	int    m_Height;
+};
+
+
+class Mycompare
+{
+public:
+	bool operator()(Person p1, Person p2) const
+	{
+		return p1.m_Age > p2.m_Age;
+	}
+};
+
+
+
+
+void test01()
+{
+	Person p1("ï¿½Å¶ï¿½ï¿½ï¿½", 23,177);
+	Person p2("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 20,168);
+	Person p3("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 21,175);
+	Person p4("ï¿½ï¿½ï¿½ï¿½ï¿½", 36,180);
+	Person p5("Ë¾ï¿½ï¿½Ü²", 36,173);
+	set<Person, Mycompare> S;
+	S.insert(p1);
+	S.insert(p2);
+	S.insert(p3);
+	S.insert(p4);
+	S.insert(p5);
+
+	for (set<Person, Mycompare>::iterator it = S.begin(); it != S.end(); it++)
+	{
+		cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ " << it->m_Name << " ï¿½ï¿½ï¿½ä£º" << it->m_Age << " ï¿½ï¿½ï¿½ß£ï¿½" << it->m_Height << endl;
+	}
+}
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

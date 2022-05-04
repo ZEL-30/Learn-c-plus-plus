@@ -1,51 +1,51 @@
-//#include <iostream>
-//#include <set>
-//using namespace std;
-//
-//
-//
-////insert(elem);                            //ÔÚÈÝÆ÷ÖÐ²åÈëÔªËØ
-////erase(pos);                              //É¾³ýposÎ»ÖÃµÄÊý¾Ý£¬·µ»ØÏÂÒ»¸öÊý¾ÝµÄÎ»ÖÃ
-////erase(beg, end);                         //É¾³ý[beg£¬end)Çø¼äµÄÊý¾Ý£¬·µ»ØÏÂÒ»¸öÊý¾ÝµÄÎ»ÖÃ
-////clear();                                 //É¾³ýÈÝÆ÷ÖÐËùÓÐÔªËØ
-////erase(elem);                             //É¾³ýÈÝÆ÷ÖÐËùÓÐÓëelemÖµÆ¥ÅäµÄÔªËØ
-//
-//
-//
-//void printSet(set<int> S)
-//{
-//	for (set<int>::iterator it = S.begin(); it != S.end(); it++)
-//	{
-//		cout << *it << " ";
-//	}
-//	cout << endl;
-//
-//}
-//
-//
-//void test01()
-//{
-//	set<int> s1;
-//
-//	//²åÈëÊý¾Ý£¬Ö»ÓÐinsert·½Ê½
-//	s1.insert(10);
-//	s1.insert(40);
-//	s1.insert(30);
-//	s1.insert(30);
-//	s1.insert(20);
-//
-//	printSet(s1);
-//	s1.erase(s1.begin());
-//	printSet(s1);
-//}
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
-//
+#include <iostream>
+#include <set>
+using namespace std;
+
+
+
+//insert(elem);                            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+//erase(pos);                              //É¾ï¿½ï¿½posÎ»ï¿½Ãµï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ýµï¿½Î»ï¿½ï¿½
+//erase(beg, end);                         //É¾ï¿½ï¿½[begï¿½ï¿½end)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ýµï¿½Î»ï¿½ï¿½
+//clear();                                 //É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+//erase(elem);                             //É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½elemÖµÆ¥ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+
+
+
+void printSet(set<int> S)
+{
+	for (set<int>::iterator it = S.begin(); it != S.end(); it++)
+	{
+		cout << *it << " ";
+	}
+	cout << endl;
+
+}
+
+
+void test01()
+{
+	set<int> s1;
+
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½Ö»ï¿½ï¿½insertï¿½ï¿½Ê½
+	s1.insert(10);
+	s1.insert(40);
+	s1.insert(30);
+	s1.insert(30);
+	s1.insert(20);
+
+	printSet(s1);
+	s1.erase(s1.begin());
+	printSet(s1);
+}
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}
+

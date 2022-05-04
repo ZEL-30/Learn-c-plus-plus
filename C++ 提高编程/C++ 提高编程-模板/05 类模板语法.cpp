@@ -1,45 +1,45 @@
-//#include <iostream>
-//using namespace std;
-//
-////ÀàÄ£°å
-//template <class NameType,class AgeType = int>  //class AgeType = int Ä¬ÈÏÀàÐÍ
-//class Person
-//{
-//public:
-//
-//	Person(NameType Name,AgeType Age)
-//	{
-//		m_Age = Age;
-//		m_Name = Name;
-//	}
-//
-//	void showInfo()
-//	{
-//		cout << m_Age << m_Name << endl;
-//	}
-//
-//	AgeType m_Age;
-//	NameType m_Name;
-//};
-//
-//
-//void test01()
-//{
-//	Person<string,int>p1("ÕÅ¶÷ÀÖ", 23);
-//	p1.showInfo();
-//
-//
-//}
-//
-//
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	system("cls");
-//	return 0;
-//}
+#include <iostream>
+using namespace std;
+
+//ï¿½ï¿½Ä£ï¿½ï¿½
+template <class NameType,class AgeType = int>  //class AgeType = int Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+class Person
+{
+public:
+
+	Person(NameType Name,AgeType Age)
+	{
+		m_Age = Age;
+		m_Name = Name;
+	}
+
+	void showInfo()
+	{
+		cout << m_Age << m_Name << endl;
+	}
+
+	AgeType m_Age;
+	NameType m_Name;
+};
+
+
+void test01()
+{
+	Person<string,int>p1("ï¿½Å¶ï¿½ï¿½ï¿½", 23);
+	p1.showInfo();
+
+
+}
+
+
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	system("cls");
+	return 0;
+}

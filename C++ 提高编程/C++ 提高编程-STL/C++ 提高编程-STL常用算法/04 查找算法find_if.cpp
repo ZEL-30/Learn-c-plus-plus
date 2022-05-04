@@ -1,122 +1,122 @@
-//#include <iostream>
-//#include <algorithm>
-//#include <vector>
-//using namespace std;
-//
-////find_if(iterator beg, iterator end, _Pred);
-//////°´Öµ²éÕÒÔªËØ£¬ÕÒµ½·µ»ØÖ¸¶¨ÔªËØµÄµü´úÆ÷£¬ÕÒ²»µ½·µ»Ø½áÊøµü´úÆ÷end()
-//////beg¿ªÊ¼µü´úÆ÷
-//////end½áÊøµü´úÆ÷
-//////_Pred º¯Êý»òÕßÎ½´Ê (·µ»ØÖµboolÀàÐÍµÄ·Âº¯Êý)
-//
-//class Mycompare1
-//{
-//public:
-//	bool operator()(int val)
-//	{
-//		if (val > 5)
-//		{
-//			return true;
-//		}
-//		else
-//		{
-//			return false;
-//		}
-//	}
-//};
-//
-//
-//class Person
-//{
-//public:
-//	Person(string Name, int Age)
-//	{
-//		m_Name = Name;
-//		m_Age = Age;
-//	}
-//
-//	//ÖØÔØ ==
-//	bool operator==(const Person &p)
-//	{
-//		if (m_Age == p.m_Age && m_Name == p.m_Name)
-//		{
-//			return true;
-//		}
-//		else
-//		{
-//			return false;
-//		}
-//	}
-//
-//	string m_Name;
-//	int    m_Age;
-//};
-//
-//
-//class Mycompare2
-//{
-//public:
-//	bool operator()(Person& p)
-//	{
-//		return p.m_Age > 5;
-//	}
-//};
-//
-//
-//
-//
-//
-////ÄÚÖÃÊý¾ÝÀàÐÍ
-//void test01()
-//{
-//	vector<int> V;
-//	for (int i = 0; i < 10; i++)
-//	{
-//		V.push_back(i);
-//	}
-//
-//	vector<int>::iterator it = find_if(V.begin(), V.end(), Mycompare1());
-//	if (it != V.end())
-//	{
-//		cout << " ÕÒµ½ÁË£¡" << *it << endl;
-//	}
-//
-//}
-//
-//
-////×Ô¶¨ÒåÊý¾ÝÀàÐÍ
-//void test02()
-//{
-//	vector<Person> V;
-//	Person p1("aaa", 1);
-//	Person p2("bbb", 3);
-//	Person p3("sss", 5);
-//	Person p4("fff", 7);
-//	Person p5("hhh", 6);
-//
-//	V.push_back(p1);
-//	V.push_back(p2);
-//	V.push_back(p3);
-//	V.push_back(p4);
-//	V.push_back(p5);
-//
-//	vector<Person>::iterator it = find_if(V.begin(), V.end(), Mycompare2());
-//	if (it != V.end())
-//	{
-//		cout << " ÕÒµ½ÁË£¡" << it->m_Name << endl;
-//	}
-//
-//
-//
-//}
-//
-//
-//
-//int main()
-//{
-//	test01();
-//	test02();
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <algorithm>
+#include <vector>
+using namespace std;
+
+//find_if(iterator beg, iterator end, _Pred);
+////ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø£ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½Ôªï¿½ØµÄµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½end()
+////begï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+////endï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+////_Pred ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î½ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½Öµboolï¿½ï¿½ï¿½ÍµÄ·Âºï¿½ï¿½ï¿½)
+
+class Mycompare1
+{
+public:
+	bool operator()(int val)
+	{
+		if (val > 5)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+};
+
+
+class Person
+{
+public:
+	Person(string Name, int Age)
+	{
+		m_Name = Name;
+		m_Age = Age;
+	}
+
+	//ï¿½ï¿½ï¿½ï¿½ ==
+	bool operator==(const Person &p)
+	{
+		if (m_Age == p.m_Age && m_Name == p.m_Name)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	string m_Name;
+	int    m_Age;
+};
+
+
+class Mycompare2
+{
+public:
+	bool operator()(Person& p)
+	{
+		return p.m_Age > 5;
+	}
+};
+
+
+
+
+
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+void test01()
+{
+	vector<int> V;
+	for (int i = 0; i < 10; i++)
+	{
+		V.push_back(i);
+	}
+
+	vector<int>::iterator it = find_if(V.begin(), V.end(), Mycompare1());
+	if (it != V.end())
+	{
+		cout << " ï¿½Òµï¿½ï¿½Ë£ï¿½" << *it << endl;
+	}
+
+}
+
+
+//ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+void test02()
+{
+	vector<Person> V;
+	Person p1("aaa", 1);
+	Person p2("bbb", 3);
+	Person p3("sss", 5);
+	Person p4("fff", 7);
+	Person p5("hhh", 6);
+
+	V.push_back(p1);
+	V.push_back(p2);
+	V.push_back(p3);
+	V.push_back(p4);
+	V.push_back(p5);
+
+	vector<Person>::iterator it = find_if(V.begin(), V.end(), Mycompare2());
+	if (it != V.end())
+	{
+		cout << " ï¿½Òµï¿½ï¿½Ë£ï¿½" << it->m_Name << endl;
+	}
+
+
+
+}
+
+
+
+int main()
+{
+	test01();
+	test02();
+
+	system("pause");
+	return 0;
+}

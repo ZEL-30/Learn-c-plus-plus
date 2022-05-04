@@ -1,42 +1,42 @@
-//#include <iostream>
-//#include <ctime>  //timeÏµÍ³Ê±¼äÍ·ÎÄ¼ş°üº¬
-//using namespace std;
-//
-//
-//int main()
-//{
-//	//Ìí¼ÓËæ»úÊıÖÖ×Ó
-//	srand((unsigned int)time(NULL));
-//	// rand()%100 ÊÇ0-99Ö®¼äµÄËæ»úÊı
-//	int random_number = rand() % 100 + 1;
-//	int guess_number = 0;
-//	int time = 0;
-//	while (guess_number != random_number)
-//	{
-//		if (time <= 2)
-//		{
-//			cout << "ÇëÊäÈë1-100Ö®¼äµÄÊı×Ö£º" << endl;
-//			cin >> guess_number;
-//			time++;
-//			if (guess_number > random_number)
-//				cout << "±§Ç¸Äã²Â´óÁË,Äã»¹ÓĞ" << 3-time <<"´Î»ú»á"<< endl;
-//			else if (guess_number < random_number)
-//				cout << "±§Ç¸Äã²ÂĞ¡ÁË,Äã»¹ÓĞ" << 3-time << "´Î»ú»á" << endl;
-//			else
-//				break;
-//		}
-//		else
-//			break;
-//		
-//	}
-//	if (time <= 2)
-//		cout << "¹§Ï²Äã²Å¶ÔÁË£¬´ğ°¸ÊÇ£º" << random_number << endl;
-//	else
-//		cout << "ºÜÒÅº¶£¡Ö»ÓĞÈı´Î»ú»á£¬ÏÂ´Î¼ÓÓÍ°É£¡\n ´ğ°¸ÊÇ£º" << random_number<< endl;
-//
-//
-//
-//	system("pause");
-//
-//	return 0;
-//}
+#include <iostream>
+#include <ctime>  //timeÏµÍ³Ê±ï¿½ï¿½Í·ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+using namespace std;
+
+
+int main()
+{
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	srand((unsigned int)time(NULL));
+	// rand()%100 ï¿½ï¿½0-99Ö®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	int random_number = rand() % 100 + 1;
+	int guess_number = 0;
+	int time = 0;
+	while (guess_number != random_number)
+	{
+		if (time <= 2)
+		{
+			cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1-100Ö®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½" << endl;
+			cin >> guess_number;
+			time++;
+			if (guess_number > random_number)
+				cout << "ï¿½ï¿½Ç¸ï¿½ï¿½Â´ï¿½ï¿½ï¿½,ï¿½ã»¹ï¿½ï¿½" << 3-time <<"ï¿½Î»ï¿½ï¿½ï¿½"<< endl;
+			else if (guess_number < random_number)
+				cout << "ï¿½ï¿½Ç¸ï¿½ï¿½ï¿½Ğ¡ï¿½ï¿½,ï¿½ã»¹ï¿½ï¿½" << 3-time << "ï¿½Î»ï¿½ï¿½ï¿½" << endl;
+			else
+				break;
+		}
+		else
+			break;
+		
+	}
+	if (time <= 2)
+		cout << "ï¿½ï¿½Ï²ï¿½ï¿½Å¶ï¿½ï¿½Ë£ï¿½ï¿½ï¿½ï¿½Ç£ï¿½" << random_number << endl;
+	else
+		cout << "ï¿½ï¿½ï¿½Åºï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½á£¬ï¿½Â´Î¼ï¿½ï¿½Í°É£ï¿½\n ï¿½ï¿½ï¿½Ç£ï¿½" << random_number<< endl;
+
+
+
+	system("pause");
+
+	return 0;
+}

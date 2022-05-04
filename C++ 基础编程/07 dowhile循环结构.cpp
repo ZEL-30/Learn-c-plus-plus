@@ -2,43 +2,43 @@
 
 using namespace std;
 
-//ÅÐ¶ÏÊÇ·ñÊÇË®ÏÉ»¨Êý
+//ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ë®ï¿½É»ï¿½ï¿½ï¿½
 int Daffodil_number(int num);
 
-//³Ë·½º¯Êý
+//ï¿½Ë·ï¿½ï¿½ï¿½ï¿½ï¿½
 int power(int a, int b);
 
-//int main()
-//{
-//
-//	int num = 100;    //ÆðÊ¼Êý×Ö
-//
-//	cout << "3Î»ÊýÖÐµÄË®ÏÉ»¨ÊýÓÐ£º" << endl;
-//
-//	do
-//	{
-//		if (daffodil_number(num) == 1)
-//		{
-//			cout << num << endl;
-//			num++;
-//		}
-//
-//		else
-//			num++;		
-//	} while (num < 1000);
-//
-//	system("pause");
-//	return 0;
-//}
+int main()
+{
+
+	int num = 100;    //ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
+
+	cout << "3Î»ï¿½ï¿½ï¿½Ðµï¿½Ë®ï¿½É»ï¿½ï¿½ï¿½ï¿½Ð£ï¿½" << endl;
+
+	do
+	{
+		if (Daffodil_number(num) == 1)
+		{
+			cout << num << endl;
+			num++;
+		}
+
+		else
+			num++;		
+	} while (num < 1000);
+
+	system("pause");
+	return 0;
+}
 
 
-//ÅÐ¶ÏÊÇ·ñÊÇË®ÏÉ»¨Êý
+//ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ë®ï¿½É»ï¿½ï¿½ï¿½
 int Daffodil_number(int num)
 {
-	int num_1 = 0;  //¸öÎ»
+	int num_1 = 0;  //ï¿½ï¿½Î»
 	int num_2 = 0;  //Ê®Î»
-	int num_3 = 0;  //°ÙÎ»
-	//·ÖÀëÕûÊý°ÙÎ»¡¢Ê®Î»¡¢¸öÎ»
+	int num_3 = 0;  //ï¿½ï¿½Î»
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ê®Î»ï¿½ï¿½ï¿½ï¿½Î»
 	num_3 = num / 100;
 	num_2 = (num % 100) / 10;
 	num_1 = (num % 100) % 10;
@@ -49,7 +49,7 @@ int Daffodil_number(int num)
 		return 0;
 }
 
-//³Ë·½º¯Êý
+//ï¿½Ë·ï¿½ï¿½ï¿½ï¿½ï¿½
 int power(int a, int b)
 {
 	int result = 1;

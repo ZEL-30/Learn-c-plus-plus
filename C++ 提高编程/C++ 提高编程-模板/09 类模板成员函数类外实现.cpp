@@ -1,51 +1,51 @@
-//#include <iostream>
-//using namespace std;
-//
-////ÀàÄ£°å³ÉÔ±º¯ÊıÀàÍâÊµÏÖ
-//template <class T1, class T2>
-//class Person
-//{
-//public:
-//	Person(T1 name, T2 age);
-//
-//
-//	void showPerson();
-//	
-//
-//
-//	T1 m_name;
-//	T2 m_age;
-//};
-//
-////¹¹Ôìº¯Êı ÀàÍâÊµÏÖ
-//template <class T1,class T2>
-//Person<T1,T2>::Person(T1 name, T2 age)
-//{
-//	m_age = age;
-//	m_name = name;
-//}
-//
-//
-////³ÉÔ±º¯Êı ÀàÍâÊµÏÖ
-//template <class T1, class T2>
-//void Person<T1,T2>::showPerson()
-//{
-//	cout << "ĞÕÃû£º" << m_name << "ÄêÁä£º" << m_age << endl;
-//}
-//
-//
-//
-//
-//void test01()
-//{
-//	Person<string, int>p1("ÕÅ¶÷ÀÖ", 23);
-//	p1.showPerson();
-//}
-//
-//int main()
-//{
-//	test01();
-//	system("pause");
-//	system("cls");
-//	return 0;
-//}
+#include <iostream>
+using namespace std;
+
+//ï¿½ï¿½Ä£ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½
+template <class T1, class T2>
+class Person
+{
+public:
+	Person(T1 name, T2 age);
+
+
+	void showPerson();
+	
+
+
+	T1 m_name;
+	T2 m_age;
+};
+
+//ï¿½ï¿½ï¿½ìº¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½
+template <class T1,class T2>
+Person<T1,T2>::Person(T1 name, T2 age)
+{
+	m_age = age;
+	m_name = name;
+}
+
+
+//ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½
+template <class T1, class T2>
+void Person<T1,T2>::showPerson()
+{
+	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << m_name << "ï¿½ï¿½ï¿½ä£º" << m_age << endl;
+}
+
+
+
+
+void test01()
+{
+	Person<string, int>p1("ï¿½Å¶ï¿½ï¿½ï¿½", 23);
+	p1.showPerson();
+}
+
+int main()
+{
+	test01();
+	system("pause");
+	system("cls");
+	return 0;
+}

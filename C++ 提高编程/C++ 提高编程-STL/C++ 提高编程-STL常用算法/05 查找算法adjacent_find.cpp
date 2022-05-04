@@ -1,17 +1,17 @@
-//#include <iostream>
-//using namespace std;
-//
+#include <iostream>
+using namespace std;
+
 //adjacent_find(iterator beg, iterator end);
-////查找相邻重复元素，返回相邻元素的第一个位置的迭代器
-////beg 开始迭代器
-////end 开始迭代器
-//
-//
-//
-//
-//int main()
-//{
-//
-//	system("pause");
-//	return 0;
-//}
+//锟斤拷锟斤拷锟斤拷锟斤拷锟截革拷元锟截ｏ拷锟斤拷锟斤拷锟斤拷锟斤拷元锟截的碉拷一锟斤拷位锟矫的碉拷锟斤拷锟斤拷
+//beg 锟斤拷始锟斤拷锟斤拷锟斤拷
+//end 锟斤拷始锟斤拷锟斤拷锟斤拷
+
+
+
+
+int main()
+{
+
+	system("pause");
+	return 0;
+}

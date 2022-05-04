@@ -1,56 +1,56 @@
-//#include <iostream>
-//#include <string>
-//using namespace std;
-//
-//
-////string& operator=(const char* s);            //char*ÀàÐÍ×Ö·û´® ¸³Öµ¸øµ±Ç°µÄ×Ö·û´®
-////string& operator=(const string &s);          //°Ñ×Ö·û´®s¸³Öµ¸øµ±Ç°µÄ×Ö·û´®
-////string& operator=(char s);                   //×Ö·û¸³Öµ¸øµ±Ç°µÄ×Ö·û´®
-////string& assign(const char* s);               //°Ñ×Ö·û´®s¸³¸øµ±Ç°µÄ×Ö·û´®
-////string& assign(const char* s,int n);         //°Ñ×Ö·û´®sµÄÇ°n¸ö×Ö·û¸³Öµ¸øµ±Ç°µÄ×Ö·û´®
-////string& assign(const string &s);             //°Ñ×Ö·û´®s¸³Öµ¸øµ±Ç°×Ö·û´®
-////string& assign(int n,char c);                //ÓÃn¸ö×Ö·ûc¸³Öµ¸øµ±Ç°×Ö·û´®
-//
-//
-//void test01()
-//{
-//	string s1;
-//	const char* str1 = "ÕÅ¶÷ÀÖ";
-//	s1 = str1;
-//	cout << "s1 = " << s1 << endl;
-//
-//	string s2;
-//	s2 = s1;
-//	cout << "s2 = " << s2 << endl;
-//
-//	string s3;
-//	s3 = 'z';
-//	cout << "s3 = " << s3 << endl;
-//
-//	string s4;
-//	s4.assign("Íõ×Óâù");
-//	cout << "s4 = " << s4 << endl;
-//
-//	string s5;
-//	s5.assign("ÖÐ»ªÈËÃñ¹²ºÍ¹ú", 8);
-//	cout << "s5 = " << s5 << endl;
-//
-//	string s6;
-//	s6.assign(s5);
-//	cout << "s6 = " << s6 << endl;
-//
-//	string s7;
-//	s7.assign(10, 'z');
-//	cout << "s7 = " << s7 << endl;
-//
-//
-//}
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+//string& operator=(const char* s);            //char*ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+//string& operator=(const string &s);          //ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½sï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+//string& operator=(char s);                   //ï¿½Ö·ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+//string& assign(const char* s);               //ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+//string& assign(const char* s,int n);         //ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½sï¿½ï¿½Ç°nï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+//string& assign(const string &s);             //ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½sï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ö·ï¿½ï¿½ï¿½
+//string& assign(int n,char c);                //ï¿½ï¿½nï¿½ï¿½ï¿½Ö·ï¿½cï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ö·ï¿½ï¿½ï¿½
+
+
+void test01()
+{
+	string s1;
+	const char* str1 = "ï¿½Å¶ï¿½ï¿½ï¿½";
+	s1 = str1;
+	cout << "s1 = " << s1 << endl;
+
+	string s2;
+	s2 = s1;
+	cout << "s2 = " << s2 << endl;
+
+	string s3;
+	s3 = 'z';
+	cout << "s3 = " << s3 << endl;
+
+	string s4;
+	s4.assign("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+	cout << "s4 = " << s4 << endl;
+
+	string s5;
+	s5.assign("ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ñ¹²ºÍ¹ï¿½", 8);
+	cout << "s5 = " << s5 << endl;
+
+	string s6;
+	s6.assign(s5);
+	cout << "s6 = " << s6 << endl;
+
+	string s7;
+	s7.assign(10, 'z');
+	cout << "s7 = " << s7 << endl;
+
+
+}
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

@@ -1,50 +1,50 @@
-//#include <iostream>
-//#include <deque>
-//using namespace std;
-//
-////at(int index);           //·µ»ØË÷ÒýindexËùÖ¸µÄÊý¾Ý
-////operator[];              //·µ»ØË÷ÒýindexËùÖ¸µÄÊý¾Ý
-////front();                 //·µ»ØÈÝÆ÷ÖÐµÚÒ»¸öÊý¾ÝÔªËØ
-////back();                  //·µ»ØÈÝÆ÷ÖÐ×îºóÒ»¸öÊý¾ÝÔªËØ
-//
-//
-//
-//
-//
-//void test01()
-//{
-//	deque<int> d1;
-//	for (int i = 0; i < 10; i++)
-//	{
-//		d1.push_back(i);
-//	}
-//
-//	//ÀûÓÃ[]·½Ê½·ÃÎÊÔªËØ
-//	for (int i = 0; i < d1.size(); i++)
-//	{
-//		cout << d1[i] << " ";
-//	}
-//	cout << endl;
-//
-//	//ÀûÓÃat·½Ê½·ÃÎÊÔªËØ
-//	for (int i = 0; i < d1.size(); i++)
-//	{
-//		cout << d1.at(i) << " ";
-//	}
-//	cout << endl;
-//
-//	cout << "µÚÒ»¸öÔªËØÎª£º" << d1.front() << endl;
-//	cout << "×îºóÒ»¸öÔªËØÎª£º" << d1.back() << endl;
-//
-//}
-//
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <deque>
+using namespace std;
+
+//at(int index);           //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½indexï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//operator[];              //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½indexï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//front();                 //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+//back();                  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+
+
+
+
+
+void test01()
+{
+	deque<int> d1;
+	for (int i = 0; i < 10; i++)
+	{
+		d1.push_back(i);
+	}
+
+	//ï¿½ï¿½ï¿½ï¿½[]ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+	for (int i = 0; i < d1.size(); i++)
+	{
+		cout << d1[i] << " ";
+	}
+	cout << endl;
+
+	//ï¿½ï¿½ï¿½ï¿½atï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+	for (int i = 0; i < d1.size(); i++)
+	{
+		cout << d1.at(i) << " ";
+	}
+	cout << endl;
+
+	cout << "ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½Îªï¿½ï¿½" << d1.front() << endl;
+	cout << "ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½Îªï¿½ï¿½" << d1.back() << endl;
+
+}
+
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

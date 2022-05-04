@@ -1,77 +1,77 @@
-//#include <iostream>
-//#include <list>
-//#include <string>
-//using namespace std;
-//
-//class Person
-//{
-//public:
-//	Person(string Name, int Age, int Height)
-//	{
-//		m_Name = Name;
-//		m_Age = Age;
-//		m_Height = Height;
-//	}
-//
-//	string m_Name;
-//	int m_Age;
-//	int m_Height;
-//};
-//
-//
-//
-//void PrintPerson(list<Person> L)
-//{
-//	for (list<Person>::iterator it = L.begin(); it != L.end(); it++)
-//	{
-//		cout << "ÐÕÃû£º" << it->m_Name << " ÄêÁä£º" << it->m_Age << " Éí¸ß£º" << it->m_Height << endl;
-//	}
-//}
-//
-////sort »Øµ÷º¯Êý Ö¸¶¨ÅÅÐò¹æÔò
-//bool mycompare(Person& p1,Person &p2)
-//{
-//	if (p1.m_Age != p2.m_Age)
-//	{
-//		return p1.m_Age < p2.m_Age;
-//	}
-//	else
-//	{
-//		return p1.m_Height > p2.m_Height;
-//	}
-//}
-//
-//
-//void test01()
-//{
-//	list<Person> L;
-//	Person p1("ÕÅ¶÷ÀÖ", 23, 177);
-//	Person p2("Íõ×Óâù", 20, 168);
-//	Person p3("ÑîÎÄÁú", 21, 173);
-//	Person p4("Öî¸ðÁÁ", 21, 175);
-//	Person p5("Ë¾ÂíÜ²", 21, 180);
-//
-//	L.push_back(p1);
-//	L.push_back(p2);
-//	L.push_back(p3);
-//	L.push_back(p4);
-//	L.push_back(p5);
-//
-//	PrintPerson(L);
-//	
-//	//ÅÅÐò
-//	cout << "ÅÅÐòºó£º" << endl;
-//	L.sort(mycompare);
-//	PrintPerson(L);
-//}
-//
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <list>
+#include <string>
+using namespace std;
+
+class Person
+{
+public:
+	Person(string Name, int Age, int Height)
+	{
+		m_Name = Name;
+		m_Age = Age;
+		m_Height = Height;
+	}
+
+	string m_Name;
+	int m_Age;
+	int m_Height;
+};
+
+
+
+void PrintPerson(list<Person> L)
+{
+	for (list<Person>::iterator it = L.begin(); it != L.end(); it++)
+	{
+		cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << it->m_Name << " ï¿½ï¿½ï¿½ä£º" << it->m_Age << " ï¿½ï¿½ï¿½ß£ï¿½" << it->m_Height << endl;
+	}
+}
+
+//sort ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½ Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+bool mycompare(Person& p1,Person &p2)
+{
+	if (p1.m_Age != p2.m_Age)
+	{
+		return p1.m_Age < p2.m_Age;
+	}
+	else
+	{
+		return p1.m_Height > p2.m_Height;
+	}
+}
+
+
+void test01()
+{
+	list<Person> L;
+	Person p1("ï¿½Å¶ï¿½ï¿½ï¿½", 23, 177);
+	Person p2("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 20, 168);
+	Person p3("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 21, 173);
+	Person p4("ï¿½ï¿½ï¿½ï¿½ï¿½", 21, 175);
+	Person p5("Ë¾ï¿½ï¿½Ü²", 21, 180);
+
+	L.push_back(p1);
+	L.push_back(p2);
+	L.push_back(p3);
+	L.push_back(p4);
+	L.push_back(p5);
+
+	PrintPerson(L);
+	
+	//ï¿½ï¿½ï¿½ï¿½
+	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½" << endl;
+	L.sort(mycompare);
+	PrintPerson(L);
+}
+
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

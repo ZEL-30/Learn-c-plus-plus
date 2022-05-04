@@ -1,90 +1,90 @@
-//#include <iostream>
-//#include <string>
-//using namespace std;
-//
-//
-//struct Hero
-//{
-//	string name;
-//	int    age;
-//	string sex;
-//};
-//
-//
-//void Swap(Hero* h1, Hero* h2)
-//{
-//	Hero temp;
-//	//½»»»Ãû×Ö
-//	temp.name = h1->name;
-//	h1->name = h2->name;
-//	h2->name = temp.name;
-//	//½»»»ÄêÁä
-//	temp.age = h1->age;
-//	h1->age = h2->age;
-//	h2->age = temp.age;
-//	//½»»»ÐÔ±ð
-//	temp.sex = h1->sex;
-//	h1->sex = h2->sex;
-//	h2->sex = temp.sex;
-//
-//
-//}
-//
-//
-//
-//
-//void Bubble(Hero h[],int len)
-//{
-//	for (int i = 0; i < len-1; i++)
-//	{
-//		for (int j = 0; j < len - i - 1; j++)
-//		{
-//			if (h[j].age > h[j + 1].age)
-//			{
-//				Swap(&(h[j]), &(h[j + 1]));
-//			}
-//
-//		}
-//	}
-//
-//}
-//
-//
-//void PrintStruct(Hero h[], int len)
-//{
-//	for (int i = 0; i < len; i++)
-//	{
-//		cout << h[i].name << "  " << h[i].age << "  " << h[i].sex << endl;
-//	}
-//}
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//int main()
-//{
-//	Hero h[5] =
-//	{
-//		{"Áõ±¸",23,"ÄÐ"},
-//		{"¹ØÓð",22,"ÄÐ"},
-//		{"ÕÅ·É",20,"ÄÐ"},
-//		{"ÕÔÔÆ",21,"ÄÐ"},
-//		{"õõ²õ",19,"Å®"}
-//	};
-//
-//	int len = sizeof(h) / sizeof(h[0]);
-//
-//	Bubble(h,len);
-//
-//	PrintStruct(h,len);
-//
-//
-//	system("pause");
-//
-//	return 0;
-//} 
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+struct Hero
+{
+	string name;
+	int    age;
+	string sex;
+};
+
+
+void Swap(Hero* h1, Hero* h2)
+{
+	Hero temp;
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	temp.name = h1->name;
+	h1->name = h2->name;
+	h2->name = temp.name;
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	temp.age = h1->age;
+	h1->age = h2->age;
+	h2->age = temp.age;
+	//ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½
+	temp.sex = h1->sex;
+	h1->sex = h2->sex;
+	h2->sex = temp.sex;
+
+
+}
+
+
+
+
+void Bubble(Hero h[],int len)
+{
+	for (int i = 0; i < len-1; i++)
+	{
+		for (int j = 0; j < len - i - 1; j++)
+		{
+			if (h[j].age > h[j + 1].age)
+			{
+				Swap(&(h[j]), &(h[j + 1]));
+			}
+
+		}
+	}
+
+}
+
+
+void PrintStruct(Hero h[], int len)
+{
+	for (int i = 0; i < len; i++)
+	{
+		cout << h[i].name << "  " << h[i].age << "  " << h[i].sex << endl;
+	}
+}
+
+
+
+
+
+
+
+
+
+int main()
+{
+	Hero h[5] =
+	{
+		{"ï¿½ï¿½ï¿½ï¿½",23,"ï¿½ï¿½"},
+		{"ï¿½ï¿½ï¿½ï¿½",22,"ï¿½ï¿½"},
+		{"ï¿½Å·ï¿½",20,"ï¿½ï¿½"},
+		{"ï¿½ï¿½ï¿½ï¿½",21,"ï¿½ï¿½"},
+		{"ï¿½ï¿½ï¿½ï¿½",19,"Å®"}
+	};
+
+	int len = sizeof(h) / sizeof(h[0]);
+
+	Bubble(h,len);
+
+	PrintStruct(h,len);
+
+
+	system("pause");
+
+	return 0;
+} 

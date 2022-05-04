@@ -1,57 +1,57 @@
-//#include <iostream>
-//#include <vector>
-//using namespace std;
-//
-//
-////vector& operator=(const vector& vec);           //ÖØÔØµÈºÅÔËËã·û
-////assign(beg, end);                               //½«[beg,end)Çø¼äÖÐµÄÊý¾Ý¿½±´¸³Öµ¸ø±¾Éí
-////assign(n,elem);                                 //½«n¸öelem¿½±´¸³Öµ¸ø±¾Éí
-//
-//
-//
-//void printVector(vector<int> v)
-//{
-//	for (vector<int>::iterator it = v.begin(); it != v.end(); it++)
-//	{
-//		cout << *it << " ";
-//	}
-//	cout << endl;
-//}
-//
-//
-//
-//void test01()
-//{
-//	vector<int> v1;
-//	for (int i = 0; i < 10; i++)
-//	{
-//		v1.push_back(i);
-//	}
-//
-//	printVector(v1);
-//
-//	vector<int> v2 = v1;
-//	printVector(v2);
-//
-//	vector<int> v3;
-//	v3.assign(v2.begin(),v2.end());
-//	printVector(v3);
-//
-//	vector<int> v4;
-//	v4.assign(10, 100);
-//	printVector(v4);
-//}
-//
-//
-//
-//
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <vector>
+using namespace std;
+
+
+//vector& operator=(const vector& vec);           //ï¿½ï¿½ï¿½ØµÈºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//assign(beg, end);                               //ï¿½ï¿½[beg,end)ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//assign(n,elem);                                 //ï¿½ï¿½nï¿½ï¿½elemï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
+
+
+void printVector(vector<int> v)
+{
+	for (vector<int>::iterator it = v.begin(); it != v.end(); it++)
+	{
+		cout << *it << " ";
+	}
+	cout << endl;
+}
+
+
+
+void test01()
+{
+	vector<int> v1;
+	for (int i = 0; i < 10; i++)
+	{
+		v1.push_back(i);
+	}
+
+	printVector(v1);
+
+	vector<int> v2 = v1;
+	printVector(v2);
+
+	vector<int> v3;
+	v3.assign(v2.begin(),v2.end());
+	printVector(v3);
+
+	vector<int> v4;
+	v4.assign(10, 100);
+	printVector(v4);
+}
+
+
+
+
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

@@ -1,48 +1,48 @@
-//#include <iostream>
-//#include <stack>
-//using namespace std;
+#include <iostream>
+#include <stack>
+using namespace std;
+
+
+//stack<T> stk;                             //stackï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½Êµï¿½Ö£ï¿½stackï¿½ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½Ï¹ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
+//stack(const stack& stk);                  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ìº¯ï¿½ï¿½
 //
+//stack& operator=(const stack& stk);       //ï¿½ï¿½ï¿½ØµÈºÅ²ï¿½ï¿½ï¿½ï¿½ï¿½
 //
-////stack<T> stk;                             //stack²ÉÓÃÄ£°åÀàÊµÏÖ£¬stack¶ÔÏóµÄÄ¬ÈÏ¹¹ÔìÐÎÊ½
-////stack(const stack& stk);                  //¿½±´¹¹Ôìº¯Êý
-////
-////stack& operator=(const stack& stk);       //ÖØÔØµÈºÅ²Ù×÷·û
-////
-////push(elem);                               //ÏòÕ»¶¥Ìí¼ÓÔªËØ
-////pop();                                    //´ÓÕ»¶¥ÒÆ³ýµÚÒ»¸öÔªËØ
-////top();                                    //·µ»ØÕ»¶¥ÔªËØ
-////
-////empty();                                  //ÅÐ¶ÏÕ»¶¥ÊÇ·ñÎª¿Õ
-////size();                                   //·µ»ØÕ»´óÐ¡
+//push(elem);                               //ï¿½ï¿½Õ»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+//pop();                                    //ï¿½ï¿½Õ»ï¿½ï¿½ï¿½Æ³ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½
+//top();                                    //ï¿½ï¿½ï¿½ï¿½Õ»ï¿½ï¿½Ôªï¿½ï¿½
 //
-//
-//
-//
-//void test01()
-//{
-//	//ÌØµã£º·ûºÏÏÈ½øºó³öÊý¾Ý½á¹¹
-//	stack<int> s;
-//
-//	//ÈëÕ»
-//	s.push(10);
-//	s.push(20);
-//	s.push(30);
-//	s.push(40);
-//
-//	while(!s.empty())
-//	{
-//		cout << s.top() << endl;
-//		s.pop();
-//	}
-//
-//}
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+//empty();                                  //ï¿½Ð¶ï¿½Õ»ï¿½ï¿½ï¿½Ç·ï¿½Îªï¿½ï¿½
+//size();                                   //ï¿½ï¿½ï¿½ï¿½Õ»ï¿½ï¿½Ð¡
+
+
+
+
+void test01()
+{
+	//ï¿½Øµã£ºï¿½ï¿½ï¿½ï¿½ï¿½È½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý½á¹¹
+	stack<int> s;
+
+	//ï¿½ï¿½Õ»
+	s.push(10);
+	s.push(20);
+	s.push(30);
+	s.push(40);
+
+	while(!s.empty())
+	{
+		cout << s.top() << endl;
+		s.pop();
+	}
+
+}
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

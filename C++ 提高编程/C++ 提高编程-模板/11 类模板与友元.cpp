@@ -1,59 +1,59 @@
-//#include <iostream>
-//using namespace std;
-//template <class T1, class T2>
-//class Person;
-//
-//template <class T1, class T2>
-//void printPerson2(Person<T1, T2>& p);
-//
-//template <class T1,class T2>
-//class Person
-//{
-//	//È«¾Öº¯Êý ÀàÄÚÊµÏÖ
-//	friend void printPerson1(Person<T1,T2> &p)
-//	{
-//		cout << "ÐÕÃû£º" << p.m_name << " ÄêÁä£º" << p.m_age << endl;
-//	}
-//	//È«¾Öº¯Êý ÀàÄÚÊµÏÖ
-//	//¼ÓÈëÄ£°å²ÎÊýÁÐ±í
-//	//Èç¹ûÈ«¾Öº¯Êý ÊÇÀàÍâÊµÏÖ£¬ÐèÒªÈÃ±àÒëÆ÷ÌáÇ°ÖªµÀÕâ¸öº¯Êý´æÔÚ
-//	friend void printPerson2<>(Person<T1, T2>& p);
-//
-//
-//public:
-//	Person(T1 name, T2 age)
-//	{
-//		m_name = name;
-//		m_age = age;
-//	}
-//
-//private:
-//
-//	T1 m_name;
-//	T2 m_age;
-//};
-//
-////ÀàÍâÊµÏÖ
-//template <class T1, class T2>
-//void printPerson2(Person<T1, T2>& p)
-//{
-//	cout << "ÐÕÃû£º" << p.m_name << " ÄêÁä£º" << p.m_age << endl;
-//}
-//
-//
-//
-//void test01()
-//{
-//	Person<string, int>p1("ÕÅ¶÷ÀÖ", 23);
-//	//printPerson1(p1);
-//	printPerson2(p1);
-//}
-//
-//
-//int main()
-//{
-//	test01();
-//	system("pause");
-//	system("cls");
-//	return 0;
-//}
+#include <iostream>
+using namespace std;
+template <class T1, class T2>
+class Person;
+
+template <class T1, class T2>
+void printPerson2(Person<T1, T2>& p);
+
+template <class T1,class T2>
+class Person
+{
+	//È«ï¿½Öºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½
+	friend void printPerson1(Person<T1,T2> &p)
+	{
+		cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << p.m_name << " ï¿½ï¿½ï¿½ä£º" << p.m_age << endl;
+	}
+	//È«ï¿½Öºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½
+	//ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½
+	//ï¿½ï¿½ï¿½È«ï¿½Öºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½Ö£ï¿½ï¿½ï¿½Òªï¿½Ã±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°Öªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	friend void printPerson2<>(Person<T1, T2>& p);
+
+
+public:
+	Person(T1 name, T2 age)
+	{
+		m_name = name;
+		m_age = age;
+	}
+
+private:
+
+	T1 m_name;
+	T2 m_age;
+};
+
+//ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½
+template <class T1, class T2>
+void printPerson2(Person<T1, T2>& p)
+{
+	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << p.m_name << " ï¿½ï¿½ï¿½ä£º" << p.m_age << endl;
+}
+
+
+
+void test01()
+{
+	Person<string, int>p1("ï¿½Å¶ï¿½ï¿½ï¿½", 23);
+	//printPerson1(p1);
+	printPerson2(p1);
+}
+
+
+int main()
+{
+	test01();
+	system("pause");
+	system("cls");
+	return 0;
+}

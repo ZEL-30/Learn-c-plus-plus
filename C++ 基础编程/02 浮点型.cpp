@@ -2,36 +2,36 @@
 using namespace std;
 
 
-//int main()
-//{
-//	float f1 = 3.14f;
-//
-//	cout << "¸¡µãÊıÊÇ£º" << f1 << endl;
-//
-//	double d1 = 3.1415926;
-//
-//	cout << "¸¡µãÊıÊÇ£º" << d1<< endl;
-//	
-//	//Í³¼ÆÄÚ´æ¿Õ¼ä
-//	cout << "floatµÄÄÚ´æ¿Õ¼ä£º" << sizeof(f1) << endl;
-//
-//	cout << "doubleµÄÄÚ´æ¿Õ¼ä£º" << sizeof(d1) << endl;
-//
-//
-//
-//	//¿ÆÑ§¼ÆÊı·¨
-//	float f2 = 9e3;  //9*10^3
-//	cout << "f2ÊÇ£º" << f2 << endl;
-//
-//	float f3 = 3e-3; //3*0.1^3
-//	cout << "f3ÊÇ£º" << f3 << endl;
-//
-//
-//
-//
-//
-//	system("pause");
-//
-//	return 0;
-//}
+int main()
+{
+	float f1 = 3.14f;
+
+	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½" << f1 << endl;
+
+	double d1 = 3.1415926;
+
+	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½" << d1<< endl;
+	
+	//Í³ï¿½ï¿½ï¿½Ú´ï¿½Õ¼ï¿½
+	cout << "floatï¿½ï¿½ï¿½Ú´ï¿½Õ¼ä£º" << sizeof(f1) << endl;
+
+	cout << "doubleï¿½ï¿½ï¿½Ú´ï¿½Õ¼ä£º" << sizeof(d1) << endl;
+
+
+
+	//ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	float f2 = 9e3;  //9*10^3
+	cout << "f2ï¿½Ç£ï¿½" << f2 << endl;
+
+	float f3 = 3e-3; //3*0.1^3
+	cout << "f3ï¿½Ç£ï¿½" << f3 << endl;
+
+
+
+
+
+	system("pause");
+
+	return 0;
+}
 

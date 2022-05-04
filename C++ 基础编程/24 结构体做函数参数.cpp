@@ -1,62 +1,62 @@
-//#include <iostream>
-//#include <string>
-//using namespace std;
-//
-//struct Student
-//{
-//	string       name;
-//	int          age;
-//	string       sex;
-//	long long    s_id;
-//	string       courses;
-//	int          scores;
-//};
-//
-//void PrintSturct(struct Student std)
-//{
-//	cout << "Ñ§ÉúµÄÐÕÃû£º" << std.name << endl;
-//	cout << "Ñ§ÉúµÄÄêÁä£º" << std.age << endl;
-//	cout << "Ñ§ÉúµÄÐÔ±ð£º" << std.sex << endl;
-//	cout << "Ñ§ÉúµÄÑ§ºÅ£º" << std.s_id << endl;
-//	cout << "Ñ§ÉúµÄÑ§¿Æ£º" << std.courses << endl;
-//	cout << "Ñ§ÉúµÄ³É¼¨£º" << std.scores << endl;
-//}
-//
-////³õÊ¼»¯
-//Student* Init(Student* std)
-//{
-//	std->name = " ";
-//	std->age = 0;
-//	std->sex =" ";
-//	std->s_id = 0;
-//	std->courses = " ";
-//	std->scores = 0;
-//	return std;
-//}
-//
-//int main()
-//{
-//	// ½á¹¹Ìå¸³Öµ·½·¨1
-//	Student std1;
-//	std1.name = "ÕÅ¶÷ÀÖ";
-//	std1.age = 23;
-//	std1.sex = "ÄÐ";
-//	std1.s_id = 201802464052;
-//	std1.courses  = "CET-6";
-//	std1.scores = 452;
-//
-//	// ½á¹¹Ìå¸³Öµ·½·¨2
-//	Student std2 = { "ÑîÎÄÁú",22,"ÄÐ",201802464060,"CET-6",0 };
-//
-//	PrintSturct(std1);
-//	PrintSturct(std2);
-//
-//	Init(&std2);   //³õÊ¼»¯Êý¾Ý
-//	PrintSturct(std1);
-//	PrintSturct(std2);
-//
-//	system("pause");
-//
-//
-//	return 0;
-//} 
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Student
+{
+	string       name;
+	int          age;
+	string       sex;
+	long long    s_id;
+	string       courses;
+	int          scores;
+};
+
+void PrintSturct(struct Student std)
+{
+	cout << "Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << std.name << endl;
+	cout << "Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä£º" << std.age << endl;
+	cout << "Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½" << std.sex << endl;
+	cout << "Ñ§ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½Å£ï¿½" << std.s_id << endl;
+	cout << "Ñ§ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½Æ£ï¿½" << std.courses << endl;
+	cout << "Ñ§ï¿½ï¿½ï¿½Ä³É¼ï¿½ï¿½ï¿½" << std.scores << endl;
+}
+
+//ï¿½ï¿½Ê¼ï¿½ï¿½
+Student* Init(Student* std)
+{
+	std->name = " ";
+	std->age = 0;
+	std->sex =" ";
+	std->s_id = 0;
+	std->courses = " ";
+	std->scores = 0;
+	return std;
+}
+
+int main()
+{
+	// ï¿½á¹¹ï¿½å¸³Öµï¿½ï¿½ï¿½ï¿½1
+	Student std1;
+	std1.name = "ï¿½Å¶ï¿½ï¿½ï¿½";
+	std1.age = 23;
+	std1.sex = "ï¿½ï¿½";
+	std1.s_id = 201802464052;
+	std1.courses  = "CET-6";
+	std1.scores = 452;
+
+	// ï¿½á¹¹ï¿½å¸³Öµï¿½ï¿½ï¿½ï¿½2
+	Student std2 = { "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",22,"ï¿½ï¿½",201802464060,"CET-6",0 };
+
+	PrintSturct(std1);
+	PrintSturct(std2);
+
+	Init(&std2);   //ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	PrintSturct(std1);
+	PrintSturct(std2);
+
+	system("pause");
+
+
+	return 0;
+} 

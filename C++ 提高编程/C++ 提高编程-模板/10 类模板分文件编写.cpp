@@ -1,20 +1,20 @@
-////·½·¨Ò» Ö±½Ó°üº¬Ô´ÎÄ¼þ
-////#include "Person.cpp" 
-//
-////·½·¨¶þ ½« .h ºÍ.cppÖÐµÄÄÚÈÝÐ´µ½Ò»Æð£¬ºó×º¸ÄÎª.hpp
-//
-//#include "Person.hpp"
-//
-//void test01()
-//{
-//	Person<string, int>p1("ÕÅ¶÷ÀÖ", 23);
-//	p1.showPerson();
-//}
-//
-//int main()
-//{
-//	test01();
-//	system("pause");
-//	system("cls");
-//	return 0;
-//}
+//ï¿½ï¿½ï¿½ï¿½Ò» Ö±ï¿½Ó°ï¿½ï¿½ï¿½Ô´ï¿½Ä¼ï¿½
+//#include "Person.cpp" 
+
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ .h ï¿½ï¿½.cppï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½Ò»ï¿½ð£¬ºï¿½×ºï¿½ï¿½Îª.hpp
+
+#include "Person.hpp"
+
+void test01()
+{
+	Person<string, int>p1("ï¿½Å¶ï¿½ï¿½ï¿½", 23);
+	p1.showPerson();
+}
+
+int main()
+{
+	test01();
+	system("pause");
+	system("cls");
+	return 0;
+}

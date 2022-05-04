@@ -1,65 +1,65 @@
-//#include <iostream>
-//#include <set>
-//using namespace std;
-//
-////find(key);                            //²éÕÒkeyÊÇ·ñ´æÔÚ£¬Èô´æÔÚ£¬·µ»Ø¸Ã¼üµÄÔªËØµÄµü´úÆ÷£»Èô²»´æÔÚ£¬·µ»Øset.end()
-////count(key);                           //Í³¼ÆkeyµÄÔªËØ¸öÊý
-//
-//
-//
-//void printSet(set<int> S)
-//{
-//	for (set<int>::iterator it = S.begin(); it != S.end(); it++)
-//	{
-//		cout << *it << " ";
-//	}
-//	cout << endl;
-//
-//}
-//
-//
-//void test01()
-//{
-//	set<int> s1;
-//
-//	//²åÈëÊý¾Ý£¬Ö»ÓÐinsert·½Ê½
-//	s1.insert(10);
-//	s1.insert(40);
-//	s1.insert(30);
-//	s1.insert(30);
-//	s1.insert(20);
-//	
-//	set<int>::iterator pos = s1.find(40);
-//	if (pos != s1.end())
-//	{
-//		cout << "ÕÒµ½ÔªËØ:" << *pos << endl;
-//	}
-//	else
-//	{
-//		cout << "Ã»ÓÐÕÒµ½ÔªËØ" << endl;
-//	}
-//}
-//
-//void test02()
-//{
-//	//Í³¼Æ
-//	multiset<int> s1;
-//
-//	//²åÈëÊý¾Ý£¬Ö»ÓÐinsert·½Ê½
-//	s1.insert(10);
-//	s1.insert(40);
-//	s1.insert(30);
-//	s1.insert(30);
-//	s1.insert(20);
-//
-//	cout << "num = " << s1.count(30) << endl;
-//}
-//
-//int main()
-//{
-//	//test01();
-//	test02();
-//	system("pause");
-//	return 0;
-//}
-//
+#include <iostream>
+#include <set>
+using namespace std;
+
+//find(key);                            //ï¿½ï¿½ï¿½ï¿½keyï¿½Ç·ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½Ø¸Ã¼ï¿½ï¿½ï¿½Ôªï¿½ØµÄµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½set.end()
+//count(key);                           //Í³ï¿½ï¿½keyï¿½ï¿½Ôªï¿½Ø¸ï¿½ï¿½ï¿½
+
+
+
+void printSet(set<int> S)
+{
+	for (set<int>::iterator it = S.begin(); it != S.end(); it++)
+	{
+		cout << *it << " ";
+	}
+	cout << endl;
+
+}
+
+
+void test01()
+{
+	set<int> s1;
+
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½Ö»ï¿½ï¿½insertï¿½ï¿½Ê½
+	s1.insert(10);
+	s1.insert(40);
+	s1.insert(30);
+	s1.insert(30);
+	s1.insert(20);
+	
+	set<int>::iterator pos = s1.find(40);
+	if (pos != s1.end())
+	{
+		cout << "ï¿½Òµï¿½Ôªï¿½ï¿½:" << *pos << endl;
+	}
+	else
+	{
+		cout << "Ã»ï¿½ï¿½ï¿½Òµï¿½Ôªï¿½ï¿½" << endl;
+	}
+}
+
+void test02()
+{
+	//Í³ï¿½ï¿½
+	multiset<int> s1;
+
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½Ö»ï¿½ï¿½insertï¿½ï¿½Ê½
+	s1.insert(10);
+	s1.insert(40);
+	s1.insert(30);
+	s1.insert(30);
+	s1.insert(20);
+
+	cout << "num = " << s1.count(30) << endl;
+}
+
+int main()
+{
+	//test01();
+	test02();
+	system("pause");
+	return 0;
+}
+

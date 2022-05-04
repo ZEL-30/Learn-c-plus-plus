@@ -1,64 +1,64 @@
-//#include <iostream>
-//#include <vector>
-//#include <algorithm>
-//using namespace std;
-//
-//
-////vectorÈİÆ÷´æ·ÅÄÚÖÃÊı¾İÀàĞÍ
-//
-//void myPrint(int val)
-//{
-//	cout << val << " ";
-//}
-//
-//
-//
-//
-//void test01()
-//{
-//	//´´½¨Ò»¸övectorÈİÆ÷£¬ÀàËÆÓÚÊı×é
-//	vector<int> v;
-//
-//	//ÏòÈİÆ÷ÖĞ²åÈëÊı¾İ
-//	v.push_back(10);
-//	v.push_back(20);
-//	v.push_back(30);
-//	v.push_back(40);
-//
-//	////Í¨¹ıµü´úÆ÷·ÃÎÊÈİÆ÷ÖĞµÄÊı¾İ
-//	//vector<int>::iterator itBegin = v.begin(); //ÆğÊ¼µü´úÆ÷ Ö¸ÏòÈİÆ÷ÖĞµÚÒ»¸öÔªËØ
-//	//vector<int>::iterator itEnd = v.end();     //½áÊøµü´úÆ÷ Ö¸ÏòÈİÆ÷ÖĞ×îºóÒ»¸öÔªËØµÄÏÂÒ»¸öÎ»ÖÃ
-//
-//
-//	////µÚÒ»ÖÖ±éÀú·½Ê½
-//	//while (itBegin != itEnd)
-//	//{
-//	//	cout << *itBegin << " ";
-//	//	itBegin++;
-//	//}
-//	//cout << endl;
-//
-//	////µÚ¶şÖÖ±éÀú·½Ê½ £¨³£ÓÃ£©
-//	//for (vector<int>::iterator it = v.begin(); it != v.end(); it++)
-//	//{
-//	//	cout << *it << " ";
-//	//}
-//	//cout << endl;
-//
-//	//µÚÈıÖÖ±éÀú·½Ê½  ÀûÓÃSTLÌá¹©±éÀúËã·¨
-//	for_each(v.begin(), v.end(), myPrint);
-//	cout << endl;
-//
-//
-//
-//}
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+
+//vectorï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
+void myPrint(int val)
+{
+	cout << val << " ";
+}
+
+
+
+
+void test01()
+{
+	//ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½vectorï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	vector<int> v;
+
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	v.push_back(10);
+	v.push_back(20);
+	v.push_back(30);
+	v.push_back(40);
+
+	////Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½ï¿½ï¿½ï¿½ï¿½
+	//vector<int>::iterator itBegin = v.begin(); //ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½
+	//vector<int>::iterator itEnd = v.end();     //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½Øµï¿½ï¿½ï¿½Ò»ï¿½ï¿½Î»ï¿½ï¿½
+
+
+	////ï¿½ï¿½Ò»ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
+	//while (itBegin != itEnd)
+	//{
+	//	cout << *itBegin << " ";
+	//	itBegin++;
+	//}
+	//cout << endl;
+
+	////ï¿½Ú¶ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½
+	//for (vector<int>::iterator it = v.begin(); it != v.end(); it++)
+	//{
+	//	cout << *it << " ";
+	//}
+	//cout << endl;
+
+	//ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½Ê½  ï¿½ï¿½ï¿½ï¿½STLï¿½á¹©ï¿½ï¿½ï¿½ï¿½ï¿½ã·¨
+	for_each(v.begin(), v.end(), myPrint);
+	cout << endl;
+
+
+
+}
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

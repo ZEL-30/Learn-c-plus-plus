@@ -1,38 +1,38 @@
-//#include <iostream>
-//using namespace std;
-//
-//int main()
-//{
-//	//Ö¸ÕëºÍÊı×é
-//	//ÀûÓÃÖ¸Õë·ÃÎÊÊı×éÖĞµÄÔªËØ
-//	int arr[] = { 4,5,8,9,6,7 };
-//	int length = sizeof(arr) / sizeof(arr[0]);
-//	int* pa = arr;
-//	cout << "Êı×éÎª£º " << endl;
-//	for (int i = 0; i < length; i++)
-//	{
-//		cout <<*(pa + i) << " ";
-//
-//	}
-//	cout << endl;
-//
-//	cout << "¸³ÖµºóÎª£º " << endl;
-//	for (int i = 0; i < length; i++)
-//	{
-//		*(pa + i) = i * 10;
-//	}
-//	for (int i = 0; i < length; i++)
-//	{
-//		cout << *(pa + i) << " ";   
-//	}
-//	cout << endl;
-//	int* pb = 0;
-//	cout << (long long)pa << endl;
-//	cout << pa + 4 << endl;
-//	pb = pa + 4;
-//	cout << (long long)pb<< endl;
-//
-//	system("pause");
-//
-//	return 0;
-//} 
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	//Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	//ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½Ôªï¿½ï¿½
+	int arr[] = { 4,5,8,9,6,7 };
+	int length = sizeof(arr) / sizeof(arr[0]);
+	int* pa = arr;
+	cout << "ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ " << endl;
+	for (int i = 0; i < length; i++)
+	{
+		cout <<*(pa + i) << " ";
+
+	}
+	cout << endl;
+
+	cout << "ï¿½ï¿½Öµï¿½ï¿½Îªï¿½ï¿½ " << endl;
+	for (int i = 0; i < length; i++)
+	{
+		*(pa + i) = i * 10;
+	}
+	for (int i = 0; i < length; i++)
+	{
+		cout << *(pa + i) << " ";   
+	}
+	cout << endl;
+	int* pb = 0;
+	cout << (long long)pa << endl;
+	cout << pa + 4 << endl;
+	pb = pa + 4;
+	cout << (long long)pb<< endl;
+
+	system("pause");
+
+	return 0;
+} 

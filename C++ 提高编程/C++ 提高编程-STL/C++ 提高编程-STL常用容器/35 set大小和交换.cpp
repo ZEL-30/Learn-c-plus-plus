@@ -1,60 +1,60 @@
-//#include <iostream>
-//#include <set>
-//using namespace std;
-//
-//
-//
-////empty();                  //ÅÐ¶ÏÈÝÆ÷ÊÇ·ñÎª¿Õ  ·µ»ØboolÐÍ
-////size();                   //·µ»ØÈÝÆ÷ÖÐÔªËØµÄ¸öÊý
-////swap(st);                 //½»»»Á½¸ö¼¯ºÏÈÝÆ÷
-//
-//
-//void printSet(set<int> S)
-//{
-//	for (set<int>::iterator it = S.begin(); it != S.end(); it++)
-//	{
-//		cout << *it << " ";
-//	}
-//	cout << endl;
-//
-//}
-//
-//
-//void test01()
-//{
-//	set<int> s1;
-//
-//	//²åÈëÊý¾Ý£¬Ö»ÓÐinsert·½Ê½
-//	s1.insert(10);
-//	s1.insert(40);
-//	s1.insert(30);
-//	s1.insert(30);
-//	s1.insert(20);
-//
-//	set<int> s2;
-//	s2.insert(100);
-//	s2.insert(200);
-//	s2.insert(300);
-//	s2.insert(400);
-//	s2.insert(500);
-//
-//	cout << "½»»»Ç°£º" << endl;
-//	printSet(s1);
-//	printSet(s2);
-//
-//	cout << "½»»»ºó£º" << endl;
-//	s1.swap(s2);
-//	printSet(s1);
-//	printSet(s2);
-//}
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
-//
+#include <iostream>
+#include <set>
+using namespace std;
+
+
+
+//empty();                  //ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Îªï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½boolï¿½ï¿½
+//size();                   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ØµÄ¸ï¿½ï¿½ï¿½
+//swap(st);                 //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
+
+void printSet(set<int> S)
+{
+	for (set<int>::iterator it = S.begin(); it != S.end(); it++)
+	{
+		cout << *it << " ";
+	}
+	cout << endl;
+
+}
+
+
+void test01()
+{
+	set<int> s1;
+
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½Ö»ï¿½ï¿½insertï¿½ï¿½Ê½
+	s1.insert(10);
+	s1.insert(40);
+	s1.insert(30);
+	s1.insert(30);
+	s1.insert(20);
+
+	set<int> s2;
+	s2.insert(100);
+	s2.insert(200);
+	s2.insert(300);
+	s2.insert(400);
+	s2.insert(500);
+
+	cout << "ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½" << endl;
+	printSet(s1);
+	printSet(s2);
+
+	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << endl;
+	s1.swap(s2);
+	printSet(s1);
+	printSet(s2);
+}
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}
+

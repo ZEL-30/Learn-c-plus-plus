@@ -1,60 +1,60 @@
-//#include <iostream>
-//#include <list>
-//using namespace std;
-//
-//
-////list<T> lst;                         //list²ÉÓÃÄ£°åÊµÏÖÀàÊµÏÖ£¬Ä¬ÈÏ¹¹Ôìº¯Êý
-////list(v.begin(), v.end());            //½«v[begin(),end())Çø¼äÖÐµÄÔªËØ¿½±´¸ø±¾Éí  Ç°±Õºó¿ªµÄÇø¼ä
-////list(n, elem);                       //¹¹Ôìº¯Êý½«n¸öelem¿½±´¸ø±¾Éí
-////list(const list& lst);               //¿½±´¹¹Ôìº¯Êý
-//
-//
-//void printList(const list<int> &L)
-//{
-//	for (list<int>::const_iterator it = L.begin(); it != L.end(); it++)
-//	{
-//		cout << *it << " ";
-//	}
-//	cout << endl;
-//}
-//
-//
-//
-//
-//
-//
-//
-//
-//void test01()
-//{
-//	list<int> L1;
-//
-//	L1.push_back(10);
-//	L1.push_back(20);
-//	L1.push_back(30);
-//	L1.push_back(40);
-//
-//	printList(L1);
-//
-//	list<int> L2(L1.begin(), L1.end());
-//	printList(L2);
-//
-//	list<int> L3(10, 122);
-//	printList(L3);
-//
-//	list<int> L4(L3);
-//	printList(L4);
-//}
-//
-//
-//
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <list>
+using namespace std;
+
+
+//list<T> lst;                         //listï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½Êµï¿½Ö£ï¿½Ä¬ï¿½Ï¹ï¿½ï¿½ìº¯ï¿½ï¿½
+//list(v.begin(), v.end());            //ï¿½ï¿½v[begin(),end())ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½Ôªï¿½Ø¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  Ç°ï¿½Õºó¿ªµï¿½ï¿½ï¿½ï¿½ï¿½
+//list(n, elem);                       //ï¿½ï¿½ï¿½ìº¯ï¿½ï¿½ï¿½ï¿½nï¿½ï¿½elemï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//list(const list& lst);               //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ìº¯ï¿½ï¿½
+
+
+void printList(const list<int> &L)
+{
+	for (list<int>::const_iterator it = L.begin(); it != L.end(); it++)
+	{
+		cout << *it << " ";
+	}
+	cout << endl;
+}
+
+
+
+
+
+
+
+
+void test01()
+{
+	list<int> L1;
+
+	L1.push_back(10);
+	L1.push_back(20);
+	L1.push_back(30);
+	L1.push_back(40);
+
+	printList(L1);
+
+	list<int> L2(L1.begin(), L1.end());
+	printList(L2);
+
+	list<int> L3(10, 122);
+	printList(L3);
+
+	list<int> L4(L3);
+	printList(L4);
+}
+
+
+
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

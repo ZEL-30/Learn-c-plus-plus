@@ -1,47 +1,47 @@
-//#include <iostream>
-//#include <string>
-//using namespace std;
-//
-//
-////string& operator+=(const char* str);                   //ÖØÔØ+=²Ù×÷·û
-////string& operator+=(const char c);                      //ÖØÔØ+=²Ù×÷·û
-////string& operator+=(const string &str);                 //ÖØÔØ+=²Ù×÷·û
-////string& append(const char* s);                         //°Ñ×Ö·û´®sÁ¬½Óµ½µ±Ç°µÄ×Ö·û´®½áÎ²
-////string& append(const char* s,int n);                   //°Ñ×Ö·û´®sµÄÇ°n¸ö×Ö·ûÁ¬½Óµ½µ±Ç°µÄ×Ö·û´®½áÎ²
-////string& append(const string &s);                       //Í¬string& operator+=(const string &str)
-////string& append(const string &s,int pos,int n);         //×Ö·û´®sÖÐ´Ópos¿ªÊ¼µÄn¸ö×Ö·ûÁ¬½Óµ½×Ö·û´®½áÎ²
-//
-//void test01()
-//{
-//	string str1 = "ÎÒ";
-//	str1 += "°®ÍæÓÎÏ·";
-//	cout << "str1 = " << str1 << endl;
-//
-//	str1 += ':';
-//	cout << "str1 = " << str1 << endl;
-//
-//	string str2 = "LOL DNF";
-//	str1 += str2;
-//	cout << "str1 = " << str1 << endl;
-//
-//	string str3 = "I";
-//	str3.append(" love");
-//	cout << "str3 = " << str3 << endl;
-//
-//	str3.append(str2, 3);
-//	cout << "str3 = " << str3 << endl;
-//
-//	str3.append(str2, 0,3);
-//	cout << "str3 = " << str3 << endl;
-//
-//}
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+//string& operator+=(const char* str);                   //ï¿½ï¿½ï¿½ï¿½+=ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//string& operator+=(const char c);                      //ï¿½ï¿½ï¿½ï¿½+=ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//string& operator+=(const string &str);                 //ï¿½ï¿½ï¿½ï¿½+=ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//string& append(const char* s);                         //ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Î²
+//string& append(const char* s,int n);                   //ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½sï¿½ï¿½Ç°nï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Î²
+//string& append(const string &s);                       //Í¬string& operator+=(const string &str)
+//string& append(const string &s,int pos,int n);         //ï¿½Ö·ï¿½ï¿½ï¿½sï¿½Ð´ï¿½posï¿½ï¿½Ê¼ï¿½ï¿½nï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Î²
+
+void test01()
+{
+	string str1 = "ï¿½ï¿½";
+	str1 += "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï·";
+	cout << "str1 = " << str1 << endl;
+
+	str1 += ':';
+	cout << "str1 = " << str1 << endl;
+
+	string str2 = "LOL DNF";
+	str1 += str2;
+	cout << "str1 = " << str1 << endl;
+
+	string str3 = "I";
+	str3.append(" love");
+	cout << "str3 = " << str3 << endl;
+
+	str3.append(str2, 3);
+	cout << "str3 = " << str3 << endl;
+
+	str3.append(str2, 0,3);
+	cout << "str3 = " << str3 << endl;
+
+}
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

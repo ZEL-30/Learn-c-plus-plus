@@ -1,72 +1,72 @@
-//#include <iostream>
-//#include <map>
-//using namespace std;
-//
-//
-////insert(elem);                            //ÔÚÈÝÆ÷ÖÐ²åÈëÔªËØ
-////erase(pos);                              //É¾³ýposÎ»ÖÃµÄÊý¾Ý£¬·µ»ØÏÂÒ»¸öÊý¾ÝµÄÎ»ÖÃ
-////erase(beg, end);                         //É¾³ý[beg£¬end)Çø¼äµÄÊý¾Ý£¬·µ»ØÏÂÒ»¸öÊý¾ÝµÄÎ»ÖÃ
-////clear();                                 //É¾³ýÈÝÆ÷ÖÐËùÓÐÔªËØ
-////erase(key);                             //É¾³ýÈÝÆ÷ÖÐÖµÎªkeyµÄÔªËØ
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//void printMap(map<int, int>& M)
-//{
-//	for (map<int, int>::iterator it = M.begin(); it != M.end(); it++)
-//	{
-//		cout << "±àºÅ£º" << (*it).first << " Öµ£º" << it->second << endl;
-//	}
-//}
-//
-//
-//void test01()
-//{
-//	map<int, int> M;
-//
-//	//µÚÒ»ÖÖ
-//	pair<int, int> p1 = make_pair(1, 20);
-//	pair<int, int> p2 = make_pair(2, 100);
-//	pair<int, int> p3 = make_pair(3, 390);
-//	M.insert(p1);
-//	M.insert(p2);
-//	M.insert(p3);
-//
-//	//µÚ¶þÖÖ
-//	M.insert(make_pair(4, 150));
-//
-//	//µÚÈýÖÖ
-//	M[5] = 50;
-//
-//	printMap(M);
-//
-//	//É¾³ý
-//	M.erase(M.begin());
-//	printMap(M);
-//
-//	//°´ÕÕkeyµÄÖµÉ¾³ý
-//	M.erase(3);
-//	printMap(M);
-//
-//	//Çå¿Õ
-//	M.clear();
-//	 
-//}
-//
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <map>
+using namespace std;
+
+
+//insert(elem);                            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+//erase(pos);                              //É¾ï¿½ï¿½posÎ»ï¿½Ãµï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ýµï¿½Î»ï¿½ï¿½
+//erase(beg, end);                         //É¾ï¿½ï¿½[begï¿½ï¿½end)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ýµï¿½Î»ï¿½ï¿½
+//clear();                                 //É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+//erase(key);                             //É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÖµÎªkeyï¿½ï¿½Ôªï¿½ï¿½
+
+
+
+
+
+
+
+
+
+
+void printMap(map<int, int>& M)
+{
+	for (map<int, int>::iterator it = M.begin(); it != M.end(); it++)
+	{
+		cout << "ï¿½ï¿½Å£ï¿½" << (*it).first << " Öµï¿½ï¿½" << it->second << endl;
+	}
+}
+
+
+void test01()
+{
+	map<int, int> M;
+
+	//ï¿½ï¿½Ò»ï¿½ï¿½
+	pair<int, int> p1 = make_pair(1, 20);
+	pair<int, int> p2 = make_pair(2, 100);
+	pair<int, int> p3 = make_pair(3, 390);
+	M.insert(p1);
+	M.insert(p2);
+	M.insert(p3);
+
+	//ï¿½Ú¶ï¿½ï¿½ï¿½
+	M.insert(make_pair(4, 150));
+
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	M[5] = 50;
+
+	printMap(M);
+
+	//É¾ï¿½ï¿½
+	M.erase(M.begin());
+	printMap(M);
+
+	//ï¿½ï¿½ï¿½ï¿½keyï¿½ï¿½ÖµÉ¾ï¿½ï¿½
+	M.erase(3);
+	printMap(M);
+
+	//ï¿½ï¿½ï¿½
+	M.clear();
+	 
+}
+
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

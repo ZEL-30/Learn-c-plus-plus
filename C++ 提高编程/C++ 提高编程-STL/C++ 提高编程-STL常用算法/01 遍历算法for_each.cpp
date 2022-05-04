@@ -1,57 +1,57 @@
-//#include <iostream>
-//#include <vector>
-//#include <algorithm>
-//using namespace std;
-//
-////1¡¢ÆÕÍ¨º¯Êý
-//void print(int val)
-//{
-//	cout << val << " ";
-//}
-//
-//
-////2¡¢·Âº¯Êý
-//class Myprint
-//{
-//public:
-//	void operator()(int val)
-//	{
-//		cout << val << " ";
-//	}
-//};
-//
-//
-//
-//
-//
-//void test01()
-//{
-//	vector<int> V;
-//	for (int i = 0; i < 10; i++)
-//	{
-//		V.push_back(i);
-//	}
-//
-//	//±éÀúÈÝÆ÷
-//	//·½·¨Ò»¡¢ÆÕÍ¨º¯Êý
-//	//for_each(V.begin(),V.end(),print);
-//	//cout << endl;
-//
-//	//·½·¨¶þ¡¢º¯Êý¶ÔÏó-·Âº¯Êý
-//	Myprint p;
-//	for_each(V.begin(), V.end(), p);
-//	cout << endl;
-//
-//}
-//
-//
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+//1ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½
+void print(int val)
+{
+	cout << val << " ";
+}
+
+
+//2ï¿½ï¿½ï¿½Âºï¿½ï¿½ï¿½
+class Myprint
+{
+public:
+	void operator()(int val)
+	{
+		cout << val << " ";
+	}
+};
+
+
+
+
+
+void test01()
+{
+	vector<int> V;
+	for (int i = 0; i < 10; i++)
+	{
+		V.push_back(i);
+	}
+
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	//ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½
+	//for_each(V.begin(),V.end(),print);
+	//cout << endl;
+
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-ï¿½Âºï¿½ï¿½ï¿½
+	Myprint p;
+	for_each(V.begin(), V.end(), p);
+	cout << endl;
+
+}
+
+
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

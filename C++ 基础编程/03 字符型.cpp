@@ -1,15 +1,15 @@
 #include <iostream>
 using namespace std;
 
-//int main()
-//{
-//	char ch1 = 'a';
-//
-//	//×Ö·ûĞÍ±äÁ¿Ëù¶ÔÓ¦µÄASCIIÂëÖµ   
-//	cout << "98Ëù¶ÔÓ¦µÄ×Ö·ûÊÇ£º\n" << (int)ch1 << endl;
-//
-//	cout << "aaa\t\thelloworld" << endl;
-//	system("pause");
-//
-//	return 0;
-//}
+int main()
+{
+	char ch1 = 'a';
+
+	//ï¿½Ö·ï¿½ï¿½Í±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ASCIIï¿½ï¿½Öµ   
+	cout << "98ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½Ö·ï¿½ï¿½Ç£ï¿½\n" << (int)ch1 << endl;
+
+	cout << "aaa\t\thelloworld" << endl;
+	system("pause");
+
+	return 0;
+}

@@ -1,141 +1,143 @@
-//#include <iostream>
-//#include <vector>
-//#include <string>
-//using namespace std;
-//
-//class Person
-//{
-//public:
-//	Person(string name,int age)
-//	{
-//		m_name = name;
-//		m_age = age;
-//	}
-//
-//	string m_name;
-//	int m_age;
-//};
-//
-//
-//ostream& operator<<(ostream& cout, Person& p)
-//{
-//	cout << "ĞÕÃû£º" << p.m_name << " ÄêÁä£º" << p.m_age;
-//	return cout;
-//}
-//
-//
-////´æ·Å×Ô¶¨ÒåÊı¾İÀàĞÍ
-//void test01()
-//{
-//	vector<Person> v;
-//	Person p1("ÕÅ¶÷ÀÖ",23);
-//	Person p2("ÑîÎÄÁú",22);
-//	Person p3("Íõ×Óâù",20);
-//	v.push_back(p1);
-//	v.push_back(p2);
-//	v.push_back(p3);
-//
-//	//±éÀúÈİÆ÷ÖĞµÄÊı¾İ
-//	for (vector<Person>::iterator it = v.begin(); it != v.end(); it++)
-//	{
-//		cout << *it << endl;
-//	}
-//
-//}
-//
-////´æ·Å×Ô¶¨ÒåÊı¾İÀàĞÍµÄÖ¸Õë
-//void test02()
-//{
-//	vector<Person*> v;
-//	Person p1("ÕÅ¶÷ÀÖ", 23);
-//	Person p2("ÑîÎÄÁú", 22);
-//	Person p3("Íõ×Óâù", 20);
-//	v.push_back(&p1);
-//	v.push_back(&p2);
-//	v.push_back(&p3);
-//
-//	for (vector<Person*>::iterator it = v.begin(); it != v.end(); it++)    //¼¼ÇÉ   (*it) == <Êı¾İÀàĞÍ>
-//	{
-//		cout << (*it)->m_age << endl;
-//		cout << **it << endl;
-//	}
-//}
-//
-//
-//int main()
-//{
-//	test01();
-//	test02();
-//	system("pause");
-//	return 0;
-//}#include <iostream>
-//#include <vector>
-//#include <string>
-//using namespace std;
-//
-//class Person
-//{
-//public:
-//	Person(string name,int age)
-//	{
-//		m_name = name;
-//		m_age = age;
-//	}
-//
-//	string m_name;
-//	int m_age;
-//};
-//
-//
-//ostream& operator<<(ostream& cout, Person& p)
-//{
-//	cout << "ĞÕÃû£º" << p.m_name << " ÄêÁä£º" << p.m_age;
-//	return cout;
-//}
-//
-//
-////´æ·Å×Ô¶¨ÒåÊı¾İÀàĞÍ
-//void test01()
-//{
-//	vector<Person> v;
-//	Person p1("ÕÅ¶÷ÀÖ",23);
-//	Person p2("ÑîÎÄÁú",22);
-//	Person p3("Íõ×Óâù",20);
-//	v.push_back(p1);
-//	v.push_back(p2);
-//	v.push_back(p3);
-//
-//	//±éÀúÈİÆ÷ÖĞµÄÊı¾İ
-//	for (vector<Person>::iterator it = v.begin(); it != v.end(); it++)
-//	{
-//		cout << *it << endl;
-//	}
-//
-//}
-//
-////´æ·Å×Ô¶¨ÒåÊı¾İÀàĞÍµÄÖ¸Õë
-//void test02()
-//{
-//	vector<Person*> v;
-//	Person p1("ÕÅ¶÷ÀÖ", 23);
-//	Person p2("ÑîÎÄÁú", 22);
-//	Person p3("Íõ×Óâù", 20);
-//	v.push_back(&p1);
-//	v.push_back(&p2);
-//	v.push_back(&p3);
-//
-//	for (vector<Person*>::iterator it = v.begin(); it != v.end(); it++)    //¼¼ÇÉ   (*it) == <Êı¾İÀàĞÍ>
-//	{
-//		cout << (*it)->m_age << endl;
-//		cout << **it << endl;
-//	}
-//}
-//
-//
-//int main()
-//{
-//	test01();
-//	test02();
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+class Person
+{
+public:
+	Person(string name,int age)
+	{
+		m_name = name;
+		m_age = age;
+	}
+
+	string m_name;
+	int m_age;
+};
+
+
+ostream& operator<<(ostream& cout, Person& p)
+{
+	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << p.m_name << " ï¿½ï¿½ï¿½ä£º" << p.m_age;
+	return cout;
+}
+
+
+//ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+void test01()
+{
+	vector<Person> v;
+	Person p1("ï¿½Å¶ï¿½ï¿½ï¿½",23);
+	Person p2("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",22);
+	Person p3("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",20);
+	v.push_back(p1);
+	v.push_back(p2);
+	v.push_back(p3);
+
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½ï¿½ï¿½ï¿½ï¿½
+	for (vector<Person>::iterator it = v.begin(); it != v.end(); it++)
+	{
+		cout << *it << endl;
+	}
+
+}
+
+//ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½Ö¸ï¿½ï¿½
+void test02()
+{
+	vector<Person*> v;
+	Person p1("ï¿½Å¶ï¿½ï¿½ï¿½", 23);
+	Person p2("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 22);
+	Person p3("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 20);
+	v.push_back(&p1);
+	v.push_back(&p2);
+	v.push_back(&p3);
+
+	for (vector<Person*>::iterator it = v.begin(); it != v.end(); it++)    //ï¿½ï¿½ï¿½ï¿½   (*it) == <ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½>
+	{
+		cout << (*it)->m_age << endl;
+		cout << **it << endl;
+	}
+}
+
+
+int main()
+{
+	test01();
+	test02();
+	system("pause");
+	return 0;
+}
+
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+class Person
+{
+public:
+	Person(string name,int age)
+	{
+		m_name = name;
+		m_age = age;
+	}
+
+	string m_name;
+	int m_age;
+};
+
+
+ostream& operator<<(ostream& cout, Person& p)
+{
+	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << p.m_name << " ï¿½ï¿½ï¿½ä£º" << p.m_age;
+	return cout;
+}
+
+
+//ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+void test01()
+{
+	vector<Person> v;
+	Person p1("ï¿½Å¶ï¿½ï¿½ï¿½",23);
+	Person p2("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",22);
+	Person p3("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",20);
+	v.push_back(p1);
+	v.push_back(p2);
+	v.push_back(p3);
+
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½ï¿½ï¿½ï¿½ï¿½
+	for (vector<Person>::iterator it = v.begin(); it != v.end(); it++)
+	{
+		cout << *it << endl;
+	}
+
+}
+
+//ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½Ö¸ï¿½ï¿½
+void test02()
+{
+	vector<Person*> v;
+	Person p1("ï¿½Å¶ï¿½ï¿½ï¿½", 23);
+	Person p2("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 22);
+	Person p3("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 20);
+	v.push_back(&p1);
+	v.push_back(&p2);
+	v.push_back(&p3);
+
+	for (vector<Person*>::iterator it = v.begin(); it != v.end(); it++)    //ï¿½ï¿½ï¿½ï¿½   (*it) == <ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½>
+	{
+		cout << (*it)->m_age << endl;
+		cout << **it << endl;
+	}
+}
+
+
+int main()
+{
+	test01();
+	test02();
+	system("pause");
+	return 0;
+}

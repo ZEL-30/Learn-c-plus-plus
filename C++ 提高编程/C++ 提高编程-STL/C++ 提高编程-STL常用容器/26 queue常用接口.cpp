@@ -1,46 +1,46 @@
-//#include <iostream>
-//#include <queue>
-//using namespace std;
+#include <iostream>
+#include <queue>
+using namespace std;
+
+
+//queue<T> que;                             //queueï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½Êµï¿½Ö£ï¿½queueï¿½ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½Ï¹ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
+//queue(const queue& que;                   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ìº¯ï¿½ï¿½
 //
+//queue& operator=(const queue& que);       //ï¿½ï¿½ï¿½ØµÈºÅ²ï¿½ï¿½ï¿½ï¿½ï¿½
 //
-////queue<T> que;                             //queue²ÉÓÃÄ£°åÀàÊµÏÖ£¬queue¶ÔÏóµÄÄ¬ÈÏ¹¹ÔìÐÎÊ½
-////queue(const queue& que;                   //¿½±´¹¹Ôìº¯Êý
-////
-////queue& operator=(const queue& que);       //ÖØÔØµÈºÅ²Ù×÷·û
-////
-////push(elem);                               //Ïò¶ÓÎ²Ìí¼ÓÔªËØ
-////pop();                                    //´Ó¶ÓÍ·ÒÆ³ýµÚÒ»¸öÔªËØ
-////back();                                   //·µ»Ø×îºóÒ»¸öÔªËØ
-////front();                                    //·µ»ØµÚÒ»¸öÔªËØ
-////
-////empty();                                  //ÅÐ¶Ï¶ÓÁÐÊÇ·ñÎª¿Õ
-////size();                                   //·µ»Ø¶ÓÁÐ´óÐ¡
+//push(elem);                               //ï¿½ï¿½ï¿½Î²ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+//pop();                                    //ï¿½Ó¶ï¿½Í·ï¿½Æ³ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½
+//back();                                   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½
+//front();                                    //ï¿½ï¿½ï¿½Øµï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½
 //
-//
-//void test01()
-//{
-//	queue<int> q;
-//	q.push(10);
-//	q.push(20);
-//	q.push(30);
-//	q.push(40);
-//
-//	while (!q.empty())
-//	{
-//		cout << "¶ÓÍ·£º" << q.front() << " ¶ÓÎ²£º"<< q.back() <<endl;
-//		q.pop();
-//	}
-//
-//}
-//
-//
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+//empty();                                  //ï¿½Ð¶Ï¶ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Îªï¿½ï¿½
+//size();                                   //ï¿½ï¿½ï¿½Ø¶ï¿½ï¿½Ð´ï¿½Ð¡
+
+
+void test01()
+{
+	queue<int> q;
+	q.push(10);
+	q.push(20);
+	q.push(30);
+	q.push(40);
+
+	while (!q.empty())
+	{
+		cout << "ï¿½ï¿½Í·ï¿½ï¿½" << q.front() << " ï¿½ï¿½Î²ï¿½ï¿½"<< q.back() <<endl;
+		q.pop();
+	}
+
+}
+
+
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

@@ -1,34 +1,34 @@
-//#include <iostream>
-//using namespace std;
-//
-////函数模板
-//template<typename T> //声明一个模板，告诉编译器后面代码中紧跟着的T不要报错，T是一个通用的数据类型
-//void Swap(T &a,T &b)
-//{
-//	T temp = a;
-//	a = b;
-//	b = temp;
-//}
-//
-//int main()
-//{
-//	int a = 10;
-//	int b = 20;
-//	double c = 1.1;
-//	double d = 2.2;
-//
-//	//两种方式使用函数模板
-//	//1、自动类型推导
-//	Swap(a, b);
-//	cout << "a = " << a << endl;
-//	cout << "b = " << b << endl;
-//
-//	//2、显示指定类型
-//	Swap<double>(c, d);
-//	cout << "c = " << c << endl;
-//	cout << "d = " << d << endl;
-//
-//	system("pause");
-//	system("cls");
-//	return 0;
-//}
+#include <iostream>
+using namespace std;
+
+//锟斤拷锟斤拷模锟斤拷
+template<typename T> //锟斤拷锟斤拷一锟斤拷模锟藉，锟斤拷锟竭憋拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷薪锟斤拷锟斤拷诺锟絋锟斤拷要锟斤拷锟斤拷锟斤拷T锟斤拷一锟斤拷通锟矫碉拷锟斤拷锟斤拷锟斤拷锟斤拷
+void Swap(T &a,T &b)
+{
+	T temp = a;
+	a = b;
+	b = temp;
+}
+
+int main()
+{
+	int a = 10;
+	int b = 20;
+	double c = 1.1;
+	double d = 2.2;
+
+	//锟斤拷锟街凤拷式使锟矫猴拷锟斤拷模锟斤拷
+	//1锟斤拷锟皆讹拷锟斤拷锟斤拷锟狡碉拷
+	Swap(a, b);
+	cout << "a = " << a << endl;
+	cout << "b = " << b << endl;
+
+	//2锟斤拷锟斤拷示指锟斤拷锟斤拷锟斤拷
+	Swap<double>(c, d);
+	cout << "c = " << c << endl;
+	cout << "d = " << d << endl;
+
+	system("pause");
+	system("cls");
+	return 0;
+}

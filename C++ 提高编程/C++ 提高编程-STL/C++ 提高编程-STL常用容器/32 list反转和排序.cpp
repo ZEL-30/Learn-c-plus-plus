@@ -1,61 +1,61 @@
-//#include <iostream>
-//#include <list>
-//using namespace std;
-//
-//
-////reverse();        //·´×ªÁ´±í
-////sort();           //Á´±íÅÅÐò
-//
-//
-//void printList(list<int>& L)
-//{
-//	for (list<int>::iterator it = L.begin(); it != L.end(); it++)
-//	{
-//		cout << *it << " ";
-//	}
-//	cout << endl;
-//}
-//
-//
-//bool mycompare(int v1, int v2)
-//{
-//	//½µÐò  ¾ÍÈÃµÚÒ»¸öÊý > µÚ¶þ¸öÊý
-//	return v1 > v2;
-//}
-//
-//
-//
-//
-//
-//void test01()
-//{
-//	list<int> L;
-//	L.push_back(10);
-//	L.push_back(20);
-//	L.push_back(30);
-//	L.push_front(100);
-//	L.push_front(200);
-//	L.push_front(300);
-//
-//	printList(L);
-//	L.reverse();
-//	printList(L);
-//	L.sort();  //Ä¬ÈÏÉýÐò
-//	printList(L);
-//
-//	//½µÐò
-//	L.sort(mycompare);
-//	printList(L);
-//}
-//
-//
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <list>
+using namespace std;
+
+
+//reverse();        //ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½
+//sort();           //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
+
+void printList(list<int>& L)
+{
+	for (list<int>::iterator it = L.begin(); it != L.end(); it++)
+	{
+		cout << *it << " ";
+	}
+	cout << endl;
+}
+
+
+bool mycompare(int v1, int v2)
+{
+	//ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½Ãµï¿½Ò»ï¿½ï¿½ï¿½ï¿½ > ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½
+	return v1 > v2;
+}
+
+
+
+
+
+void test01()
+{
+	list<int> L;
+	L.push_back(10);
+	L.push_back(20);
+	L.push_back(30);
+	L.push_front(100);
+	L.push_front(200);
+	L.push_front(300);
+
+	printList(L);
+	L.reverse();
+	printList(L);
+	L.sort();  //Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	printList(L);
+
+	//ï¿½ï¿½ï¿½ï¿½
+	L.sort(mycompare);
+	printList(L);
+}
+
+
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

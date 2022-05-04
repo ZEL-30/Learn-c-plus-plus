@@ -1,50 +1,50 @@
-//#include <set>
-//#include <iostream>
-//using namespace std;
+#include <set>
+#include <iostream>
+using namespace std;
+
+
+//set<T> st;                                       //Ä¬ï¿½Ï¹ï¿½ï¿½ìº¯ï¿½ï¿½
+//set(const set& st);                              //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ìº¯ï¿½ï¿½
 //
-//
-////set<T> st;                                       //Ä¬ÈÏ¹¹Ôìº¯Êý
-////set(const set& st);                              //¿½±´¹¹Ôìº¯Êý
-////
-////set& operator=(const set& st);                   //ÖØÔØµÈºÅ²Ù×÷·û
-//
-//
-//
-//void printSet(set<int> S)
-//{
-//	for (set<int>::iterator it = S.begin(); it != S.end(); it++)
-//	{
-//		cout << *it << " ";
-//	}
-//	cout << endl;
-//
-//}
-//
-//
-//void test01()
-//{
-//	set<int> s1;
-//
-//	//²åÈëÊý¾Ý£¬Ö»ÓÐinsert·½Ê½
-//	s1.insert(10);
-//	s1.insert(40);
-//	s1.insert(30);
-//	s1.insert(30);
-//	s1.insert(20);
-//
-//	printSet(s1);
-//
-//	set<int>s2(s1);
-//	printSet(s2);
-//}
-//
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+//set& operator=(const set& st);                   //ï¿½ï¿½ï¿½ØµÈºÅ²ï¿½ï¿½ï¿½ï¿½ï¿½
+
+
+
+void printSet(set<int> S)
+{
+	for (set<int>::iterator it = S.begin(); it != S.end(); it++)
+	{
+		cout << *it << " ";
+	}
+	cout << endl;
+
+}
+
+
+void test01()
+{
+	set<int> s1;
+
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½Ö»ï¿½ï¿½insertï¿½ï¿½Ê½
+	s1.insert(10);
+	s1.insert(40);
+	s1.insert(30);
+	s1.insert(30);
+	s1.insert(20);
+
+	printSet(s1);
+
+	set<int>s2(s1);
+	printSet(s2);
+}
+
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

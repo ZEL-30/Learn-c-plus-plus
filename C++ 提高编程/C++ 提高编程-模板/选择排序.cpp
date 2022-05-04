@@ -1,43 +1,43 @@
-//#include <iostream>
-//using namespace std;
-//
-//
-//int main()
-//{
-//	int arr[] = { 25,36,30,36,10,56,12 };
-//	int length = sizeof(arr) / sizeof(arr[0]);
-//	for (int i = 0; i < length; i++)
-//	{
-//		cout << arr[i] << " ";
-//	}
-//	cout << endl;
-//
-//	//Ñ¡ÔñÅÅÐò
-//	for (int i = 0; i < length; i++)
-//	{
-//		int Min = i;   //ÈÏ¶¨Ò»¸ö×îÐ¡µÄÊýµÄÏÂ±ê
-//		for (int j = i + 1; j < length; j++)
-//		{
-//			if (arr[Min] > arr[j])
-//			{
-//				Min = j;  //¸üÐÂ×îÐ¡ÖµµÄÏÂ±ê
-//			}
-//		}
-//
-//		if (Min != i)    //Èç¹ûÏÂ±êÓÐ±ä»¯£¬¾Í½»»»ÔªËØ£¬¸üÐÂ×îÐ¡ÔªËØ
-//		{
-//			int temp = arr[i];
-//			arr[i] = arr[Min];
-//			arr[Min] = temp;
-//		}
-//	}
-//
-//	for (int i = 0; i < length; i++)
-//	{
-//		cout << arr[i] << " ";
-//	}
-//	cout << endl;
-//	system("pause");
-//	system("cls");
-//	return 0;
-//}
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+	int arr[] = { 25,36,30,36,10,56,12 };
+	int length = sizeof(arr) / sizeof(arr[0]);
+	for (int i = 0; i < length; i++)
+	{
+		cout << arr[i] << " ";
+	}
+	cout << endl;
+
+	//Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	for (int i = 0; i < length; i++)
+	{
+		int Min = i;   //ï¿½Ï¶ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â±ï¿½
+		for (int j = i + 1; j < length; j++)
+		{
+			if (arr[Min] > arr[j])
+			{
+				Min = j;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡Öµï¿½ï¿½ï¿½Â±ï¿½
+			}
+		}
+
+		if (Min != i)    //ï¿½ï¿½ï¿½ï¿½Â±ï¿½ï¿½Ð±ä»¯ï¿½ï¿½ï¿½Í½ï¿½ï¿½ï¿½Ôªï¿½Ø£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡Ôªï¿½ï¿½
+		{
+			int temp = arr[i];
+			arr[i] = arr[Min];
+			arr[Min] = temp;
+		}
+	}
+
+	for (int i = 0; i < length; i++)
+	{
+		cout << arr[i] << " ";
+	}
+	cout << endl;
+	system("pause");
+	system("cls");
+	return 0;
+}

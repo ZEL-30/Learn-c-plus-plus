@@ -1,30 +1,30 @@
-//#include <iostream>
-//using namespace std;
-//
-////pair¶ÔÊý×é´´½¨
-//void test01()
-//{
-//	//µÚÒ»ÖÖ·½Ê½
-//	pair<string, int>p{ "ÕÅ¶÷ÀÖ",23 };
-//		
-//	cout << "ÐÕÃû£º" << p.first << " ÄêÁä£º" << p.second << endl;
-//
-//
-//	//µÚ¶þÖÖ·½Ê½
-//	pair<string, int> p2 = make_pair("Íõ×Óâù",20);
-//
-//	cout << "ÐÕÃû£º" << p.first << " ÄêÁä£º" << p.second << endl;
-//}
-//
-//
-//
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+using namespace std;
+
+//pairï¿½ï¿½ï¿½ï¿½ï¿½é´´ï¿½ï¿½
+void test01()
+{
+	//ï¿½ï¿½Ò»ï¿½Ö·ï¿½Ê½
+	pair<string, int>p{ "ï¿½Å¶ï¿½ï¿½ï¿½",23 };
+		
+	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << p.first << " ï¿½ï¿½ï¿½ä£º" << p.second << endl;
+
+
+	//ï¿½Ú¶ï¿½ï¿½Ö·ï¿½Ê½
+	pair<string, int> p2 = make_pair("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",20);
+
+	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << p.first << " ï¿½ï¿½ï¿½ä£º" << p.second << endl;
+}
+
+
+
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

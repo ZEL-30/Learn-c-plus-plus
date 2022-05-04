@@ -1,41 +1,41 @@
-//#include <iostream>
-//#include <functional>
-//using namespace std;
-//
-//
-////template<class T> T plus<T>             //¼Ó·¨·Âº¯Êý
-////template<class T> T minus<T>            //¼õ·¨·Âº¯Êý
-////template<class T> T multiplies<T>       //³Ë·¨·Âº¯Êý
-////template<class T> T divides<T>          //³ý·¨·Âº¯Êý
-////template<class T> T modulues<T>         //È¡Ä£·Âº¯Êý
-////template<class T> T negate<T>           //È¡·´·Âº¯Êý
-//
-//
-////negate Ò»Ôª·Âº¯Êý   È¡·´
-//void test01()
-//{
-//	negate<int> N;
-//	cout <<N(50) << endl;
-//}
-//
-//
-//
-////plus ¶þÔª·Âº¯Êý   ¼Ó·¨
-//
-//void test02()
-//{
-//	plus<int> P;
-//	cout << P(25, 19) << endl;
-//}
-//
-//
-//int main()
-//{
-//	test01();
-//	test02();
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <functional>
+using namespace std;
+
+
+//template<class T> T plus<T>             //ï¿½Ó·ï¿½ï¿½Âºï¿½ï¿½ï¿½
+//template<class T> T minus<T>            //ï¿½ï¿½ï¿½ï¿½ï¿½Âºï¿½ï¿½ï¿½
+//template<class T> T multiplies<T>       //ï¿½Ë·ï¿½ï¿½Âºï¿½ï¿½ï¿½
+//template<class T> T divides<T>          //ï¿½ï¿½ï¿½ï¿½ï¿½Âºï¿½ï¿½ï¿½
+//template<class T> T modulues<T>         //È¡Ä£ï¿½Âºï¿½ï¿½ï¿½
+//template<class T> T negate<T>           //È¡ï¿½ï¿½ï¿½Âºï¿½ï¿½ï¿½
+
+
+//negate Ò»Ôªï¿½Âºï¿½ï¿½ï¿½   È¡ï¿½ï¿½
+void test01()
+{
+	negate<int> N;
+	cout <<N(50) << endl;
+}
+
+
+
+//plus ï¿½ï¿½Ôªï¿½Âºï¿½ï¿½ï¿½   ï¿½Ó·ï¿½
+
+void test02()
+{
+	plus<int> P;
+	cout << P(25, 19) << endl;
+}
+
+
+int main()
+{
+	test01();
+	test02();
+	system("pause");
+	return 0;
+}
 
 
 

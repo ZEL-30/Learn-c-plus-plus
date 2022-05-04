@@ -1,83 +1,83 @@
-//#include <iostream>
-//#include <string>
-//#include <deque>
-//#include <vector>
-//#include <ctime>
-//#include <algorithm>
-//using namespace std;
-//
-//
-//class Player
-//{
-//public:
-//	Player(string Name, double Score)
-//	{
-//		m_Name = Name;
-//		m_Score = Score;
-//	}
-//
-//	string        m_Name;        //Ñ¡ÊÖÐÕÃû
-//	double        m_Score;       //Ñ¡ÊÖÆ½¾ù·Ö
-//};
-//
-//
-//
-//void createplayer(vector<Player> &v)
-//{
-//	for (int i = 0; i < 5; i++)
-//	{
-//		double score = 0;
-//		string name;
-//		cout << "ÇëÊäÈëµÚ" << i + 1 << "¸öÈËµÄÐÕÃû£º" << endl;
-//		cin >> name;
-//		Player p(name, score);
-//		v.push_back(p);
-//	}
-//}
-//
-//
-//void setscore(vector<Player> &v)
-//{
-//	for (vector<Player>::iterator it = v.begin(); it != v.end(); it++)
-//	{
-//		//´´½¨dequeÈÝÆ÷´æ·Å·ÖÊý
-//		deque<int> d;
-//		
-//		for (int i = 0; i < 10; i++)
-//		{
-//			
-//			int score = rand() % 41 + 60; // 60~100
-//			d.push_back(score);
-//		}
-//		//sort(d.begin(), d.end());
-//		double f_score = 0;
-//		for (int i = 1; i < 9; i++)
-//		{
-//			f_score = f_score + d[i];
-//		}
-//		double average = f_score / 8;
-//		(*it).m_Score = average;
-//	}
-//}
-//
-//int main()
-//{
-//	srand((unsigned int)time(NULL));
-//	//1¡¢´´½¨5ÃûÑ¡ÊÖ
-//	vector<Player> v;
-//	createplayer(v);
-//
-//	//2¡¢¸ø5ÃûÑ¡ÊÖ´ò·Ö
-//	setscore(v);
-//
-//
-//	//3¡¢ÏÔÊ¾×îºóµÃ·Ö
-//	for (vector<Player>::iterator it = v.begin(); it != v.end(); it++)
-//	{
-//		cout << "ÐÕÃû£º" << (*it).m_Name << " Æ½¾ù·Ö£º" << (*it).m_Score << endl;
-//	}
-//
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <string>
+#include <deque>
+#include <vector>
+#include <ctime>
+#include <algorithm>
+using namespace std;
+
+
+class Player
+{
+public:
+	Player(string Name, double Score)
+	{
+		m_Name = Name;
+		m_Score = Score;
+	}
+
+	string        m_Name;        //Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	double        m_Score;       //Ñ¡ï¿½ï¿½Æ½ï¿½ï¿½ï¿½ï¿½
+};
+
+
+
+void createplayer(vector<Player> &v)
+{
+	for (int i = 0; i < 5; i++)
+	{
+		double score = 0;
+		string name;
+		cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << i + 1 << "ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << endl;
+		cin >> name;
+		Player p(name, score);
+		v.push_back(p);
+	}
+}
+
+
+void setscore(vector<Player> &v)
+{
+	for (vector<Player>::iterator it = v.begin(); it != v.end(); it++)
+	{
+		//ï¿½ï¿½ï¿½ï¿½dequeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å·ï¿½ï¿½ï¿½
+		deque<int> d;
+		
+		for (int i = 0; i < 10; i++)
+		{
+			
+			int score = rand() % 41 + 60; // 60~100
+			d.push_back(score);
+		}
+		//sort(d.begin(), d.end());
+		double f_score = 0;
+		for (int i = 1; i < 9; i++)
+		{
+			f_score = f_score + d[i];
+		}
+		double average = f_score / 8;
+		(*it).m_Score = average;
+	}
+}
+
+int main()
+{
+	srand((unsigned int)time(NULL));
+	//1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½5ï¿½ï¿½Ñ¡ï¿½ï¿½
+	vector<Player> v;
+	createplayer(v);
+
+	//2ï¿½ï¿½ï¿½ï¿½5ï¿½ï¿½Ñ¡ï¿½Ö´ï¿½ï¿½
+	setscore(v);
+
+
+	//3ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ã·ï¿½
+	for (vector<Player>::iterator it = v.begin(); it != v.end(); it++)
+	{
+		cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << (*it).m_Name << " Æ½ï¿½ï¿½ï¿½Ö£ï¿½" << (*it).m_Score << endl;
+	}
+
+
+	system("pause");
+	return 0;
+}

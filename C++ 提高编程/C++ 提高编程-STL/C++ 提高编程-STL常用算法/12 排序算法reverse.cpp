@@ -1,62 +1,62 @@
-//#include <iostream>
-//#include <vector>
-//#include <algorithm>
-//using namespace std;
-//
-////merge(iterator beg1, iterator end1, iterator beg2, iterator end2, iterator dest);
-//////beg1 ÈÝÆ÷1ÆðÊ¼µü´úÆ÷
-//////end1 ÈÝÆ÷1½áÊøµü´úÆ÷
-//////beg2 ÈÝÆ÷2ÆðÊ¼µü´úÆ÷
-//////end2 ÈÝÆ÷2½áÊøµü´úÆ÷
-//////dest Ä¿±êÈÝÆ÷ÆðÊ¼µü´úÆ÷
-//
-//
-//void print(int val)
-//{
-//	cout << val << " ";
-//}
-//
-//
-//
-//
-//
-//
-//
-//
-//void test01()
-//{
-//	vector<int> v1;
-//	vector<int> v2;
-//
-//	for (int i = 0; i < 10; i++)
-//	{
-//		v1.push_back(i);
-//		v2.push_back(i+1);
-//	}
-//
-//	vector<int> vtarget;
-//	vtarget.resize(v1.size()+v2.size());
-//	cout << "·´×ªÇ°£º" << endl;
-//	merge(v1.begin(), v1.end(), v2.begin(), v2.end(), vtarget.begin());
-//	for_each(vtarget.begin(), vtarget.end(), print);
-//	cout << endl;
-//	cout << "·´×ªºó£º" << endl;
-//	reverse(vtarget.begin(), vtarget.end());
-//	for_each(vtarget.begin(), vtarget.end(), print);
-//	cout << endl;
-//
-//}
-//
-//
-//
-//
-//
-//
-//
-//
-//int main()
-//{
-//	test01();
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+//merge(iterator beg1, iterator end1, iterator beg2, iterator end2, iterator dest);
+////beg1 ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+////end1 ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+////beg2 ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+////end2 ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+////dest Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
+
+void print(int val)
+{
+	cout << val << " ";
+}
+
+
+
+
+
+
+
+
+void test01()
+{
+	vector<int> v1;
+	vector<int> v2;
+
+	for (int i = 0; i < 10; i++)
+	{
+		v1.push_back(i);
+		v2.push_back(i+1);
+	}
+
+	vector<int> vtarget;
+	vtarget.resize(v1.size()+v2.size());
+	cout << "ï¿½ï¿½×ªÇ°ï¿½ï¿½" << endl;
+	merge(v1.begin(), v1.end(), v2.begin(), v2.end(), vtarget.begin());
+	for_each(vtarget.begin(), vtarget.end(), print);
+	cout << endl;
+	cout << "ï¿½ï¿½×ªï¿½ï¿½" << endl;
+	reverse(vtarget.begin(), vtarget.end());
+	for_each(vtarget.begin(), vtarget.end(), print);
+	cout << endl;
+
+}
+
+
+
+
+
+
+
+
+int main()
+{
+	test01();
+	system("pause");
+	return 0;
+}

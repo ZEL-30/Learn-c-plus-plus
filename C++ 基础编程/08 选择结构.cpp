@@ -1,16 +1,15 @@
-//#include <iostream>
-//using namespace std;
-//
-//int main()
-//{
-//	int a = 100;
-//	int b = 20;
-//	int c = 0;
-//	a > b ? c = a : c = b;
-//	cout << "C的值为：" << c << endl;
-//
-//	system("pause");
-//
-//	return 0;
-//}
-// 
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a = 100;
+	int b = 20;
+	int c = 0;
+	a > b ? c = a : c = b;
+	cout << "C锟斤拷值为锟斤拷" << c << endl;
+
+	system("pause");
+
+	return 0;
+}

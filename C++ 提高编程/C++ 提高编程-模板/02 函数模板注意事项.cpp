@@ -1,34 +1,34 @@
-//#include <iostream>
-//using namespace std;
-//
-////º¯ÊýÄ£°å
-//template<class T> //typename ¿ÉÒÔÌæ»»Îª class  
-//void Swap(T& a, T& b)
-//{
-//	T temp = a;
-//	a = b;
-//	b = temp;
-//}
-//
-//int main()
-//{
-//	int a = 10;
-//	int b = 20;
-//	double c = 1.1;
-//	double d = 2.2;
-//
-//	//Á½ÖÖ·½Ê½Ê¹ÓÃº¯ÊýÄ£°å
-//	//1¡¢×Ô¶¯ÀàÐÍÍÆµ¼
-//	Swap(a, b);
-//	cout << "a = " << a << endl;
-//	cout << "b = " << b << endl;
-//
-//	//2¡¢ÏÔÊ¾Ö¸¶¨ÀàÐÍ
-//	Swap<double>(c, d);
-//	cout << "c = " << c << endl;
-//	cout << "d = " << d << endl;
-//
-//	system("pause");
-//	system("cls");
-//	return 0;
-//}
+#include <iostream>
+using namespace std;
+
+//ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½
+template<class T> //typename ï¿½ï¿½ï¿½ï¿½ï¿½æ»»Îª class  
+void Swap(T& a, T& b)
+{
+	T temp = a;
+	a = b;
+	b = temp;
+}
+
+int main()
+{
+	int a = 10;
+	int b = 20;
+	double c = 1.1;
+	double d = 2.2;
+
+	//ï¿½ï¿½ï¿½Ö·ï¿½Ê½Ê¹ï¿½Ãºï¿½ï¿½ï¿½Ä£ï¿½ï¿½
+	//1ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½
+	Swap(a, b);
+	cout << "a = " << a << endl;
+	cout << "b = " << b << endl;
+
+	//2ï¿½ï¿½ï¿½ï¿½Ê¾Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	Swap<double>(c, d);
+	cout << "c = " << c << endl;
+	cout << "d = " << d << endl;
+
+	system("pause");
+	system("cls");
+	return 0;
+}

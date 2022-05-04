@@ -1,117 +1,117 @@
-//#include <iostream>
-//using namespace std;
-//
-//
-//
-//int main()
-//{
-//	//°¸Àý1
-//	int arr1[] = { 300,350,200,400,250 };
-//	int length_1 = sizeof(arr1) / sizeof(arr1[0]);
-//	int max = 0;
-//	int num = 0;
-//	for (int i = 0; i < length_1 - 1; i++) 
-//	{	
-//		
-//		if (arr1[i] > max)
-//		{
-//			max = arr1[i];
-//			num = i;
-//		}
-//		else
-//			continue;
-//	}
-//
-//	for (int j = 0; j < length_1; j++)
-//	{
-//		cout << arr1[j] << " ";
-//	}
-//	cout << endl;
-//	cout << "×îÖØµÄÐ¡ÖíÊÇÔÚµÚ" << num << "Î»" << endl;
-//	cout << "×îÖØµÄÐ¡ÖíµÄÌåÖØÊÇ£º" << max << "½ï" << endl;
-//
-//	//°¸Àý2 Êý×éÔªËØÄæÖÃ
-//	int arr2[] = { 1,3,3,4,5,6,7,4,9};
-//	int length = sizeof(arr2) / sizeof(arr2[0]);
-//	cout << "Êý×éÔªËØÎª£º" << endl;
-//	for (int i = 0; i < length; i++)
-//	{
-//		cout << arr2[i] << " ";
-//	}
-//	cout << endl;
-//	//ÄæÖÃ
-//	int temp = 0;
-//	if (length % 2 == 1)
-//	{
-//		for (int i = 0; i < (length / 2) + 1; i++)
-//		{
-//			temp = arr2[i];
-//			arr2[i] = arr2[(length - 1) - i];
-//			arr2[(length - 1) - i] = temp;
-//		}
-//	}
-//	else
-//	{
-//		for (int i = 0; i < length / 2 ; i++)
-//		{
-//			temp = arr2[i];
-//			arr2[i] = arr2[(length - 1) - i];
-//			arr2[(length - 1) - i] = temp; 
-//		}
-//	}
-//
-//	cout << "ÄæÖÃºóµÄÊý×éÔªËØÎª£º" << endl;
-//	for (int i = 0; i < length; i++)
-//	{
-//		cout << arr2[i] << " ";
-//	}
-//	cout << endl;
-//
-//
-//	system("pause");
-//
-//	return 0;
-//}
+#include <iostream>
+using namespace std;
+
+
+
+int main()
+{
+	//ï¿½ï¿½ï¿½ï¿½1
+	int arr1[] = { 300,350,200,400,250 };
+	int length_1 = sizeof(arr1) / sizeof(arr1[0]);
+	int max = 0;
+	int num = 0;
+	for (int i = 0; i < length_1 - 1; i++) 
+	{	
+		
+		if (arr1[i] > max)
+		{
+			max = arr1[i];
+			num = i;
+		}
+		else
+			continue;
+	}
+
+	for (int j = 0; j < length_1; j++)
+	{
+		cout << arr1[j] << " ";
+	}
+	cout << endl;
+	cout << "ï¿½ï¿½ï¿½Øµï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½" << num << "Î»" << endl;
+	cout << "ï¿½ï¿½ï¿½Øµï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½" << max << "ï¿½ï¿½" << endl;
+
+	//ï¿½ï¿½ï¿½ï¿½2 ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	int arr2[] = { 1,3,3,4,5,6,7,4,9};
+	int length = sizeof(arr2) / sizeof(arr2[0]);
+	cout << "ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½Îªï¿½ï¿½" << endl;
+	for (int i = 0; i < length; i++)
+	{
+		cout << arr2[i] << " ";
+	}
+	cout << endl;
+	//ï¿½ï¿½ï¿½ï¿½
+	int temp = 0;
+	if (length % 2 == 1)
+	{
+		for (int i = 0; i < (length / 2) + 1; i++)
+		{
+			temp = arr2[i];
+			arr2[i] = arr2[(length - 1) - i];
+			arr2[(length - 1) - i] = temp;
+		}
+	}
+	else
+	{
+		for (int i = 0; i < length / 2 ; i++)
+		{
+			temp = arr2[i];
+			arr2[i] = arr2[(length - 1) - i];
+			arr2[(length - 1) - i] = temp; 
+		}
+	}
+
+	cout << "ï¿½ï¿½ï¿½Ãºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½Îªï¿½ï¿½" << endl;
+	for (int i = 0; i < length; i++)
+	{
+		cout << arr2[i] << " ";
+	}
+	cout << endl;
+
+
+	system("pause");
+
+	return 0;
+}
 
 
 
 
-//#include <iostream>
-//using namespace std;
-//
-//int main()
-//{
-//	int arr[] = { 1,5,8,9,4,3,7 };
-//	int length = sizeof(arr) / sizeof(arr[0]);
-//	int order = sizeof(arr) / sizeof(arr[0]) - 1;
-//	cout << "Ô­Êý×éÎª£º" << endl;
-//	for (int i = 0; i < length; i++)
-//	{
-//		cout << arr[i] << " ";
-//	}
-//	cout << endl;
-//
-//	int start = 0;
-//	int end = order;
-//	int temp = 0;
-//
-//	while (start <= end)
-//	{
-//		temp = arr[start];
-//		arr[start] = arr[end];
-//		arr[end] = temp;
-//		start++;
-//		end--;
-//	}
-//	cout << "½»»»ºóÎª£º" << endl;
-//	for (int i = 0; i < length; i++)
-//	{
-//		cout << arr[i] << " ";
-//	}
-//	cout << endl;
-//
-//
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int arr[] = { 1,5,8,9,4,3,7 };
+	int length = sizeof(arr) / sizeof(arr[0]);
+	int order = sizeof(arr) / sizeof(arr[0]) - 1;
+	cout << "Ô­ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½" << endl;
+	for (int i = 0; i < length; i++)
+	{
+		cout << arr[i] << " ";
+	}
+	cout << endl;
+
+	int start = 0;
+	int end = order;
+	int temp = 0;
+
+	while (start <= end)
+	{
+		temp = arr[start];
+		arr[start] = arr[end];
+		arr[end] = temp;
+		start++;
+		end--;
+	}
+	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½" << endl;
+	for (int i = 0; i < length; i++)
+	{
+		cout << arr[i] << " ";
+	}
+	cout << endl;
+
+
+
+	system("pause");
+	return 0;
+}

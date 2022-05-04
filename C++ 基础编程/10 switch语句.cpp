@@ -1,35 +1,35 @@
-//#include <iostream>
-//using namespace std;
-//
-//int main()
-//{
-//	string movie = "";
-//	int score = 0;
-//	cout << "ÇëÊäÈëÄú¹Û¿´µÄµçÓ°£º" << endl;
-//	cin >> movie;
-//	cout << "Çë¸ø<<" << movie << ">>´ò·Ö:" << endl;
-//	cin >> score;
-//	switch (score)
-//	{
-//		case 0:  cout << "<<" << movie << ">>ÊÇÒ»²¿À¬»øµÄµçÓ°!" << endl; break;
-//		case 1:  cout << "<<" << movie << ">>ÊÇÒ»²¿À¬»øµÄµçÓ°!" << endl; break;
-//		case 2:  cout << "<<" << movie << ">>ÊÇÒ»²¿À¬»øµÄµçÓ°!" << endl; break;
-//		case 3:  cout << "<<" << movie << ">>ÊÇÒ»²¿À¬»øµÄµçÓ°!" << endl; break;
-//		case 4:  cout << "<<" << movie << ">>ÊÇÒ»²¿À¬»øµÄµçÓ°!" << endl; break;
-//		case 5:  cout << "<<" << movie << ">>ÊÇÒ»²¿Ò»°ãµÄµçÓ°!" << endl; break;
-//		case 6:  cout << "<<" << movie << ">>ÊÇÒ»²¿Ò»°ãµÄµçÓ°!" << endl; break;
-//		case 7:  cout << "<<" << movie << ">>ÊÇÒ»²¿·Ç³£ºÃµÄµçÓ°!" << endl; break;
-//		case 8:  cout << "<<" << movie << ">>ÊÇÒ»²¿·Ç³£ºÃµÄµçÓ°!" << endl; break;
-//		case 9:  cout << "<<" << movie << ">>ÊÇÒ»²¿¾­µäµÄµçÓ°!" << endl; break;
-//		case 10: cout << "<<" << movie << ">>ÊÇÒ»²¿¾­µäµÄµçÓ°!" << endl; break;
-//		default: cout << "ÇëÊäÈë0-10ÒÔÄÚµÄÕûÊý½øÐÐÆÀ·Ö£¡" << endl; break;
-//
-//	}
-//
-//
-//	system("pause");
-//
-//	return 0;
-//}
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	string movie = "";
+	int score = 0;
+	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Û¿ï¿½ï¿½Äµï¿½Ó°ï¿½ï¿½" << endl;
+	cin >> movie;
+	cout << "ï¿½ï¿½ï¿½<<" << movie << ">>ï¿½ï¿½ï¿½:" << endl;
+	cin >> score;
+	switch (score)
+	{
+		case 0:  cout << "<<" << movie << ">>ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½Ó°!" << endl; break;
+		case 1:  cout << "<<" << movie << ">>ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½Ó°!" << endl; break;
+		case 2:  cout << "<<" << movie << ">>ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½Ó°!" << endl; break;
+		case 3:  cout << "<<" << movie << ">>ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½Ó°!" << endl; break;
+		case 4:  cout << "<<" << movie << ">>ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½Ó°!" << endl; break;
+		case 5:  cout << "<<" << movie << ">>ï¿½ï¿½Ò»ï¿½ï¿½Ò»ï¿½ï¿½Äµï¿½Ó°!" << endl; break;
+		case 6:  cout << "<<" << movie << ">>ï¿½ï¿½Ò»ï¿½ï¿½Ò»ï¿½ï¿½Äµï¿½Ó°!" << endl; break;
+		case 7:  cout << "<<" << movie << ">>ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ç³ï¿½ï¿½ÃµÄµï¿½Ó°!" << endl; break;
+		case 8:  cout << "<<" << movie << ">>ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ç³ï¿½ï¿½ÃµÄµï¿½Ó°!" << endl; break;
+		case 9:  cout << "<<" << movie << ">>ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½Ó°!" << endl; break;
+		case 10: cout << "<<" << movie << ">>ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½Ó°!" << endl; break;
+		default: cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-10ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½" << endl; break;
+
+	}
+
+
+	system("pause");
+
+	return 0;
+}
 
 

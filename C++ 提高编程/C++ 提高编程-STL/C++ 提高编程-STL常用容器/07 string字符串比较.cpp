@@ -1,36 +1,36 @@
-//#include <iostream>
-//using namespace std;
-//
-////= ·µ»Ø 0
-////> ·µ»Ø 1
-////< ·µ»Ø -1
-////int campare(const string& s) const;       //Óë×Ö·û´®s±È½Ï
-////int compare(const char* s) const;         //Óë×Ö·û´®s±È½Ï
-//
-//void test01()
-//{
-//	string str1 = "xello";
-//	string str2 = "hello";
-//	if (str1.compare(str2) == 0)
-//	{
-//		cout << "×Ö·û´®ÏàµÈ" << endl;
-//	}
-//	else if (str1.compare(str2) > 0)
-//	{
-//		cout << "str1 > str2" << endl;
-//	}
-//	else if (str1.compare(str2) < 0)
-//	{
-//		cout << "str1 < str2" << endl;
-//	}
-//}
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+using namespace std;
+
+//= ï¿½ï¿½ï¿½ï¿½ 0
+//> ï¿½ï¿½ï¿½ï¿½ 1
+//< ï¿½ï¿½ï¿½ï¿½ -1
+//int campare(const string& s) const;       //ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½sï¿½È½ï¿½
+//int compare(const char* s) const;         //ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½sï¿½È½ï¿½
+
+void test01()
+{
+	string str1 = "xello";
+	string str2 = "hello";
+	if (str1.compare(str2) == 0)
+	{
+		cout << "ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << endl;
+	}
+	else if (str1.compare(str2) > 0)
+	{
+		cout << "str1 > str2" << endl;
+	}
+	else if (str1.compare(str2) < 0)
+	{
+		cout << "str1 < str2" << endl;
+	}
+}
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

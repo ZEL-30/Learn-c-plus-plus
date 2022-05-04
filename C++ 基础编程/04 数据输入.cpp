@@ -1,19 +1,19 @@
 #include <iostream>
 using namespace std;
 
-//int main()
-//{
-//	int a = 10;
-//	cout << "Çë¸øÕûĞÎ±äÁ¿a¸³Öµ:" << endl;
-//	cin >> a;
-//	cout << "aµÄÖµ¸Ä±äÎª£º" << a << endl;
-//
-//	double b = 0.0;
-//	cout << "Çë¸ø¸¡µãĞÍĞÎ±äÁ¿b¸³Öµ:" << endl;
-//	cin >> b;
-//	cout << "aµÄÖµ¸Ä±äÎª£º" << b << endl;
-//
-//	system("pause");
-//
-//	return 0;
-//}
+int main()
+{
+	int a = 10;
+	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î±ï¿½ï¿½ï¿½aï¿½ï¿½Öµ:" << endl;
+	cin >> a;
+	cout << "aï¿½ï¿½Öµï¿½Ä±ï¿½Îªï¿½ï¿½" << a << endl;
+
+	double b = 0.0;
+	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î±ï¿½ï¿½ï¿½bï¿½ï¿½Öµ:" << endl;
+	cin >> b;
+	cout << "aï¿½ï¿½Öµï¿½Ä±ï¿½Îªï¿½ï¿½" << b << endl;
+
+	system("pause");
+
+	return 0;
+}

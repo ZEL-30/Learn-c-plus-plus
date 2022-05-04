@@ -1,87 +1,87 @@
-//#include <iostream>
-//using namespace std;
-//
-//
-////ÀàÄ£°å¶ÔÏó×öº¯Êý²ÎÊý
-//
-//template<class T1,class T2>
-//class Person
-//{
-//public:
-//
-//	Person(T1 Name,T2 Age)
-//	{
-//		m_Age = Age;
-//		m_Name = Name;
-//	}
-//
-//	void showPerson()
-//	{
-//		cout << "ÐÕÃû£º" << m_Name << " ÄêÁä£º" << m_Age << endl;
-//	}
-//
-//
-//
-//
-//	T1 m_Name;
-//	T2 m_Age;
-//};
-////1¡¢Ö¸¶¨´«ÈëÀàÐÍ
-//void printPerson1(Person<string, int> &p1)
-//{
-//	p1.showPerson();
-//}
-//
-//
-//
-//void test01()
-//{
-//	Person<string, int>p1("ËïÎò¿Õ", 100);
-//	printPerson1(p1);
-//}
-//
-////2¡¢²ÎÊýÄ£°å»¯
-//template <class T1,class T2>
-//void prntPerson2(Person<T1,T2> &p)
-//{
-//	p.showPerson();
-//	cout << "T1 µÄÀàÐÍÎª£º" << typeid(T1).name() << endl;
-//	cout << "T2 µÄÀàÐÍÎª£º" << typeid(T2).name() << endl;
-//}
-//
-//
-//void test02()
-//{
-//	Person<string, int>p2("Öí°Ë½ä", 90);
-//	prntPerson2(p2);
-//}
-//
-////3¡¢Õû¸öÄ£°å»¯
-//template <class T>
-//void printPerson3(T& p)
-//{
-//	p.showPerson();
-//	cout << "T µÄÀàÐÍÎª£º" << typeid(T).name() << endl;
-//}
-//
-//void test03()
-//{
-//	Person<string, int>p3("ÌÆÉ®", 30);
-//	printPerson3(p3);
-//}
-//
-//
-//
-//
-//int main()
-//{
-//	//test01();
-//
-//	test02();
-//
-//	test03();
-//
-//	system("pause");
-//	system("cls");
-//	return 0;
-//}
+#include <iostream>
+using namespace std;
+
+
+//ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
+template<class T1,class T2>
+class Person
+{
+public:
+
+	Person(T1 Name,T2 Age)
+	{
+		m_Age = Age;
+		m_Name = Name;
+	}
+
+	void showPerson()
+	{
+		cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << m_Name << " ï¿½ï¿½ï¿½ä£º" << m_Age << endl;
+	}
+
+
+
+
+	T1 m_Name;
+	T2 m_Age;
+};
+//1ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+void printPerson1(Person<string, int> &p1)
+{
+	p1.showPerson();
+}
+
+
+
+void test01()
+{
+	Person<string, int>p1("ï¿½ï¿½ï¿½ï¿½ï¿½", 100);
+	printPerson1(p1);
+}
+
+//2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½å»¯
+template <class T1,class T2>
+void prntPerson2(Person<T1,T2> &p)
+{
+	p.showPerson();
+	cout << "T1 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½" << typeid(T1).name() << endl;
+	cout << "T2 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½" << typeid(T2).name() << endl;
+}
+
+
+void test02()
+{
+	Person<string, int>p2("ï¿½ï¿½ï¿½Ë½ï¿½", 90);
+	prntPerson2(p2);
+}
+
+//3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½å»¯
+template <class T>
+void printPerson3(T& p)
+{
+	p.showPerson();
+	cout << "T ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½" << typeid(T).name() << endl;
+}
+
+void test03()
+{
+	Person<string, int>p3("ï¿½ï¿½É®", 30);
+	printPerson3(p3);
+}
+
+
+
+
+int main()
+{
+	//test01();
+
+	test02();
+
+	test03();
+
+	system("pause");
+	system("cls");
+	return 0;
+}

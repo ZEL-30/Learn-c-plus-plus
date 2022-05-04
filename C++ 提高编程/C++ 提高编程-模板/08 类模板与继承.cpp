@@ -1,35 +1,35 @@
-//#include <iostream>
-//using namespace std;
-//
-////ÀàÄ£°åÓë¼Ì³Ğ
-//template <class T>
-//class Base
-//{
-//public:
-//	T m;
-//};
-//
-//class son :public Base<int>
-//{
-//
-//};
-//
-//
-////Èç¹ûÏëÁé»îÖ¸¶¨³ö¸¸ÀàÖĞTµÄÀàĞÍ£¬×ÓÀàÒ²Ğè±äÎªÀàÄ£°å
-//template <class T1,class T2>
-//class son2 : public Base<T2>
-//{
-//public:
-//	T1 obj;
-//};
-//
-//void test01()
-//{
-//	son2<string,int> s2;
-//}
-//int main()
-//{
-//	system("pause");
-//	system("cls");
-//	return 0;
-//}
+#include <iostream>
+using namespace std;
+
+//ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½Ì³ï¿½
+template <class T>
+class Base
+{
+public:
+	T m;
+};
+
+class son :public Base<int>
+{
+
+};
+
+
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Tï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½Îªï¿½ï¿½Ä£ï¿½ï¿½
+template <class T1,class T2>
+class son2 : public Base<T2>
+{
+public:
+	T1 obj;
+};
+
+void test01()
+{
+	son2<string,int> s2;
+}
+int main()
+{
+	system("pause");
+	system("cls");
+	return 0;
+}

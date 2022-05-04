@@ -1,56 +1,56 @@
-//#include <iostream>
-//#include <deque>
-//using namespace std;
-//
-//
-//
-////deque<T> depT;                         //²ÉÓÃÄ£°åÊµÏÖÀàÊµÏÖ£¬Ä¬ÈÏ¹¹Ôìº¯Êý
-////deque(v.begin(), v.end());             //½«v[begin(),end()]Çø¼äÖÐµÄÔªËØ¿½±´¸ø±¾Éí     Ç°±Õºó¿ªµÄÇø¼ä
-////deque(n, elem);                        //¹¹Ôìº¯Êý½«n¸öelem¿½±´¸ø±¾Éí
-////deque(const deque& deq);               //¿½±´¹¹Ôìº¯Êý
-//
-//void printDeque(const deque<int> &d)
-//{
-//	for (deque<int>::const_iterator it = d.begin(); it != d.end(); it++)
-//	{
-//		cout << *it << " ";
-//	}
-//	cout << endl;
-//}
-//
-//
-//
-//
-//
-//
-//void test01()
-//{
-//	deque<int> d1;
-//	for (int i = 0; i < 10; i++)
-//	{
-//		d1.push_front(i);
-//	}
-//	printDeque(d1);
-//
-//	deque<int> d2(d1.begin(), d1.end());
-//	printDeque(d2);
-//
-//	deque<int> d3(10, 5);
-//	printDeque(d3);
-//
-//	deque<int> d4(d3);
-//	printDeque(d4);
-//
-//
-//}
-//
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <deque>
+using namespace std;
+
+
+
+//deque<T> depT;                         //ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½Êµï¿½Ö£ï¿½Ä¬ï¿½Ï¹ï¿½ï¿½ìº¯ï¿½ï¿½
+//deque(v.begin(), v.end());             //ï¿½ï¿½v[begin(),end()]ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½Ôªï¿½Ø¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     Ç°ï¿½Õºó¿ªµï¿½ï¿½ï¿½ï¿½ï¿½
+//deque(n, elem);                        //ï¿½ï¿½ï¿½ìº¯ï¿½ï¿½ï¿½ï¿½nï¿½ï¿½elemï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//deque(const deque& deq);               //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ìº¯ï¿½ï¿½
+
+void printDeque(const deque<int> &d)
+{
+	for (deque<int>::const_iterator it = d.begin(); it != d.end(); it++)
+	{
+		cout << *it << " ";
+	}
+	cout << endl;
+}
+
+
+
+
+
+
+void test01()
+{
+	deque<int> d1;
+	for (int i = 0; i < 10; i++)
+	{
+		d1.push_front(i);
+	}
+	printDeque(d1);
+
+	deque<int> d2(d1.begin(), d1.end());
+	printDeque(d2);
+
+	deque<int> d3(10, 5);
+	printDeque(d3);
+
+	deque<int> d4(d3);
+	printDeque(d4);
+
+
+}
+
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

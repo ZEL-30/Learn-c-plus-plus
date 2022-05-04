@@ -1,31 +1,31 @@
-//#include <iostream>
-//#include <string>
-//using namespace std;
-//
-//
-////string& insert(int pos, const char* s);               //²åÈë×Ö·û´®
-////string& insert(int pos, const string &str);           //²åÈë×Ö·û´®
-////string& insert(int pos, int n,char c);                //ÔÚÖ¸¶¨Î»ÖÃ²åÈën¸ö×Ö·ûc
-////string& erase(int pos, int n = npos);                 //É¾³ý´ÓPos¿ªÊ¼µÄn¸ö×Ö·û
-//
-//
-//void test01()
-//{
-//	string str1 = "ÕÅ¶÷ÀÖ";
-//	str1.insert(2, "¼ÓÓÍ");
-//	cout << "str1 = " << str1 << endl;
-//	str1.erase(2, 4);
-//	cout << "str1 = " << str1 << endl;
-//}
-//
-//
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+//string& insert(int pos, const char* s);               //ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+//string& insert(int pos, const string &str);           //ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+//string& insert(int pos, int n,char c);                //ï¿½ï¿½Ö¸ï¿½ï¿½Î»ï¿½Ã²ï¿½ï¿½ï¿½nï¿½ï¿½ï¿½Ö·ï¿½c
+//string& erase(int pos, int n = npos);                 //É¾ï¿½ï¿½ï¿½ï¿½Posï¿½ï¿½Ê¼ï¿½ï¿½nï¿½ï¿½ï¿½Ö·ï¿½
+
+
+void test01()
+{
+	string str1 = "ï¿½Å¶ï¿½ï¿½ï¿½";
+	str1.insert(2, "ï¿½ï¿½ï¿½ï¿½");
+	cout << "str1 = " << str1 << endl;
+	str1.erase(2, 4);
+	cout << "str1 = " << str1 << endl;
+}
+
+
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

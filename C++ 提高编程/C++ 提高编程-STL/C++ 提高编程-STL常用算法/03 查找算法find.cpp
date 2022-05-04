@@ -1,104 +1,104 @@
-//#include <iostream>
-//#include <vector>
-//#include <algorithm>
-//using namespace std;
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+
+//find                    //ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+//find_if                 //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+//adjacant_find           //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø¸ï¿½Ôªï¿½ï¿½
+//binary_seach            //ï¿½ï¿½ï¿½Ö²ï¿½ï¿½Ò·ï¿½
+//count                   //Í³ï¿½ï¿½Ôªï¿½Ø¸ï¿½ï¿½ï¿½
+//count_if                //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í³ï¿½ï¿½Ôªï¿½Ø¸ï¿½ï¿½ï¿½
 //
-//
-////find                    //²éÕÒÔªËØ
-////find_if                 //°´Ìõ¼ş²éÕÒÔªËØ
-////adjacant_find           //²éÕÒÏàÁÚÖØ¸´ÔªËØ
-////binary_seach            //¶ş·Ö²éÕÒ·¨
-////count                   //Í³¼ÆÔªËØ¸öÊı
-////count_if                //°´Ìõ¼şÍ³¼ÆÔªËØ¸öÊı
-////
-////find (iterator beg, iterator end, value);
-//////°´Öµ²éÕÒÔªËØ£¬ÕÒµ½·µ»ØÖ¸¶¨ÔªËØµÄµü´úÆ÷£¬ÕÒ²»µ½·µ»Ø½áÊøµü´úÆ÷end()
-//////beg¿ªÊ¼µü´úÆ÷
-//////end½áÊøµü´úÆ÷
-//////value ²éÕÒµÄÔªËØ
-//
-//
-//class Person
-//{
-//public:
-//	Person(string Name,int Age)
-//	{
-//		m_Name = Name;
-//		m_Age = Age;
-//	}
-//
-//	//ÖØÔØ == ÈÃµ×²ãfindÖªµÀÈçºÎ¶Ô±ÈPersonÊı¾İÀàĞÍ
-//	bool operator==(const Person &p)
-//	{
-//		if (m_Age == p.m_Age && m_Name == p.m_Name)
-//		{
-//			return true;
-//		}
-//		else
-//		{
-//			return false;
-//		}
-//	}
-//	string m_Name;
-//	int m_Age;
-//};
-//
-//
-//
-//
-////ÄÚÖÃÊı¾İÀàĞÍ
-//void test01()
-//{
-//	vector<int> V;
-//	for (int i = 0; i < 10; i++)
-//	{
-//		V.push_back(i);
-//	}
-//
-//	vector<int>::iterator it = find(V.begin(), V.end(), 5);
-//	if ( it != V.end())
-//	{
-//		cout << "ÕÒµ½ÁËÊı¾İ£º" << *it <<  endl;
-//	}
-//	else
-//	{
-//		cout << "Ã»ÓĞÕÒµ½" << endl;
-//	}
-//}
-//
-//
-////×Ô¶¨ÒåÊı¾İÀàĞÍ
-//void test02()
-//{
-//	vector<Person> V;
-//	string NameSeed = "ABCDEFGHIJ";
-//	for (int i = 0; i < 10 ; i++)
-//	{
-//		string Name = "Ñ¡ÊÖ";
-//		Name += NameSeed[i];
-//		int Age = i;
-//		Person p(Name, Age);
-//		V.push_back(p);
-//	}
-//	Person p1("Ñ¡ÊÖA", 2);
-//	vector<Person>::iterator it = find(V.begin(), V.end(),p1);
-//
-//	if (it != V.end())
-//	{
-//		cout << "ÕÒµ½ÁË! ĞÕÃû£º" << it->m_Name << " ÄêÁä£º" << it->m_Age << endl;
-//	}
-//	else
-//	{
-//		cout << "Ã»ÓĞÕÒµ½!" << endl;
-//	}
-//
-//}
-//
-//
-//int main()
-//{
-//	//test01();
-//	test02();
-//	system("pause");
-//	return 0;
-//}
+//find (iterator beg, iterator end, value);
+////ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø£ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½Ôªï¿½ØµÄµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½end()
+////begï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+////endï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+////value ï¿½ï¿½ï¿½Òµï¿½Ôªï¿½ï¿½
+
+
+class Person
+{
+public:
+	Person(string Name,int Age)
+	{
+		m_Name = Name;
+		m_Age = Age;
+	}
+
+	//ï¿½ï¿½ï¿½ï¿½ == ï¿½Ãµ×²ï¿½findÖªï¿½ï¿½ï¿½ï¿½Î¶Ô±ï¿½Personï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	bool operator==(const Person &p)
+	{
+		if (m_Age == p.m_Age && m_Name == p.m_Name)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	string m_Name;
+	int m_Age;
+};
+
+
+
+
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+void test01()
+{
+	vector<int> V;
+	for (int i = 0; i < 10; i++)
+	{
+		V.push_back(i);
+	}
+
+	vector<int>::iterator it = find(V.begin(), V.end(), 5);
+	if ( it != V.end())
+	{
+		cout << "ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ£ï¿½" << *it <<  endl;
+	}
+	else
+	{
+		cout << "Ã»ï¿½ï¿½ï¿½Òµï¿½" << endl;
+	}
+}
+
+
+//ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+void test02()
+{
+	vector<Person> V;
+	string NameSeed = "ABCDEFGHIJ";
+	for (int i = 0; i < 10 ; i++)
+	{
+		string Name = "Ñ¡ï¿½ï¿½";
+		Name += NameSeed[i];
+		int Age = i;
+		Person p(Name, Age);
+		V.push_back(p);
+	}
+	Person p1("Ñ¡ï¿½ï¿½A", 2);
+	vector<Person>::iterator it = find(V.begin(), V.end(),p1);
+
+	if (it != V.end())
+	{
+		cout << "ï¿½Òµï¿½ï¿½ï¿½! ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << it->m_Name << " ï¿½ï¿½ï¿½ä£º" << it->m_Age << endl;
+	}
+	else
+	{
+		cout << "Ã»ï¿½ï¿½ï¿½Òµï¿½!" << endl;
+	}
+
+}
+
+
+int main()
+{
+	//test01();
+	test02();
+	system("pause");
+	return 0;
+}

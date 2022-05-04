@@ -1,49 +1,49 @@
-//#include <iostream>
-//#include <vector>
-//#include <algorithm>
-//using namespace std;
-//
-////Ò»ÔªÎ½´Ê
-//
-//class Mycompare
-//{
-//public:
-//	bool operator()(int num)
-//	{
-//		if (num > 5)
-//		{
-//			return true;
-//		}
-//		else
-//		{
-//			return false;
-//		}
-//	}
-//};
-//
-//
-//
-//
-//void test01()
-//{
-//	vector<int> V;
-//	for (int i = 0; i < 10; i++)
-//	{
-//		V.push_back(i);
-//	}
-//
-//	//²éÕÒÈÝÆ÷ÖÐÓÐÃ»ÓÐ´óÓÚ5µÄÊý×Ö
-//	vector<int>::iterator it = find_if(V.begin(), V.end(), Mycompare());   //Mycompare()ÄäÃûº¯Êý¶ÔÏó
-//	if (it != V.end())
-//	{
-//		cout << "ÕÒµ½ÁË" << endl;
-//	}
-//}
-//
-//
-//int main()
-//{
-//	test01();
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+//Ò»ÔªÎ½ï¿½ï¿½
+
+class Mycompare
+{
+public:
+	bool operator()(int num)
+	{
+		if (num > 5)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+};
+
+
+
+
+void test01()
+{
+	vector<int> V;
+	for (int i = 0; i < 10; i++)
+	{
+		V.push_back(i);
+	}
+
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð´ï¿½ï¿½ï¿½5ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	vector<int>::iterator it = find_if(V.begin(), V.end(), Mycompare());   //Mycompare()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	if (it != V.end())
+	{
+		cout << "ï¿½Òµï¿½ï¿½ï¿½" << endl;
+	}
+}
+
+
+int main()
+{
+	test01();
+	system("pause");
+	return 0;
+}

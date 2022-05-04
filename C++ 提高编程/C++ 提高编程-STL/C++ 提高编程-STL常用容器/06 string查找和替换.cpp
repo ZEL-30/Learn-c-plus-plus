@@ -1,45 +1,45 @@
-//#include <iostream>
-//#include <string>
-//using namespace std;
-//
-//
-////int find(const string& str, int pos = 0) const;          //²éÕÒstrµÚÒ»´Î³öÏÖÎ»ÖÃ£¬´Ópos¿ªÊ¼²éÕÒ
-////int find(const char* s, int pos = 0) const;              //²éÕÒsµÚÒ»´Î³öÏÖÎ»ÖÃ£¬´Ópos¿ªÊ¼²éÕÒ
-////int find(const char* s, int pos,int n) const;            //´ÓposÎ»ÖÃ²éÕÒsµÄÇ°n¸ö×Ö·ûµÚÒ»´ÎÎ»ÖÃ 
-////int find(const char c, int pos = 0) const;               //²éÕÒ×Ö·ûcµÚÒ»´Î³öÏÖÎ»ÖÃ
-////int rfind(const string& str, int pos = npos) const;      //²éÕÒstr×îºóÒ»´Î³öÏÖÎ»ÖÃ£¬´Ópos¿ªÊ¼²éÕÒ
-////int rfind(const char* s, int pos = npos) const;          //²éÕÒs×îºóÒ»´Î³öÏÖÎ»ÖÃ£¬´Ópos¿ªÊ¼²éÕÒ
-////int rfind(const char* s, int pos,int n) const;           //´Ópos²éÕÒsµÄÇ°n¸ö×Ö·û×îºóÒ»´ÎÎ»ÖÃ
-////int rfind(const char c, int pos = 0) const;              //²éÕÒ×Ö·ûc×îºóÒ»´Î³öÏÖÎ»ÖÃ
-////string& replace(int pos, int n, const string& str);      //Ìæ»»´Ópos¿ªÊ¼µÄn¸ö×Ö·ûÎª×Ö·û´®str
-////string& replace(int pos, int n, const char* s);          //Ìæ»»´Ópos¿ªÊ¼µÄn¸ö×Ö·ûÎª×Ö·û´®s
-//
-//
-////1¡¢²éÕÒ
-//void test01()
-//{
-//	string str1 = "abcdefg";
-//	int pos = str1.find("de");
-//	cout << "pos = " << pos << endl;      //3 ´Ó0¿ªÊ¼Ë÷Òý  Ã»ÓÐ·µ»Ø-1
-//
-//	//rfind
-//	pos = str1.find("de");
-//	cout << "pos = " << pos << endl;
-//}
-//
-////2¡¢Ìæ»»
-//void test02()
-//{
-//	string str1 = "abcdefg";
-//	//´Ó1ºÅÎ»ÖÃÆð3¸ö×Ö·ûÌæ»»Îª1111
-//	str1.replace(1, 3, "1111");
-//	cout << str1 << endl;    //a1111efg
-//}
-//
-//int main()
-//{
-//	test01();
-//	test02();
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+//int find(const string& str, int pos = 0) const;          //ï¿½ï¿½ï¿½ï¿½strï¿½ï¿½Ò»ï¿½Î³ï¿½ï¿½ï¿½Î»ï¿½Ã£ï¿½ï¿½ï¿½posï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
+//int find(const char* s, int pos = 0) const;              //ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½Ò»ï¿½Î³ï¿½ï¿½ï¿½Î»ï¿½Ã£ï¿½ï¿½ï¿½posï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
+//int find(const char* s, int pos,int n) const;            //ï¿½ï¿½posÎ»ï¿½Ã²ï¿½ï¿½ï¿½sï¿½ï¿½Ç°nï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Î»ï¿½ï¿½ 
+//int find(const char c, int pos = 0) const;               //ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½cï¿½ï¿½Ò»ï¿½Î³ï¿½ï¿½ï¿½Î»ï¿½ï¿½
+//int rfind(const string& str, int pos = npos) const;      //ï¿½ï¿½ï¿½ï¿½strï¿½ï¿½ï¿½Ò»ï¿½Î³ï¿½ï¿½ï¿½Î»ï¿½Ã£ï¿½ï¿½ï¿½posï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
+//int rfind(const char* s, int pos = npos) const;          //ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½Ò»ï¿½Î³ï¿½ï¿½ï¿½Î»ï¿½Ã£ï¿½ï¿½ï¿½posï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
+//int rfind(const char* s, int pos,int n) const;           //ï¿½ï¿½posï¿½ï¿½ï¿½ï¿½sï¿½ï¿½Ç°nï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Î»ï¿½ï¿½
+//int rfind(const char c, int pos = 0) const;              //ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½cï¿½ï¿½ï¿½Ò»ï¿½Î³ï¿½ï¿½ï¿½Î»ï¿½ï¿½
+//string& replace(int pos, int n, const string& str);      //ï¿½æ»»ï¿½ï¿½posï¿½ï¿½Ê¼ï¿½ï¿½nï¿½ï¿½ï¿½Ö·ï¿½Îªï¿½Ö·ï¿½ï¿½ï¿½str
+//string& replace(int pos, int n, const char* s);          //ï¿½æ»»ï¿½ï¿½posï¿½ï¿½Ê¼ï¿½ï¿½nï¿½ï¿½ï¿½Ö·ï¿½Îªï¿½Ö·ï¿½ï¿½ï¿½s
+
+
+//1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+void test01()
+{
+	string str1 = "abcdefg";
+	int pos = str1.find("de");
+	cout << "pos = " << pos << endl;      //3 ï¿½ï¿½0ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½  Ã»ï¿½Ð·ï¿½ï¿½ï¿½-1
+
+	//rfind
+	pos = str1.find("de");
+	cout << "pos = " << pos << endl;
+}
+
+//2ï¿½ï¿½ï¿½æ»»
+void test02()
+{
+	string str1 = "abcdefg";
+	//ï¿½ï¿½1ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½ï¿½Ö·ï¿½ï¿½æ»»Îª1111
+	str1.replace(1, 3, "1111");
+	cout << str1 << endl;    //a1111efg
+}
+
+int main()
+{
+	test01();
+	test02();
+	system("pause");
+	return 0;
+}

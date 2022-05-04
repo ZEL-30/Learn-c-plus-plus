@@ -1,55 +1,55 @@
-//#include <iostream>
-//#include <deque>
-//using namespace std;
-//
-//
-////empty();                  //判断容器是否为空  返回bool型
-////size();                   //返回容器中元素的个数
-////resize(int num);          //重新指定容器的长度为num，若容器变长，则以默认值充填新位置
-////						  //如果容器变短，则末尾超出容器长度的元素被删除
-////resize(int num, elem);    //重新指定容器的长度为num，若容器变长，则以elem值充填新位置
-////						  //如果容器变短，则末尾超出容器长度的元素被删除
-//
-//
-//
-//
-//
-//void printDeque(const deque<int>& d)
-//{
-//	for (deque<int>::const_iterator it = d.begin(); it != d.end(); it++)
-//	{
-//		cout << *it << " ";
-//	}
-//	cout << endl;
-//}
-//
-//
-//
-//
-//
-//
-//void test01()
-//{
-//	deque<int> d1;
-//	for (int i = 0; i < 10; i++)
-//	{
-//		d1.push_front(i);
-//	}
-//	printDeque(d1);
-//
-//	cout << "d1的大小为：" << d1.size() << endl;
-//	d1.resize(20, 10);
-//	printDeque(d1);
-//	cout << "d1的大小为：" << d1.size() << endl;
-//}
-//
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <deque>
+using namespace std;
+
+
+//empty();                  //锟叫讹拷锟斤拷锟斤拷锟角凤拷为锟斤拷  锟斤拷锟斤拷bool锟斤拷
+//size();                   //锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷元锟截的革拷锟斤拷
+//resize(int num);          //锟斤拷锟斤拷指锟斤拷锟斤拷锟斤拷锟侥筹拷锟斤拷为num锟斤拷锟斤拷锟斤拷锟斤拷锟戒长锟斤拷锟斤拷锟斤拷默锟斤拷值锟斤拷锟斤拷锟斤拷位锟斤拷
+//						  //锟斤拷锟斤拷锟斤拷锟斤拷锟教ｏ拷锟斤拷末尾锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟饺碉拷元锟截憋拷删锟斤拷
+//resize(int num, elem);    //锟斤拷锟斤拷指锟斤拷锟斤拷锟斤拷锟侥筹拷锟斤拷为num锟斤拷锟斤拷锟斤拷锟斤拷锟戒长锟斤拷锟斤拷锟斤拷elem值锟斤拷锟斤拷锟斤拷位锟斤拷
+//						  //锟斤拷锟斤拷锟斤拷锟斤拷锟教ｏ拷锟斤拷末尾锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟饺碉拷元锟截憋拷删锟斤拷
+
+
+
+
+
+void printDeque(const deque<int>& d)
+{
+	for (deque<int>::const_iterator it = d.begin(); it != d.end(); it++)
+	{
+		cout << *it << " ";
+	}
+	cout << endl;
+}
+
+
+
+
+
+
+void test01()
+{
+	deque<int> d1;
+	for (int i = 0; i < 10; i++)
+	{
+		d1.push_front(i);
+	}
+	printDeque(d1);
+
+	cout << "d1锟侥达拷小为锟斤拷" << d1.size() << endl;
+	d1.resize(20, 10);
+	printDeque(d1);
+	cout << "d1锟侥达拷小为锟斤拷" << d1.size() << endl;
+}
+
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

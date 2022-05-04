@@ -1,56 +1,56 @@
-//#include <iostream>
-//#include <vector>
-//using namespace std;
-//
-////empty();                  //判断容器是否为空
-////capacity();               //容器的容量
-////size();                   //返回容器中元素的个数
-////resize(int num);          //重新指定容器的长度为num，若容器变长，则以默认值充填新位置
-////						  //如果容器变短，则末尾超出容器长度的元素被删除
-////resize(int num, elem);    //重新指定容器的长度为num，若容器变长，则以elem值充填新位置
-////						  //如果容器变短，则末尾超出容器长度的元素被删除
-//
-//void printVector(vector<int> v)
-//{
-//	for (vector<int>::iterator it = v.begin(); it != v.end(); it++)
-//	{
-//		cout << *it << " ";
-//	}
-//	cout << endl;
-//}
-//
-//
-//void test01()
-//{
-//	vector<int> v1;
-//	for (int i = 0; i < 10; i++)
-//	{
-//		v1.push_back(i);
-//	}
-//
-//	printVector(v1);
-//	if (v1.empty())
-//	{
-//		cout << "容器为空" << endl;
-//	}
-//	else
-//	{
-//		cout << "容器不为空" << endl;
-//	}
-//
-//	cout << "v1的容量：" << v1.capacity() << " 大小为：" << v1.size() << endl;
-//
-//	v1.resize(15,100);
-//	cout << "v1的容量：" << v1.capacity() << " 大小为：" << v1.size() << endl;
-//	printVector(v1);
-//}
-//
-//
-//
-//int main()
-//{
-//	test01();
-//
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <vector>
+using namespace std;
+
+//empty();                  //锟叫讹拷锟斤拷锟斤拷锟角凤拷为锟斤拷
+//capacity();               //锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷
+//size();                   //锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷元锟截的革拷锟斤拷
+//resize(int num);          //锟斤拷锟斤拷指锟斤拷锟斤拷锟斤拷锟侥筹拷锟斤拷为num锟斤拷锟斤拷锟斤拷锟斤拷锟戒长锟斤拷锟斤拷锟斤拷默锟斤拷值锟斤拷锟斤拷锟斤拷位锟斤拷
+//						  //锟斤拷锟斤拷锟斤拷锟斤拷锟教ｏ拷锟斤拷末尾锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟饺碉拷元锟截憋拷删锟斤拷
+//resize(int num, elem);    //锟斤拷锟斤拷指锟斤拷锟斤拷锟斤拷锟侥筹拷锟斤拷为num锟斤拷锟斤拷锟斤拷锟斤拷锟戒长锟斤拷锟斤拷锟斤拷elem值锟斤拷锟斤拷锟斤拷位锟斤拷
+//						  //锟斤拷锟斤拷锟斤拷锟斤拷锟教ｏ拷锟斤拷末尾锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟饺碉拷元锟截憋拷删锟斤拷
+
+void printVector(vector<int> v)
+{
+	for (vector<int>::iterator it = v.begin(); it != v.end(); it++)
+	{
+		cout << *it << " ";
+	}
+	cout << endl;
+}
+
+
+void test01()
+{
+	vector<int> v1;
+	for (int i = 0; i < 10; i++)
+	{
+		v1.push_back(i);
+	}
+
+	printVector(v1);
+	if (v1.empty())
+	{
+		cout << "锟斤拷锟斤拷为锟斤拷" << endl;
+	}
+	else
+	{
+		cout << "锟斤拷锟斤拷锟斤拷为锟斤拷" << endl;
+	}
+
+	cout << "v1锟斤拷锟斤拷锟斤拷锟斤拷" << v1.capacity() << " 锟斤拷小为锟斤拷" << v1.size() << endl;
+
+	v1.resize(15,100);
+	cout << "v1锟斤拷锟斤拷锟斤拷锟斤拷" << v1.capacity() << " 锟斤拷小为锟斤拷" << v1.size() << endl;
+	printVector(v1);
+}
+
+
+
+int main()
+{
+	test01();
+
+	system("pause");
+	return 0;
+}

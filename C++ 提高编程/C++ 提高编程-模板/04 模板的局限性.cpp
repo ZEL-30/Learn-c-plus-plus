@@ -1,101 +1,101 @@
-//#include <iostream>
-//using namespace std;
-//
-//
-//class Person
-//{
-//
-//public:
-//	Person(string Name, int age)
-//	{
-//
-//		m_Name = Name;
-//		m_age = age;
-//	}
-//
-//	bool operator==(Person &p)      //ÔËËã·ûÖØÔØ
-//	{
-//		if (m_age == p.m_age && m_Name == p.m_Name)
-//		{
-//			return true;
-//		}
-//		return false;
-//
-//	}
-//	string m_Name;
-//	int m_age;
-//};
-//
-//
-//
-//
-//
-////¶Ô±ÈÁ½¸öÊı¾İÊÇ·ñÏàµÈº¯Êı
-//template <class T>
-//bool myCompare(T& a, T& b)
-//{
-//	if (a == b)
-//	{
-//		return true;
-//	}
-//	else
-//	{
-//		return false;
-//	}
-//}
-//
-//
-////ÀûÓÃ¾ßÌå»¯PersonµÄ°æ±¾ÊµÏÖ´úÂë£¬¾ßÌå»¯ÓÅÏÈµ÷ÓÃ
-//template <> bool myCompare(Person& p1, Person& p2)
-//{
-//	if (p1.m_age == p2.m_age && p2.m_Name == p2.m_Name)
-//	{
-//		return true;
-//	}
-//	return false;
-//}
-//
-//void test01()
-//{
-//	int a = 10;
-//	int b = 20;
-//	bool ret = myCompare(a, b);
-//	if (ret)
-//	{
-//		cout << "aºÍbÏàµÈ" << endl;
-//	}
-//	else
-//	{
-//		cout << "aºÍb²»ÏàµÈ" << endl;
-//	}
-//
-//}
-//
-//
-//void test02()
-//{
-//	Person p1("ÕÅ¶÷ÀÖ", 23);
-//	Person p2("ÕÅ¶÷ÀÖ", 23);
-//
-//	bool ret = myCompare(p1, p2);
-//	if (ret)
-//	{
-//		cout << "p1ºÍp2ÏàµÈ" << endl;
-//	}
-//	else
-//	{
-//		cout << "p1ºÍp2²»ÏàµÈ" << endl;
-//	}
-//}
-//
-//
-//int main()
-//{
-//	//test01();
-//
-//	test02();
-//
-//	system("pause");
-//	system("cls");
-//	return 0;
-//}
+#include <iostream>
+using namespace std;
+
+
+class Person
+{
+
+public:
+	Person(string Name, int age)
+	{
+
+		m_Name = Name;
+		m_age = age;
+	}
+
+	bool operator==(Person &p)      //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	{
+		if (m_age == p.m_age && m_Name == p.m_Name)
+		{
+			return true;
+		}
+		return false;
+
+	}
+	string m_Name;
+	int m_age;
+};
+
+
+
+
+
+//ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Èºï¿½ï¿½ï¿½
+template <class T>
+bool myCompare(T& a, T& b)
+{
+	if (a == b)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+
+//ï¿½ï¿½ï¿½Ã¾ï¿½ï¿½å»¯Personï¿½Ä°æ±¾Êµï¿½Ö´ï¿½ï¿½ë£¬ï¿½ï¿½ï¿½å»¯ï¿½ï¿½ï¿½Èµï¿½ï¿½ï¿½
+template <> bool myCompare(Person& p1, Person& p2)
+{
+	if (p1.m_age == p2.m_age && p2.m_Name == p2.m_Name)
+	{
+		return true;
+	}
+	return false;
+}
+
+void test01()
+{
+	int a = 10;
+	int b = 20;
+	bool ret = myCompare(a, b);
+	if (ret)
+	{
+		cout << "aï¿½ï¿½bï¿½ï¿½ï¿½" << endl;
+	}
+	else
+	{
+		cout << "aï¿½ï¿½bï¿½ï¿½ï¿½ï¿½ï¿½" << endl;
+	}
+
+}
+
+
+void test02()
+{
+	Person p1("ï¿½Å¶ï¿½ï¿½ï¿½", 23);
+	Person p2("ï¿½Å¶ï¿½ï¿½ï¿½", 23);
+
+	bool ret = myCompare(p1, p2);
+	if (ret)
+	{
+		cout << "p1ï¿½ï¿½p2ï¿½ï¿½ï¿½" << endl;
+	}
+	else
+	{
+		cout << "p1ï¿½ï¿½p2ï¿½ï¿½ï¿½ï¿½ï¿½" << endl;
+	}
+}
+
+
+int main()
+{
+	//test01();
+
+	test02();
+
+	system("pause");
+	system("cls");
+	return 0;
+}

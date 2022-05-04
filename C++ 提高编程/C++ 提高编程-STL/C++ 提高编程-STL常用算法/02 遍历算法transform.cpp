@@ -1,62 +1,62 @@
-//#include <iostream>
-//#include <vector>
-//#include <algorithm>
-//using namespace std;
-//
-//
-////transform(iterator beg1, iterator beg1, iterator beg2, _func);
-//////beg1 Ô­ÈÝÆ÷ÆðÊ¼µü´úÆ÷
-//////end1 Ô­ÈÝÆ÷½áÊøµü´úÆ÷
-//////beg3 Ä¿±êÈÝÆ÷ÆðÊ¼µü´úÆ÷
-//////_func º¯Êý»òÕßº¯Êý¶ÔÏó
-//
-//class Transform
-//{
-//public:
-//	int operator()(int val)
-//	{
-//		return val+1000;
-//	}
-//};
-//
-//
-//class Myprint
-//{
-//public:
-//	void operator()(int val)
-//	{
-//		cout << val << " ";
-//	}
-//};
-//
-//
-//
-//
-//
-//
-//void test01()
-//{
-//	vector<int> V;
-//	for (int i = 0; i < 10; i++)
-//	{
-//		V.push_back(i);
-//	}
-//
-//	vector<int> Vtarget;
-//	Vtarget.resize(10);    //Ä¿±êÈÝÆ÷ÌáÇ°¿ª±Ù¿Õ¼ä
-//	transform(V.begin(), V.end(), Vtarget.begin(), Transform());
-//	for_each(Vtarget.begin(), Vtarget.end(), Myprint());
-//	cout << endl;
-//
-//
-//
-//}
-//
-//
-//
-//int main()
-//{
-//	test01();
-//	system("pause");
-//	return 0;
-//}
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+
+//transform(iterator beg1, iterator beg1, iterator beg2, _func);
+////beg1 Ô­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+////end1 Ô­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+////beg3 Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+////_func ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ßºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
+class Transform
+{
+public:
+	int operator()(int val)
+	{
+		return val+1000;
+	}
+};
+
+
+class Myprint
+{
+public:
+	void operator()(int val)
+	{
+		cout << val << " ";
+	}
+};
+
+
+
+
+
+
+void test01()
+{
+	vector<int> V;
+	for (int i = 0; i < 10; i++)
+	{
+		V.push_back(i);
+	}
+
+	vector<int> Vtarget;
+	Vtarget.resize(10);    //Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Ù¿Õ¼ï¿½
+	transform(V.begin(), V.end(), Vtarget.begin(), Transform());
+	for_each(Vtarget.begin(), Vtarget.end(), Myprint());
+	cout << endl;
+
+
+
+}
+
+
+
+int main()
+{
+	test01();
+	system("pause");
+	return 0;
+}
